@@ -1,0 +1,143 @@
+category,page_number,from_station,to_station,coach,berth_no,berth_type,cabin,cabin_no
+AC 3 ECONOMY (3E),1,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),1,NEW DELHI (NDLS),GOVINDPURI (GOY),M14,4,Lower Berth,,1
+AC 3 ECONOMY (3E),1,NEW DELHI (NDLS),GOVINDPURI (GOY),M3,58,Middle Berth,,8
+AC 3 ECONOMY (3E),1,NEW DELHI (NDLS),GOVINDPURI (GOY),M3,45,Middle Berth,,6
+AC 3 ECONOMY (3E),1,NEW DELHI (NDLS),GOVINDPURI (GOY),M3,59,Upper Berth,,8
+AC 3 ECONOMY (3E),1,NEW DELHI (NDLS),GOVINDPURI (GOY),M3,64,Side Upper Berth,,8
+AC 3 ECONOMY (3E),1,NEW DELHI (NDLS),GOVINDPURI (GOY),M7,1,Lower Berth,,1
+AC 3 ECONOMY (3E),1,BUXAR (BXR),PATNA JN (PNBE),M6,3,Upper Berth,,1
+AC 3 ECONOMY (3E),1,BUXAR (BXR),PATNA JN (PNBE),M9,74,Middle Berth,,10
+AC 3 ECONOMY (3E),1,DANAPUR (DNR),PATNA JN (PNBE),M7,31,Side Lower Berth,,4
+AC 3 ECONOMY (3E),1,DANAPUR (DNR),PATNA JN (PNBE),M4,79,Side Lower Berth,,10
+AC 3 ECONOMY (3E),2,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),2,ARA JN (ARA),PATNA JN (PNBE),M8,52,Lower Berth,,7
+AC 3 ECONOMY (3E),2,ARA JN (ARA),PATNA JN (PNBE),M8,1,Lower Berth,,1
+AC 3 ECONOMY (3E),2,ARA JN (ARA),PATNA JN (PNBE),M9,80,Side Upper Berth,,10
+AC 3 ECONOMY (3E),2,ARA JN (ARA),PATNA JN (PNBE),M7,11,Upper Berth,,2
+AC 3 ECONOMY (3E),2,ARA JN (ARA),PATNA JN (PNBE),M3,30,Upper Berth,,4
+AC 3 ECONOMY (3E),2,ARA JN (ARA),PATNA JN (PNBE),M7,13,Middle Berth,,2
+AC 3 ECONOMY (3E),2,ARA JN (ARA),PATNA JN (PNBE),M9,27,Upper Berth,,4
+AC 3 ECONOMY (3E),2,BUXAR (BXR),PATNA JN (PNBE),M6,51,Upper Berth,,7
+AC 3 ECONOMY (3E),2,ARA JN (ARA),PATNA JN (PNBE),M8,75,Upper Berth,,10
+AC 3 ECONOMY (3E),2,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M14,75,Upper Berth,,10
+AC 3 ECONOMY (3E),3,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),3,ARA JN (ARA),PATNA JN (PNBE),M3,10,Middle Berth,,2
+AC 3 ECONOMY (3E),3,DANAPUR (DNR),PATNA JN (PNBE),M4,80,Side Upper Berth,,10
+AC 3 ECONOMY (3E),3,ARA JN (ARA),PATNA JN (PNBE),M13,62,Upper Berth,,8
+AC 3 ECONOMY (3E),3,BUXAR (BXR),PATNA JN (PNBE),M6,11,Upper Berth,,2
+AC 3 ECONOMY (3E),3,BUXAR (BXR),PATNA JN (PNBE),M9,77,Middle Berth,,10
+AC 3 ECONOMY (3E),3,ARA JN (ARA),PATNA JN (PNBE),M9,79,Side Lower Berth,,10
+AC 3 ECONOMY (3E),3,ARA JN (ARA),PATNA JN (PNBE),M7,10,Middle Berth,,2
+AC 3 ECONOMY (3E),3,ARA JN (ARA),PATNA JN (PNBE),M14,35,Upper Berth,,5
+AC 3 ECONOMY (3E),3,ARA JN (ARA),PATNA JN (PNBE),M15,57,Lower Berth,,8
+AC 3 ECONOMY (3E),3,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M3,9,Lower Berth,,2
+AC 3 ECONOMY (3E),4,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),4,BUXAR (BXR),PATNA JN (PNBE),M6,60,Lower Berth,,8
+AC 3 ECONOMY (3E),4,ARA JN (ARA),PATNA JN (PNBE),M9,46,Upper Berth,,6
+AC 3 ECONOMY (3E),4,ARA JN (ARA),PATNA JN (PNBE),M13,42,Middle Berth,,6
+AC 3 ECONOMY (3E),4,BUXAR (BXR),PATNA JN (PNBE),M4,27,Upper Berth,,4
+AC 3 ECONOMY (3E),4,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M4,70,Upper Berth,,9
+AC 3 ECONOMY (3E),4,ARA JN (ARA),PATNA JN (PNBE),M9,17,Lower Berth,,3
+AC 3 ECONOMY (3E),4,BUXAR (BXR),PATNA JN (PNBE),M9,59,Upper Berth,,8
+AC 3 ECONOMY (3E),4,BUXAR (BXR),PATNA JN (PNBE),M4,17,Lower Berth,,3
+AC 3 ECONOMY (3E),4,BUXAR (BXR),PATNA JN (PNBE),M13,68,Lower Berth,,9
+AC 3 ECONOMY (3E),4,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M14,56,Side Upper Berth,,7
+AC 3 ECONOMY (3E),5,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),5,ARA JN (ARA),PATNA JN (PNBE),M15,76,Lower Berth,,10
+AC 3 ECONOMY (3E),5,BUXAR (BXR),PATNA JN (PNBE),M10,79,Side Lower Berth,,10
+AC 3 ECONOMY (3E),5,ARA JN (ARA),PATNA JN (PNBE),M8,49,Lower Berth,,7
+AC 3 ECONOMY (3E),5,BUXAR (BXR),PATNA JN (PNBE),M10,61,Middle Berth,,8
+AC 3 ECONOMY (3E),5,BUXAR (BXR),PATNA JN (PNBE),M6,57,Lower Berth,,8
+AC 3 ECONOMY (3E),5,DANAPUR (DNR),PATNA JN (PNBE),M3,3,Upper Berth,,1
+AC 3 ECONOMY (3E),5,BUXAR (BXR),PATNA JN (PNBE),M4,7,Side Lower Berth,,1
+AC 3 ECONOMY (3E),5,BUXAR (BXR),PATNA JN (PNBE),M8,64,Side Upper Berth,,8
+AC 3 ECONOMY (3E),5,BUXAR (BXR),PATNA JN (PNBE),M15,6,Upper Berth,,1
+AC 3 ECONOMY (3E),5,BUXAR (BXR),PATNA JN (PNBE),M15,5,Middle Berth,,1
+AC 3 ECONOMY (3E),6,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),6,BUXAR (BXR),PATNA JN (PNBE),M6,10,Middle Berth,,2
+AC 3 ECONOMY (3E),6,BUXAR (BXR),PATNA JN (PNBE),M15,62,Upper Berth,,8
+AC 3 ECONOMY (3E),6,ARA JN (ARA),PATNA JN (PNBE),M8,77,Middle Berth,,10
+AC 3 ECONOMY (3E),6,BUXAR (BXR),PATNA JN (PNBE),M6,6,Upper Berth,,1
+AC 3 ECONOMY (3E),6,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M3,12,Lower Berth,,2
+AC 3 ECONOMY (3E),6,ARA JN (ARA),PATNA JN (PNBE),M13,48,Side Upper Berth,,6
+AC 3 ECONOMY (3E),6,BUXAR (BXR),PATNA JN (PNBE),M12,6,Upper Berth,,1
+AC 3 ECONOMY (3E),6,ARA JN (ARA),PATNA JN (PNBE),M15,16,Side Upper Berth,,2
+AC 3 ECONOMY (3E),6,BUXAR (BXR),PATNA JN (PNBE),M15,55,Side Lower Berth,,7
+AC 3 ECONOMY (3E),6,BUXAR (BXR),PATNA JN (PNBE),M10,59,Upper Berth,,8
+AC 3 ECONOMY (3E),7,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),7,ARA JN (ARA),PATNA JN (PNBE),M7,16,Side Upper Berth,,2
+AC 3 ECONOMY (3E),7,ARA JN (ARA),PATNA JN (PNBE),M10,41,Lower Berth,,6
+AC 3 ECONOMY (3E),7,BUXAR (BXR),PATNA JN (PNBE),M14,63,Side Lower Berth,,8
+AC 3 ECONOMY (3E),7,ARA JN (ARA),PATNA JN (PNBE),M13,59,Upper Berth,,8
+AC 3 ECONOMY (3E),7,BUXAR (BXR),PATNA JN (PNBE),M8,4,Lower Berth,,1
+AC 3 ECONOMY (3E),7,BUXAR (BXR),PATNA JN (PNBE),M11,6,Upper Berth,,1
+AC 3 ECONOMY (3E),7,ARA JN (ARA),PATNA JN (PNBE),M13,15,Side Lower Berth,,2
+AC 3 ECONOMY (3E),7,BUXAR (BXR),PATNA JN (PNBE),M15,2,Middle Berth,,1
+AC 3 ECONOMY (3E),7,BUXAR (BXR),PATNA JN (PNBE),M8,17,Lower Berth,,3
+AC 3 ECONOMY (3E),7,ARA JN (ARA),PATNA JN (PNBE),M15,60,Lower Berth,,8
+AC 3 ECONOMY (3E),8,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),8,ARA JN (ARA),PATNA JN (PNBE),M15,59,Upper Berth,,8
+AC 3 ECONOMY (3E),8,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M12,5,Middle Berth,,1
+AC 3 ECONOMY (3E),8,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M11,57,Lower Berth,,8
+AC 3 ECONOMY (3E),8,BUXAR (BXR),PATNA JN (PNBE),M13,6,Upper Berth,,1
+AC 3 ECONOMY (3E),8,BUXAR (BXR),PATNA JN (PNBE),M12,8,Side Upper Berth,,1
+AC 3 ECONOMY (3E),8,ARA JN (ARA),PATNA JN (PNBE),M10,19,Upper Berth,,3
+AC 3 ECONOMY (3E),8,ARA JN (ARA),PATNA JN (PNBE),M3,45,Middle Berth,,6
+AC 3 ECONOMY (3E),8,ARA JN (ARA),PATNA JN (PNBE),M10,21,Middle Berth,,3
+AC 3 ECONOMY (3E),8,ARA JN (ARA),PATNA JN (PNBE),M13,61,Middle Berth,,8
+AC 3 ECONOMY (3E),8,ARA JN (ARA),PATNA JN (PNBE),M11,69,Middle Berth,,9
+AC 3 ECONOMY (3E),9,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),9,BUXAR (BXR),PATNA JN (PNBE),M4,8,Side Upper Berth,,1
+AC 3 ECONOMY (3E),9,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M7,1,Lower Berth,,1
+AC 3 ECONOMY (3E),9,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M10,67,Upper Berth,,9
+AC 3 ECONOMY (3E),9,ARA JN (ARA),PATNA JN (PNBE),M10,48,Side Upper Berth,,6
+AC 3 ECONOMY (3E),9,BUXAR (BXR),PATNA JN (PNBE),M15,64,Side Upper Berth,,8
+AC 3 ECONOMY (3E),9,BUXAR (BXR),PATNA JN (PNBE),M15,3,Upper Berth,,1
+AC 3 ECONOMY (3E),9,ARA JN (ARA),PATNA JN (PNBE),M12,41,Lower Berth,,6
+AC 3 ECONOMY (3E),9,DANAPUR (DNR),PATNA JN (PNBE),M7,68,Lower Berth,,9
+AC 3 ECONOMY (3E),9,BUXAR (BXR),PATNA JN (PNBE),M15,20,Lower Berth,,3
+AC 3 ECONOMY (3E),9,ARA JN (ARA),PATNA JN (PNBE),M14,34,Middle Berth,,5
+AC 3 ECONOMY (3E),10,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),10,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M11,58,Middle Berth,,8
+AC 3 ECONOMY (3E),10,BUXAR (BXR),PATNA JN (PNBE),M1,80,Side Upper Berth,,10
+AC 3 ECONOMY (3E),10,ARA JN (ARA),PATNA JN (PNBE),M12,47,Side Lower Berth,,6
+AC 3 ECONOMY (3E),10,ARA JN (ARA),PATNA JN (PNBE),M10,18,Middle Berth,,3
+AC 3 ECONOMY (3E),10,ARA JN (ARA),PATNA JN (PNBE),M1,77,Middle Berth,,10
+AC 3 ECONOMY (3E),10,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M14,80,Side Upper Berth,,10
+AC 3 ECONOMY (3E),10,BUXAR (BXR),PATNA JN (PNBE),M1,75,Upper Berth,,10
+AC 3 ECONOMY (3E),10,ARA JN (ARA),PATNA JN (PNBE),M10,22,Upper Berth,,3
+AC 3 ECONOMY (3E),10,ARA JN (ARA),PATNA JN (PNBE),M10,63,Side Lower Berth,,8
+AC 3 ECONOMY (3E),10,ARA JN (ARA),PATNA JN (PNBE),M10,44,Lower Berth,,6
+AC 3 ECONOMY (3E),11,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),11,BUXAR (BXR),PATNA JN (PNBE),M15,28,Lower Berth,,4
+AC 3 ECONOMY (3E),11,BUXAR (BXR),PATNA JN (PNBE),M13,57,Lower Berth,,8
+AC 3 ECONOMY (3E),11,ARA JN (ARA),PATNA JN (PNBE),M10,47,Side Lower Berth,,6
+AC 3 ECONOMY (3E),11,BUXAR (BXR),PATNA JN (PNBE),M10,28,Lower Berth,,4
+AC 3 ECONOMY (3E),11,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M10,69,Middle Berth,,9
+AC 3 ECONOMY (3E),11,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M11,63,Side Lower Berth,,8
+AC 3 ECONOMY (3E),11,ARA JN (ARA),PATNA JN (PNBE),M11,62,Upper Berth,,8
+AC 3 ECONOMY (3E),11,ARA JN (ARA),PATNA JN (PNBE),M6,67,Upper Berth,,9
+AC 3 ECONOMY (3E),11,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M12,3,Upper Berth,,1
+AC 3 ECONOMY (3E),11,DANAPUR (DNR),PATNA JN (PNBE),M11,79,Side Lower Berth,,10
+AC 3 ECONOMY (3E),12,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),12,ARA JN (ARA),PATNA JN (PNBE),M1,1,Lower Berth,,1
+AC 3 ECONOMY (3E),12,BUXAR (BXR),PATNA JN (PNBE),M1,40,Side Upper Berth,,5
+AC 3 ECONOMY (3E),12,BUXAR (BXR),PATNA JN (PNBE),M1,79,Side Lower Berth,,10
+AC 3 ECONOMY (3E),12,ARA JN (ARA),PATNA JN (PNBE),M1,78,Upper Berth,,10
+AC 3 ECONOMY (3E),12,BUXAR (BXR),PATNA JN (PNBE),M1,37,Middle Berth,,5
+AC 3 ECONOMY (3E),12,BUXAR (BXR),PATNA JN (PNBE),M10,80,Side Upper Berth,,10
+AC 3 ECONOMY (3E),12,BUXAR (BXR),PATNA JN (PNBE),M1,35,Upper Berth,,5
+AC 3 ECONOMY (3E),12,ARA JN (ARA),PATNA JN (PNBE),M1,74,Middle Berth,,10
+AC 3 ECONOMY (3E),12,ARA JN (ARA),PATNA JN (PNBE),M1,73,Lower Berth,,10
+AC 3 ECONOMY (3E),12,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M1,32,Side Upper Berth,,4
+AC 3 ECONOMY (3E),13,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list,filter_list
+AC 3 ECONOMY (3E),13,BUXAR (BXR),PATNA JN (PNBE),M10,25,Lower Berth,,4
+AC 3 ECONOMY (3E),13,DD UPADHYAYA JN (DDU),PATNA JN (PNBE),M13,17,Lower Berth,,3
+AC 3 ECONOMY (3E),13,BUXAR (BXR),PATNA JN (PNBE),M1,69,Middle Berth,,9
+AC 3 ECONOMY (3E),13,BUXAR (BXR),PATNA JN (PNBE),M1,68,Lower Berth,,9
+AC 3 ECONOMY (3E),13,BUXAR (BXR),PATNA JN (PNBE),M1,67,Upper Berth,,9
+AC 3 ECONOMY (3E),13,BUXAR (BXR),PATNA JN (PNBE),M11,3,Upper Berth,,1
+AC 3 ECONOMY (3E),13,BUXAR (BXR),PATNA JN (PNBE),M10,71,Side Lower Berth,,9
+AC 3 ECONOMY (3E),13,ARA JN (ARA),PATNA JN (PNBE),M1,4,Lower Berth,,1
+AC 3 ECONOMY (3E),13,DANAPUR (DNR),PATNA JN (PNBE),M11,80,Side Upper Berth,,10

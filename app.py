@@ -363,6 +363,27 @@ def handle_normal_mode(request):
                         routes=filtered_routes, 
                         connection_time=min_connection_time)
 
+def load_station_mapping():
+    """Load station mapping from train_stops.json"""
+    try:
+        with open('train_stops.json', 'r') as f:
+            return json.load(f)
+    except:
+        return {}
+
+def get_station_name_from_code(station_code, train_number, train_stops_data):
+    """Get station name from code using train_stops.json"""
+    try:
+        if str(train_number) in train_stops_data:
+            stops = train_stops_data[str(train_number)]
+            for stop in stops:
+                if stop.get('station_code') == station_code:
+                    station_name = stop.get('station_name', '').replace(' ', '')
+                    return f"{station_code}_{station_name}"
+        return f"{station_code}_{station_code}"  # Fallback
+    except:
+        return f"{station_code}_{station_code}"
+
 def handle_urgent_mode(request):
     """Handle urgent mode using orchestrator"""
     try:
@@ -371,26 +392,27 @@ def handle_urgent_mode(request):
         destination = request.form['destination']
         date = request.form['date']
         max_standing_time_minutes = int(request.form['max_standing_time'])
-        min_valid_routes = int(request.form['max_routes'])  # This is actually min_valid_routes based on your form
+        min_valid_routes = int(request.form['max_routes'])
         
         # Convert date format from YYYY-MM-DD to YYYYMMDD
-        date = date.replace('-', '')
+        formatted_date = date.replace('-', '')
         
         # Convert standing time from minutes to hours for orchestrator
         max_standing_time_hours = max_standing_time_minutes / 60.0
         
-        # Default values as discussed
+        # Default values
         max_iterations = 5
         max_candidates_per_iteration = 5
         
         print(f"Debug: Urgent mode parameters:")
         print(f"  Origin: {origin}")
         print(f"  Destination: {destination}")
-        print(f"  Date: {date}")
+        print(f"  Date: {formatted_date}")
         print(f"  Max Standing Time: {max_standing_time_minutes} minutes ({max_standing_time_hours} hours)")
         print(f"  Min Valid Routes: {min_valid_routes}")
-        print(f"  Max Iterations: {max_iterations}")
-        print(f"  Max Candidates Per Iteration: {max_candidates_per_iteration}")
+        
+        # Load station mapping
+        train_stops_data = load_station_mapping()
         
         # Initialize orchestrator
         driver = TrainAnalysisDriver()
@@ -399,7 +421,7 @@ def handle_urgent_mode(request):
         result = driver.run_analysis(
             origin=origin,
             destination=destination,
-            journey_date=date,
+            journey_date=formatted_date,
             min_valid_routes=min_valid_routes,
             max_standing_time_hours=max_standing_time_hours,
             max_iterations=max_iterations,
@@ -409,35 +431,144 @@ def handle_urgent_mode(request):
         print(f"Debug: Orchestrator result success: {result.get('success', False)}")
         print(f"Debug: Valid results count: {len(result.get('valid_results', []))}")
         
-        # For now, return a simple confirmation as requested
-        if result.get('success', False):
-            return jsonify({
-                'status': 'success',
-                'message': f"Urgent mode analysis completed successfully! Found {len(result.get('valid_results', []))} valid train options.",
-                'details': {
-                    'total_iterations': result.get('total_iterations', 0),
-                    'candidates_processed': result.get('candidates_found', 0),
-                    'valid_trains_found': len(result.get('valid_results', []))
+        # Convert orchestrator results to the format expected by results.html
+        if result.get('success', False) and result.get('valid_results'):
+            formatted_routes = []
+            
+            for valid_result in result.get('valid_results', []):
+                route = {
+                    'segments': []
                 }
-            })
+                
+                print(f"Debug: Processing valid_result keys: {list(valid_result.keys())}")
+                
+                # Extract the analysis_result which contains the actual segment data
+                analysis_result = valid_result.get('analysis_result', {})
+                train_number = analysis_result.get('train_number')
+                print(f"Debug: analysis_result keys: {list(analysis_result.keys())}")
+                print(f"Debug: Train number: {train_number}")
+                
+                # Process seated segments from analysis_result
+                seated_segments = analysis_result.get('seated_segments', [])
+                print(f"Debug: Found {len(seated_segments)} seated segments")
+                
+                for segment in seated_segments:
+                    print(f"Debug: Processing seated segment: {segment}")
+                    
+                    # FIXED: Get actual station codes from segment data
+                    from_station_code = segment.get('from_station')
+                    to_station_code = segment.get('to_station')
+                    
+                    # FIXED: Get proper station names using train_stops.json
+                    from_station = get_station_name_from_code(from_station_code, train_number, train_stops_data)
+                    to_station = get_station_name_from_code(to_station_code, train_number, train_stops_data)
+                    
+                    # FIXED: Extract journey times from journey_time object
+                    journey_time = segment.get('journey_time', {})
+                    departure_time = journey_time.get('from_time')
+                    arrival_time = journey_time.get('to_time')
+                    duration_hours = journey_time.get('duration_hours', 0)
+                    duration_minutes = journey_time.get('duration_minutes', 0)
+                    
+                    # Extract seat details
+                    seat_details = segment.get('seat_details', {})
+                    
+                    formatted_segment = {
+                        'train_number': train_number,  # FIXED: Get from analysis_result
+                        'from_station': from_station,
+                        'to_station': to_station,
+                        'departure_time': departure_time,
+                        'arrival_time': arrival_time,
+                        'departure_date': formatted_date,
+                        'arrival_date': formatted_date,  # You might need to adjust for multi-day journeys
+                        'duration': f"{duration_hours}h {duration_minutes}m",
+                        'class': seat_details.get('category', 'N/A'),
+                        'coach': seat_details.get('coach', 'N/A'),
+                        'seat': seat_details.get('berth_no', 'N/A'),  # FIXED: Use berth_no
+                        'delay_prediction': None
+                    }
+                    route['segments'].append(formatted_segment)
+                    print(f"Debug: Added seated segment: {from_station} → {to_station}")
+                
+                # Process standing segments (seatless) from analysis_result
+                seatless_segments = analysis_result.get('seatless_segments', [])
+                print(f"Debug: Found {len(seatless_segments)} seatless segments")
+                
+                for segment in seatless_segments:
+                    print(f"Debug: Processing seatless segment: {segment}")
+                    
+                    # FIXED: Get actual station codes from segment data
+                    from_station_code = segment.get('from_station')
+                    to_station_code = segment.get('to_station')
+                    
+                    # FIXED: Get proper station names using train_stops.json
+                    from_station = get_station_name_from_code(from_station_code, train_number, train_stops_data)
+                    to_station = get_station_name_from_code(to_station_code, train_number, train_stops_data)
+                    
+                    # FIXED: Extract journey times from journey_time object
+                    journey_time = segment.get('journey_time', {})
+                    departure_time = journey_time.get('from_time')
+                    arrival_time = journey_time.get('to_time')
+                    duration_hours = journey_time.get('duration_hours', 0)
+                    duration_minutes = journey_time.get('duration_minutes', 0)
+                    
+                    formatted_segment = {
+                        'train_number': train_number,  # FIXED: Get from analysis_result
+                        'from_station': from_station,
+                        'to_station': to_station,
+                        'departure_time': departure_time,
+                        'arrival_time': arrival_time,
+                        'departure_date': formatted_date,
+                        'arrival_date': formatted_date,
+                        'duration': f"{duration_hours}h {duration_minutes}m",
+                        'class': 'Standing',  # This will be detected by hasStandingSegments function
+                        'coach': None,
+                        'seat': None,
+                        'delay_prediction': None
+                    }
+                    route['segments'].append(formatted_segment)
+                    print(f"Debug: Added seatless segment: {from_station} → {to_station}")
+                
+                print(f"Debug: Route has {len(route['segments'])} total segments")
+                formatted_routes.append(route)
+            
+            print(f"Debug: Created {len(formatted_routes)} formatted routes")
+            
+            # Add delay predictions if available
+            try:
+                predictor = TrainDelayPredictor(
+                    project_id="16925727262",
+                    endpoint_id="1776921841160421376",
+                    location="us-central1"
+                )
+                formatted_routes = enhance_routes_with_predictions(formatted_routes, predictor)
+                print("Debug: Successfully enhanced urgent mode routes with predictions")
+            except Exception as e:
+                print(f"Debug: Error in urgent mode prediction: {str(e)}")
+                # Continue without predictions
+            
+            # Debug: Print final routes structure
+            for i, route in enumerate(formatted_routes):
+                print(f"Debug: Final Route {i}: {len(route.get('segments', []))} segments")
+                for j, segment in enumerate(route.get('segments', [])):
+                    print(f"  Segment {j}: {segment.get('from_station')} → {segment.get('to_station')} ({segment.get('class')})")
+            
+            # Render the results.html template with the formatted routes
+            return render_template('results.html', 
+                                routes=formatted_routes, 
+                                connection_time=0)
         else:
-            return jsonify({
-                'status': 'failed',
-                'message': f"Urgent mode analysis failed: {result.get('message', 'Unknown error')}",
-                'details': {
-                    'total_iterations': result.get('total_iterations', 0),
-                    'candidates_processed': result.get('candidates_found', 0),
-                    'failed_trains_count': len(result.get('all_failed_trains', []))
-                }
-            })
+            # No valid results found
+            print("Debug: No valid results found by orchestrator")
+            return render_template('results.html', 
+                                routes=[], 
+                                connection_time=0)
             
     except Exception as e:
         print(f"Debug: Urgent mode error: {str(e)}")
-        return jsonify({
-            'status': 'error',
-            'message': f"Error in urgent mode processing: {str(e)}"
-        }), 500
-
+        import traceback
+        traceback.print_exc()
+        return render_template('error.html', error=f"Error in urgent mode processing: {str(e)}")
 # New endpoint to get Azure Speech token
 @app.route('/api/get-speech-token', methods=['GET', 'OPTIONS'])
 def get_speech_token():
