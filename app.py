@@ -85,7 +85,7 @@ def signal_handler(sig, frame):
 CREDENTIALS_PATH = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
     "keys",
-    "directed-reef-450323-t2-11d3aad6566c.json"
+    "fast-tensor-455801-h0-7c50fd901145.json"
 )
 
 # Set the environment variable for Google Cloud credentials
@@ -553,8 +553,8 @@ def index():
             
             try:
                 predictor = TrainDelayPredictor(
-                    project_id="521902680111",
-                    endpoint_id="8318633396381155328",
+                    project_id="16925727262",
+                    endpoint_id="1776921841160421376",
                     location="us-central1"
                 )
                 filtered_routes = enhance_routes_with_predictions(filtered_routes, predictor)

@@ -7,7 +7,7 @@ def set_credentials():
     creds_path = os.path.join(
         os.path.dirname(os.path.abspath(__file__)),
         "keys",
-        "directed-reef-450323-t2-11d3aad6566c.json"
+        "fast-tensor-455801-h0-7c50fd901145.json"
     )
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = creds_path
     return creds_path
@@ -31,14 +31,14 @@ def test_authentication():
         # 2. Initialize Vertex AI with correct project ID
         print("\nTrying to initialize Vertex AI...")
         aiplatform.init(
-            project='521902680111',  # Updated project ID
+            project='16925727262',  # Updated project ID
             location='us-central1'
         )
         print("✓ Successfully initialized Vertex AI")
         
         # 3. Access endpoint with correct endpoint ID
         print("\nTrying to access endpoint...")
-        endpoint_name = "projects/521902680111/locations/us-central1/endpoints/8318633396381155328"
+        endpoint_name = "projects/16925727262/locations/us-central1/endpoints/1776921841160421376"
         endpoint = aiplatform.Endpoint(endpoint_name=endpoint_name)
         print("✓ Successfully accessed endpoint")
         
@@ -72,7 +72,7 @@ def list_available_endpoints():
     try:
         print("\nListing available endpoints...")
         endpoints = aiplatform.Endpoint.list(
-            project='521902680111',  # Updated project ID
+            project='16925727262',  # Updated project ID
             location='us-central1'
         )
         print("\nAvailable endpoints:")

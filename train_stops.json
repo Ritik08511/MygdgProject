@@ -116608,5 +116608,139 @@
       "halt_duration": "18 Mar 25",
       "departure_time": "Finish"
     }
+  ],
+  " (12301": [
+    {
+      "station_name": "HOWRAH JN",
+      "station_code": "HWH",
+      "arrival_time": "Start",
+      "halt_duration": "29 Mar 25",
+      "departure_time": "16:50",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "ASANSOL JN",
+      "station_code": "ASN",
+      "arrival_time": "18:47",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:49"
+    },
+    {
+      "station_name": "DHANBAD JN",
+      "station_code": "DHN",
+      "arrival_time": "19:55",
+      "halt_duration": "05 Mins",
+      "departure_time": "20:00"
+    },
+    {
+      "station_name": "PARASNATH",
+      "station_code": "PNME",
+      "arrival_time": "20:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:32"
+    },
+    {
+      "station_name": "GAYA JN",
+      "station_code": "GAYA",
+      "arrival_time": "22:32",
+      "halt_duration": "03 Mins",
+      "departure_time": "22:35"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "00:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "00:50"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "02:43",
+      "halt_duration": "02 Mins",
+      "departure_time": "02:45"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "04:50",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:55"
+    },
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "10:05",
+      "halt_duration": "30 Mar 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (12313": [
+    {
+      "station_name": "HOWRAH JN",
+      "station_code": "HWH",
+      "arrival_time": "Start",
+      "halt_duration": "29 Mar 25",
+      "departure_time": "16:50",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "ASANSOL JN",
+      "station_code": "ASN",
+      "arrival_time": "18:47",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:49"
+    },
+    {
+      "station_name": "DHANBAD JN",
+      "station_code": "DHN",
+      "arrival_time": "19:55",
+      "halt_duration": "05 Mins",
+      "departure_time": "20:00"
+    },
+    {
+      "station_name": "PARASNATH",
+      "station_code": "PNME",
+      "arrival_time": "20:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:32"
+    },
+    {
+      "station_name": "GAYA JN",
+      "station_code": "GAYA",
+      "arrival_time": "22:32",
+      "halt_duration": "03 Mins",
+      "departure_time": "22:35"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "00:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "00:50"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "02:43",
+      "halt_duration": "02 Mins",
+      "departure_time": "02:45"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "04:50",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:55"
+    },
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "10:05",
+      "halt_duration": "30 Mar 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
   ]
 }

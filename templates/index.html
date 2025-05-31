@@ -3,7 +3,573 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Train Route Finder</title>
+    <title>Railway Route Finder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            padding: 2rem;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(96, 165, 250, 0.3);
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+        }
+
+        .particle:nth-child(2n) {
+            background: rgba(139, 92, 246, 0.2);
+            animation-duration: 25s;
+        }
+
+        .particle:nth-child(3n) {
+            background: rgba(34, 197, 94, 0.2);
+            animation-duration: 30s;
+        }
+
+        .particle:nth-child(4n) {
+            background: rgba(245, 158, 11, 0.2);
+            animation-duration: 35s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .container {
+            max-width: 800px; /* Reduced from 1200px */
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the title */
+            gap: 1rem;
+        }
+
+        .train-icon {
+            width: 3rem;
+            height: 3rem;
+            color: #60a5fa;
+        }
+
+        .mic-icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.5rem;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            text-align: center; /* Center the subtitle */
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(12px);
+            border-radius: 1rem;
+            padding: 2rem; /* Increased padding for better spacing */
+            border: 1px solid #475569;
+            margin-bottom: 2rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            max-width: 100%; /* Ensure it doesn't overflow */
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, 
+                rgba(96, 165, 250, 0.1), 
+                rgba(139, 92, 246, 0.1), 
+                rgba(34, 197, 94, 0.1), 
+                rgba(245, 158, 11, 0.1));
+            border-radius: 1rem;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .glass-card:hover {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .glass-card:hover::before {
+            opacity: 1;
+        }
+
+        .mode-toggle {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            background: rgba(71, 85, 105, 0.3);
+            border-radius: 25px;
+            border: 1px solid #475569;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+
+        .toggle-slider {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 94px;
+            height: 44px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 22px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .toggle-switch.urgent .toggle-slider {
+            transform: translateX(100px);
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+
+        .toggle-labels {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        .label-normal {
+            flex: 1;
+            text-align: center;
+            color: #94a3b8;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .label-urgent {
+            flex: 1;
+            text-align: center;
+            color: #94a3b8;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .toggle-switch:not(.urgent) .label-normal {
+            color: transparent;
+        }
+
+        .toggle-switch.urgent .label-urgent {
+            color: transparent;
+        }
+
+        .voice-command-section {
+            text-align: center;
+        }
+
+        .voice-command-button {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .voice-command-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+        }
+
+        .voice-command-button.recording {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        #voiceCommandText {
+            background: rgba(71, 85, 105, 0.3);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            min-height: 3rem;
+            color: #e2e8f0;
+            font-style: italic;
+        }
+
+        .extracted-details {
+            margin-top: 1rem;
+            text-align: left;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            display: none;
+        }
+
+        .extracted-details h3 {
+            color: #22c55e;
+            margin-bottom: 0.75rem;
+        }
+
+        .extracted-details dl {
+            margin-bottom: 1rem;
+        }
+
+        .extracted-details dt {
+            color: #94a3b8;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .extracted-details dd {
+            color: #e2e8f0;
+            margin-bottom: 0.75rem;
+            margin-left: 0;
+        }
+
+        .apply-button {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .apply-button:hover {
+            transform: translateY(-1px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #e2e8f0;
+            font-weight: 600;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .autocomplete-wrapper {
+            position: relative;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #475569;
+            border-radius: 0.5rem;
+            background: rgba(51, 65, 85, 0.5);
+            color: #ffffff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+        }
+
+        input::placeholder {
+            color: #94a3b8;
+        }
+
+        .autocomplete-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(30, 41, 59, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid #475569;
+            border-radius: 0.5rem;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none;
+        }
+
+        .autocomplete-results.show {
+            display: block;
+        }
+
+        .autocomplete-item {
+            padding: 0.75rem;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(71, 85, 105, 0.3);
+            transition: background-color 0.2s ease;
+        }
+
+        .autocomplete-item:hover {
+            background: rgba(96, 165, 250, 0.1);
+        }
+
+        .autocomplete-item:last-child {
+            border-bottom: none;
+        }
+
+        .station-code {
+            color: #94a3b8;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem; /* Increased gap for better spacing */
+        }
+
+        .urgent-field {
+            display: none;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 0.75rem;
+            padding: 1.5rem; /* Increased padding */
+            margin-bottom: 1.5rem;
+        }
+
+        .urgent-field.show {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .urgent-field label {
+            color: #f59e0b;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 0.75rem;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+        }
+
+        .urgent-mode button[type="submit"] {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+
+        .urgent-mode button[type="submit"]:hover {
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+        }
+
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            flex-direction: column;
+        }
+
+        .loading.show {
+            display: flex;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #60a5fa;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive design improvements */
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 600px; /* Slightly smaller for tablets */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%; /* Full width on mobile */
+                padding: 0 1rem; /* Add some padding */
+            }
+            
+            body {
+                padding: 1rem; /* Reduce body padding on mobile */
+            }
+            
+            .glass-card {
+                padding: 1.5rem; /* Reduce card padding on mobile */
+            }
+            
+            .row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .mode-toggle {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2rem;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .toggle-switch {
+                width: 180px; /* Slightly smaller on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 0.5rem;
+            }
+            
+            .glass-card {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            .toggle-switch {
+                width: 160px;
+                height: 45px;
+            }
+            
+            .toggle-slider {
+                width: 75px;
+                height: 39px;
+            }
+            
+            .toggle-switch.urgent .toggle-slider {
+                transform: translateX(80px);
+            }
+        }
+
+        /* Large desktop optimization */
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 900px; /* Slightly larger for very wide screens */
+            }
+        }
+    </style>
     <!-- Load the Speech SDK directly from CDN -->
     <script>
     // Create a script element programmatically to handle CORS
@@ -24,253 +590,96 @@
         });
     }
     </script>
-      <style>
-        :root {
-            --glass-bg: rgba(255, 255, 255, 0.1);
-            --glass-border: rgba(255, 255, 255, 0.2);
-            --primary-gradient: linear-gradient(135deg, #6e8efb, #4a6cf7);
-            --secondary-gradient: linear-gradient(135deg, #ff9966, #ff5e62);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        body {
-            font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
-            min-height: 100vh;
-            background: linear-gradient(45deg, #1a1f35, #2d3259);
-            color: #fff;
-            padding: 1rem;
-            line-height: 1.6;
-        }
-
-        /* Responsive container */
-        .container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        /* Responsive typography */
-        h1 {
-            font-size: clamp(1.75rem, 5vw, 2.5rem);
-            margin-bottom: clamp(1.5rem, 4vw, 2rem);
-            background: linear-gradient(to right, #fff, #a5b4fc);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-align: center;
-            letter-spacing: 1px;
-            padding: 0 10px;
-        }
-
-        .glass-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            padding: clamp(1rem, 4vw, 2rem);
-            margin-bottom: 2rem;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-            animation: fadeIn 0.5s ease-out;
-        }
-
-        .autocomplete-wrapper {
-            position: relative;
-        }
-
-        .autocomplete-results {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: rgba(26, 31, 53, 0.95);
-            border: 1px solid var(--glass-border);
-            border-radius: 10px;
-            margin-top: 0.5rem;
-            max-height: 200px;
-            overflow-y: auto;
-            z-index: 1000;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            display: none;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .autocomplete-results.show {
-            display: block;
-        }
-
-        .autocomplete-item {
-            padding: 0.75rem 1rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .autocomplete-item:hover, .autocomplete-item:active {
-            background: rgba(74, 108, 247, 0.2);
-        }
-
-        .autocomplete-item .station-code {
-            color: #a5b4fc;
-            font-size: 0.9em;
-            margin-left: 0.5rem;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        /* Responsive grid for connection options */
-        .row {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-            color: #a5b4fc;
-            letter-spacing: 0.5px;
-        }
-
-        /* Touch-friendly form elements */
-        input, select {
-            width: 100%;
-            padding: clamp(0.75rem, 3vw, 1rem);
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            color: #fff;
-            font-size: 16px; /* Prevents iOS zoom on focus */
-            transition: all 0.3s ease;
-            -webkit-appearance: none;
-            appearance: none;
-        }
-
-        /* Custom select styling for better mobile appearance */
-        select {
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-position: right 1rem center;
-            background-size: 1em;
-            padding-right: 2.5rem;
-        }
-
-        input:focus, select:focus {
-            outline: none;
-            border-color: #4a6cf7;
-            box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.2);
-        }
-
-        /* Touch-friendly button */
-        button {
-            width: 100%;
-            padding: clamp(0.75rem, 3vw, 1rem);
-            background: var(--primary-gradient);
-            border: none;
-            border-radius: 10px;
-            color: #fff;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        @media (hover: hover) {
-            button:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 5px 15px rgba(74, 108, 247, 0.4);
-            }
-        }
-
-        button:active {
-            transform: translateY(1px);
-        }
-
-        /* Date input styling for better cross-browser compatibility */
-        input[type="date"] {
-            min-height: 44px; /* Better touch target size */
-        }
-
-        /* Improved mobile scrolling */
-        @media (max-width: 768px) {
-            body {
-                padding: 0.5rem;
-            }
-
-            .container {
-                padding: 0 10px;
-            }
-
-            .glass-card {
-                margin: 10px;
-                padding: 1.25rem;
-            }
-        }
-    </style>
 </head>
 <body>
+    <div class="particles" id="particles"></div>
     <div class="container">
-        <h1>Train Route Finder</h1>
-        
-        <!-- Voice search container -->
-        
-        <!-- Add this after your voice-search-container div -->
-        <div id="voice-command-container" class="glass-card voice-search">
-            <button type="button" id="voiceCommandButton">
-                🎤 Use Voice Command
-            </button>
-            <div id="voiceCommandText"></div>
-            <div id="extractedDetails" style="margin-top: 10px; text-align: left; display: none;">
-                <h3>Extracted Details:</h3>
-                <p><strong>Origin:</strong> <span id="extractedOrigin">-</span></p>
-                <p><strong>Destination:</strong> <span id="extractedDestination">-</span></p>
-                <p><strong>Journey Date:</strong> <span id="extractedDate">-</span></p>
-                <button type="button" id="applyExtractedDetails" style="background: #ff9800; width: auto; display: none;">
-                    Apply These Details
-                </button>
+        <h1>
+            <svg class="train-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8 2 4 3 2 6V15C2 16.1 2.9 17 4 17L3 18V19H5L7 17H17L19 19H21V18L20 17C21.1 17 22 16.1 22 15V6C20 3 16 2 12 2M12 4C15.7 4 18.4 4.8 20 6V15H4V6C5.6 4.8 8.3 4 12 4M8.5 7C7.7 7 7 7.7 7 8.5S7.7 10 8.5 10 10 9.3 10 8.5 9.3 7 8.5 7M15.5 7C14.7 7 14 7.7 14 8.5S14.7 10 15.5 10 17 9.3 17 8.5 16.3 7 15.5 7M12 11C10.9 11 10 11.9 10 13S10.9 15 12 15 14 14.1 14 13 13.1 11 12 11M7 13C6.4 13 6 13.4 6 14S6.4 15 7 15 8 14.6 8 14 7.6 13 7 13M17 13C16.4 13 16 13.4 16 14S16.4 15 17 15 18 14.6 18 14 17.6 13 17 13Z"/>
+            </svg>
+            Railway Route Finder
+        </h1>
+        <p class="subtitle">Find optimal train routes with voice commands</p>
+
+        <!-- Mode Toggle -->
+        <div class="mode-toggle">
+            <div class="toggle-switch" id="modeToggle">
+                <div class="toggle-slider">Normal</div>
+                <div class="toggle-labels">
+                    <div class="label-normal">Normal</div>
+                    <div class="label-urgent">Urgent</div>
+                </div>
             </div>
         </div>
-        
-        <div class="glass-card">
-            <form action="/" method="POST">
+
+        <!-- Voice Command Container -->
+        <div class="glass-card voice-command-section">
+            <button id="voiceCommandButton" class="voice-command-button">
+                <svg class="mic-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                </svg>
+                Use Voice Command
+            </button>
+            <p id="voiceCommandText" style="margin-top: 0.5rem; font-style: italic;">Click the button above and speak your travel details...</p>
+            
+            <div id="extractedDetails" class="extracted-details">
+                <h3>Extracted Details</h3>
+                <dl>
+                    <dt>Origin:</dt>
+                    <dd id="extractedOrigin">-</dd>
+                    
+                    <dt>Destination:</dt>
+                    <dd id="extractedDestination">-</dd>
+                    
+                    <dt>Date:</dt>
+                    <dd id="extractedDate">-</dd>
+                </dl>
+                
+                <button id="applyExtractedDetails" class="apply-button">Apply These Details</button>
+            </div>
+        </div>
+
+        <!-- Main Form -->
+        <div class="glass-card" id="mainForm">
+            <form id="route-form" action="/" method="post">
+
+
+
                 <div class="form-group">
-                    <label>Origin Station</label>
-                    <div class="input-with-button">
-                        <div class="autocomplete-wrapper">
-                            <input type="text" name="origin" id="origin" placeholder="Start typing station name..." required>
-                            <div class="autocomplete-results" id="origin-results"></div>
-                        </div>
+                    <label for="origin">Origin Station:</label>
+                    <div class="input-wrapper autocomplete-wrapper">
+                        <input type="text" id="origin" name="origin" placeholder="Start typing station name..." required>
+                        <div id="origin-results" class="autocomplete-results"></div>
                     </div>
                 </div>
                 
                 <div class="form-group">
-                    <label>Destination Station</label>
-                    <div class="input-with-button">
-                        <div class="autocomplete-wrapper">
-                            <input type="text" name="destination" id="destination" placeholder="Start typing station name..." required>
-                            <div class="autocomplete-results" id="destination-results"></div>
-                        </div>
+                    <label for="destination">Destination Station:</label>
+                    <div class="input-wrapper autocomplete-wrapper">
+                        <input type="text" id="destination" name="destination" placeholder="Start typing station name..." required>
+                        <div id="destination-results" class="autocomplete-results"></div>
                     </div>
                 </div>
                 
                 <div class="form-group">
-                    <label>Date of Journey</label>
-                    <input type="date" name="date" id="journey-date" required>
+                    <label for="date">Date of Journey:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <!-- Urgent Mode Field -->
+                <div class="urgent-field" id="urgentField">
+                    <div class="form-group">
+                        <label>Maximum Standing Time (minutes)</label>
+                        <select name="max_standing_time" id="maxStandingTime">
+                            <option value="0">No Standing</option>
+                            <option value="30">30 minutes</option>
+                            <option value="60">1 hour</option>
+                            <option value="90">1.5 hours</option>
+                            <option value="120">2 hours</option>
+                            <option value="180">3 hours</option>
+                        </select>
+                    </div>
                 </div>
                 
                 <div class="row">
@@ -302,9 +711,137 @@
         </div>
     </div>
     
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">Finding the best routes for you...</div>
+    </div>
+
     <script>
     document.addEventListener('DOMContentLoaded', async function() {
         console.log("Checking Speech SDK availability...");
+        
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Random size between 2px and 8px
+                const size = Math.random() * 6 + 2;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                
+                // Random horizontal position
+                particle.style.left = Math.random() * 100 + '%';
+                
+                // Random animation delay
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize particles
+        createParticles();
+
+        // Mode toggle functionality
+        const modeToggle = document.getElementById('modeToggle');
+        const urgentField = document.getElementById('urgentField');
+        const mainForm = document.getElementById('mainForm');
+        const toggleSlider = modeToggle.querySelector('.toggle-slider');
+    
+
+
+        modeToggle.addEventListener('click', () => {
+            modeToggle.classList.toggle('urgent');
+            
+            if (modeToggle.classList.contains('urgent')) {
+                toggleSlider.textContent = 'Urgent';
+                urgentField.classList.add('show');
+                mainForm.classList.add('urgent-mode');
+            
+
+            } else {
+                toggleSlider.textContent = 'Normal';
+                urgentField.classList.remove('show');
+                mainForm.classList.remove('urgent-mode');
+            
+
+            }
+        });
+        
+        // Show loading indicator when form is submitted
+        const routeForm = document.getElementById('route-form');
+        const loadingIndicator = document.getElementById('loading');
+        
+        if (routeForm) {
+            routeForm.addEventListener('submit', function() {
+                loadingIndicator.classList.add('show');
+            });
+        }
+        
+        // Fetch stations from the server
+        fetch('/api/stations')
+            .then(response => response.json())
+            .then(stations => {
+                console.log('Loaded stations:', stations);
+                setupAutocomplete('origin', 'origin-results', stations);
+                setupAutocomplete('destination', 'destination-results', stations);
+            })
+            .catch(error => {
+                console.error('Error loading stations:', error);
+                // Fallback to hardcoded stations if API fails
+                const fallbackStations = [
+                      ];
+                setupAutocomplete('origin', 'origin-results', fallbackStations);
+                setupAutocomplete('destination', 'destination-results', fallbackStations);
+            });
+
+        function setupAutocomplete(inputId, resultsId, stations) {
+            const input = document.getElementById(inputId);
+            const results = document.getElementById(resultsId);
+            
+            if (!input || !results) {
+                console.error(`Elements not found: input=${inputId}, results=${resultsId}`);
+                return;
+            }
+            
+            input.addEventListener('input', () => {
+                const value = input.value.toLowerCase();
+                const matches = stations.filter(station => 
+                    station.name.toLowerCase().includes(value) ||
+                    station.code.toLowerCase().includes(value)
+                );
+
+                results.innerHTML = '';
+                
+                if (value.length > 0 && matches.length > 0) {
+                    results.classList.add('show');
+                    matches.forEach(station => {
+                        const div = document.createElement('div');
+                        div.className = 'autocomplete-item';
+                        div.innerHTML = `${station.name} <span class="station-code">(${station.code})</span>`;
+                        div.addEventListener('click', () => {
+                            input.value = station.full;
+                            results.classList.remove('show');
+                        });
+                        results.appendChild(div);
+                    });
+                } else {
+                    results.classList.remove('show');
+                }
+            });
+
+            // Close autocomplete when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!input.contains(e.target) && !results.contains(e.target)) {
+                    results.classList.remove('show');
+                }
+            });
+        }
         
         try {
             // Load the Speech SDK
@@ -337,11 +874,14 @@
                             
                             // Request microphone permission explicitly
                             try {
+                                if (!navigator.mediaDevices) {
+                                    throw new Error("mediaDevices not available - you may need to use HTTPS instead of HTTP for microphone access");
+                                }
                                 await navigator.mediaDevices.getUserMedia({ audio: true });
                                 console.log("Microphone permission granted");
                             } catch (micError) {
                                 console.error("Microphone permission denied:", micError);
-                                alert("Please allow microphone access to use speech recognition");
+                                alert("Microphone access failed: " + micError.message + "\nNote: Voice commands require HTTPS when testing remotely.");
                                 throw micError;
                             }
                             
@@ -401,7 +941,7 @@
                                                     if (nerData.journey_date) {
                                                         const dateStr = nerData.journey_date;
                                                         const formattedDate = `${dateStr.substring(0, 4)}-${dateStr.substring(4, 6)}-${dateStr.substring(6, 8)}`;
-                                                        document.getElementById('journey-date').value = formattedDate;
+                                                        document.getElementById('date').value = formattedDate;
                                                     }
                                                 } else {
                                                     console.error("NER processing failed:", await nerResponse.text());
@@ -417,7 +957,7 @@
                                     
                                     // Reset button
                                     button.classList.remove('recording');
-                                    button.textContent = '🎤 Speak';
+                                    button.textContent = '🎤';
                                     
                                     // Close recognizer
                                     recognizer.close();
@@ -428,7 +968,7 @@
                                     
                                     // Reset button
                                     button.classList.remove('recording');
-                                    button.textContent = '🎤 Speak';
+                                    button.textContent = '🎤';
                                     
                                     // Close recognizer
                                     recognizer.close();
@@ -492,7 +1032,16 @@
                             speechConfig.speechRecognitionLanguage = 'en-US';
                             
                             // Request microphone permission
-                            await navigator.mediaDevices.getUserMedia({ audio: true });
+                            try {
+                                if (!navigator.mediaDevices) {
+                                    throw new Error("mediaDevices not available - you may need to use HTTPS instead of HTTP for microphone access");
+                                }
+                                await navigator.mediaDevices.getUserMedia({ audio: true });
+                            } catch (micError) {
+                                console.error("Microphone permission denied:", micError);
+                                alert("Microphone access failed: " + micError.message + "\nNote: Voice commands require HTTPS when testing remotely.");
+                                throw micError;
+                            }
                             
                             const audioConfig = SpeechSDK.AudioConfig.fromDefaultMicrophoneInput();
                             const recognizer = new SpeechSDK.SpeechRecognizer(speechConfig, audioConfig);
@@ -556,11 +1105,11 @@
                                                         
                                                         // Fill date if available
                                                         if (nerData.formatted_date) {
-                                                            document.getElementById('journey-date').value = nerData.formatted_date;
+                                                            document.getElementById('date').value = nerData.formatted_date;
                                                         } else if (nerData.journey_date) {
                                                             const dateStr = nerData.journey_date;
                                                             const formattedDate = `${dateStr.substring(0, 4)}-${dateStr.substring(4, 6)}-${dateStr.substring(6, 8)}`;
-                                                            document.getElementById('journey-date').value = formattedDate;
+                                                            document.getElementById('date').value = formattedDate;
                                                         }
                                                         
                                                         // Hide the extracted details section
@@ -625,6 +1174,72 @@
             console.error("Failed to initialize speech recognition:", error);
         }
     });
+    </script>
+
+    <!-- Station Autocomplete Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fetch stations from the server
+            fetch('/api/stations')
+                .then(response => response.json())
+                .then(stations => {
+                    console.log('Loaded stations:', stations);
+                    setupAutocomplete('origin', 'origin-results', stations);
+                    setupAutocomplete('destination', 'destination-results', stations);
+                })
+                .catch(error => {
+                    console.error('Error loading stations:', error);
+                    // Fallback to hardcoded stations if API fails
+                    const fallbackStations = [
+                         { code: 'PNBE', name: 'Patna', full: 'PNBE_Patna' }
+                    ];
+                    setupAutocomplete('origin', 'origin-results', fallbackStations);
+                    setupAutocomplete('destination', 'destination-results', fallbackStations);
+                });
+
+            function setupAutocomplete(inputId, resultsId, stations) {
+                const input = document.getElementById(inputId);
+                const results = document.getElementById(resultsId);
+                
+                if (!input || !results) {
+                    console.error(`Elements not found: input=${inputId}, results=${resultsId}`);
+                    return;
+                }
+                
+                input.addEventListener('input', () => {
+                    const value = input.value.toLowerCase();
+                    const matches = stations.filter(station => 
+                        station.name.toLowerCase().includes(value) ||
+                        station.code.toLowerCase().includes(value)
+                    );
+
+                    results.innerHTML = '';
+                    
+                    if (value.length > 0 && matches.length > 0) {
+                        results.classList.add('show');
+                        matches.forEach(station => {
+                            const div = document.createElement('div');
+                            div.className = 'autocomplete-item';
+                            div.innerHTML = `${station.name} <span class="station-code">(${station.code})</span>`;
+                            div.addEventListener('click', () => {
+                                input.value = station.full;
+                                results.classList.remove('show');
+                            });
+                            results.appendChild(div);
+                        });
+                    } else {
+                        results.classList.remove('show');
+                    }
+                });
+
+                // Close autocomplete when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!input.contains(e.target) && !results.contains(e.target)) {
+                        results.classList.remove('show');
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>
