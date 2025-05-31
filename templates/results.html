@@ -174,7 +174,7 @@
             font-weight: 600;
         }
 
-        .standing-alert {
+        .standing-time {
             background: rgba(245, 158, 11, 0.1);
             border: 1px solid rgba(245, 158, 11, 0.3);
             border-radius: 8px;
@@ -439,26 +439,586 @@
                 grid-template-columns: 1fr;
             }
         }
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            padding: 2rem;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(96, 165, 250, 0.3);
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+        }
+
+        .particle:nth-child(2n) {
+            background: rgba(139, 92, 246, 0.2);
+            animation-duration: 25s;
+        }
+
+        .particle:nth-child(3n) {
+            background: rgba(34, 197, 94, 0.2);
+            animation-duration: 30s;
+        }
+
+        .particle:nth-child(4n) {
+            background: rgba(245, 158, 11, 0.2);
+            animation-duration: 35s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .container {
+            max-width: 800px; /* Reduced from 1200px */
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the title */
+            gap: 1rem;
+        }
+
+        .train-icon {
+            width: 3rem;
+            height: 3rem;
+            color: #60a5fa;
+        }
+
+        .mic-icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.5rem;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            text-align: center; /* Center the subtitle */
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(12px);
+            border-radius: 1rem;
+            padding: 2rem; /* Increased padding for better spacing */
+            border: 1px solid #475569;
+            margin-bottom: 2rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            max-width: 100%; /* Ensure it doesn't overflow */
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, 
+                rgba(96, 165, 250, 0.1), 
+                rgba(139, 92, 246, 0.1), 
+                rgba(34, 197, 94, 0.1), 
+                rgba(245, 158, 11, 0.1));
+            border-radius: 1rem;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .glass-card:hover {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .glass-card:hover::before {
+            opacity: 1;
+        }
+
+        .mode-toggle {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            background: rgba(71, 85, 105, 0.3);
+            border-radius: 25px;
+            border: 1px solid #475569;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+
+        .toggle-slider {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 94px;
+            height: 44px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 22px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .toggle-switch.urgent .toggle-slider {
+            transform: translateX(100px);
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+
+        .toggle-labels {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        .label-normal {
+            flex: 1;
+            text-align: center;
+            color: #94a3b8;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .label-urgent {
+            flex: 1;
+            text-align: center;
+            color: #94a3b8;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .toggle-switch:not(.urgent) .label-normal {
+            color: transparent;
+        }
+
+        .toggle-switch.urgent .label-urgent {
+            color: transparent;
+        }
+
+        .voice-command-section {
+            text-align: center;
+        }
+
+        .voice-command-button {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .voice-command-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+        }
+
+        .voice-command-button.recording {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        #voiceCommandText {
+            background: rgba(71, 85, 105, 0.3);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            min-height: 3rem;
+            color: #e2e8f0;
+            font-style: italic;
+        }
+
+        .extracted-details {
+            margin-top: 1rem;
+            text-align: left;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            display: none;
+        }
+
+        .extracted-details h3 {
+            color: #22c55e;
+            margin-bottom: 0.75rem;
+        }
+
+        .extracted-details dl {
+            margin-bottom: 1rem;
+        }
+
+        .extracted-details dt {
+            color: #94a3b8;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .extracted-details dd {
+            color: #e2e8f0;
+            margin-bottom: 0.75rem;
+            margin-left: 0;
+        }
+
+        .apply-button {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .apply-button:hover {
+            transform: translateY(-1px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #e2e8f0;
+            font-weight: 600;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .autocomplete-wrapper {
+            position: relative;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #475569;
+            border-radius: 0.5rem;
+            background: rgba(51, 65, 85, 0.5);
+            color: #ffffff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+        }
+
+        input::placeholder {
+            color: #94a3b8;
+        }
+
+        .autocomplete-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(30, 41, 59, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid #475569;
+            border-radius: 0.5rem;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none;
+        }
+
+        .autocomplete-results.show {
+            display: block;
+        }
+
+        .autocomplete-item {
+            padding: 0.75rem;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(71, 85, 105, 0.3);
+            transition: background-color 0.2s ease;
+        }
+
+        .autocomplete-item:hover {
+            background: rgba(96, 165, 250, 0.1);
+        }
+
+        .autocomplete-item:last-child {
+            border-bottom: none;
+        }
+
+        .station-code {
+            color: #94a3b8;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem; /* Increased gap for better spacing */
+        }
+
+        .urgent-field {
+            display: none;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 0.75rem;
+            padding: 1.5rem; /* Increased padding */
+            margin-bottom: 1.5rem;
+        }
+
+        .urgent-field.show {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .urgent-field label {
+            color: #f59e0b;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 0.75rem;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+        }
+
+        .urgent-mode button[type="submit"] {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+
+        .urgent-mode button[type="submit"]:hover {
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+        }
+
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            flex-direction: column;
+        }
+
+        .loading.show {
+            display: flex;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #60a5fa;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive design improvements */
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 600px; /* Slightly smaller for tablets */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%; /* Full width on mobile */
+                padding: 0 1rem; /* Add some padding */
+            }
+            
+            body {
+                padding: 1rem; /* Reduce body padding on mobile */
+            }
+            
+            .glass-card {
+                padding: 1.5rem; /* Reduce card padding on mobile */
+            }
+            
+            .row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .mode-toggle {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2rem;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .toggle-switch {
+                width: 180px; /* Slightly smaller on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 0.5rem;
+            }
+            
+            .glass-card {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            .toggle-switch {
+                width: 160px;
+                height: 45px;
+            }
+            
+            .toggle-slider {
+                width: 75px;
+                height: 39px;
+            }
+            
+            .toggle-switch.urgent .toggle-slider {
+                transform: translateX(80px);
+            }
+        }
+
+        /* Large desktop optimization */
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 900px; /* Slightly larger for very wide screens */
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="particles" id="particles"></div>
+
     <div class="container">
         <div class="header">
             <h1>
                 <svg class="train-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0M15 17a2 2 0 104 0"/>
+                    <path d="M12 2C8 2 4 3 2 6V15C2 16.1 2.9 17 4 17L3 18V19H5L7 17H17L19 19H21V18L20 17C21.1 17 22 16.1 22 15V6C20 3 16 2 12 2M12 4C15.7 4 18.4 4.8 20 6V15H4V6C5.6 4.8 8.3 4 12 4M8.5 7C7.7 7 7 7.7 7 8.5S7.7 10 8.5 10 10 9.3 10 8.5 9.3 7 8.5 7M15.5 7C14.7 7 14 7.7 14 8.5S14.7 10 15.5 10 17 9.3 17 8.5 16.3 7 15.5 7M12 11C10.9 11 10 11.9 10 13S10.9 15 12 15 14 14.1 14 13 13.1 11 12 11M7 13C6.4 13 6 13.4 6 14S6.4 15 7 15 8 14.6 8 14 7.6 13 7 13M17 13C16.4 13 16 13.4 16 14S16.4 15 17 15 18 14.6 18 14 17.6 13 17 13Z"/>
                 </svg>
                 Railway Journey Planner
             </h1>
             <p>Found Train Routes</p>
         </div>
 
-        {% if not routes %}
-        <div class="no-routes">
-            <p>No routes found with available seats matching your criteria.</p>
-        </div>
-        {% else %}
         <div class="train-cards" id="trainCards"></div>
         <div class="journey-details" id="journeyDetails">
             <h2>
@@ -495,20 +1055,225 @@
                 </div>
             </div>
         </div>
-        {% endif %}
 
         <a href="/" class="back-button">Search Again</a>
     </div>
 
     <script>
-        const routesData = {{ routes|tojson if routes else "[]" }};
+        // STATION NAMES MAPPING
+        const STATION_NAMES = {
+            'NDLS': 'New Delhi',
+            'CNB': 'Kanpur Central', 
+            'DDU': 'Pandit Deen Dayal Upadhyaya Junction',
+            'PNBE': 'Patna Junction',
+            'HWH': 'Howrah Junction',
+            'CSMT': 'Chhatrapati Shivaji Maharaj Terminus',
+            'LTT': 'Lokmanya Tilak Terminus',
+            'BCT': 'Mumbai Central',
+            'SBC': 'KSR Bengaluru City Junction',
+            'MAS': 'Chennai Central',
+            'SC': 'Secunderabad Junction',
+            'HYB': 'Hyderabad Deccan',
+            'JPR': 'Jaipur Junction',
+            'ADI': 'Ahmedabad Junction',
+            'BBS': 'Bhubaneswar',
+            'VSKP': 'Visakhapatnam Junction',
+            'TVC': 'Thiruvananthapuram Central',
+            'ERS': 'Ernakulam Junction',
+            'MDU': 'Madurai Junction',
+            'CBE': 'Coimbatore Junction',
+            'ANVT': 'Anand Vihar Terminal',
+            'BE': 'Bareilly',
+            'HRI': 'Hardoi',
+            'LKO': 'Lucknow',
+            'ARA': 'Ara',
+            'PRYJ': 'Prayagraj Junction'
+        };
+
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                const size = Math.random() * 6 + 2;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        createParticles();
+
+        // HARDCODED DATA FROM BACKEND
+        const routesData = [
+            {
+                "segments": [
+                    {
+                        "train_number": "13430",
+                        "from_station": "ANVT",
+                        "to_station": "BE",
+                        "departure_time": "17:10",
+                        "arrival_time": "22:49",
+                        "departure_date": "20250601",
+                        "arrival_date": "20250601",
+                        "class": "THIRD AC (3A)",
+                        "coach": "B1",
+                        "seat": "4",
+                        "status": "Seated"
+                    },
+                    {
+                        "train_number": "13430",
+                        "from_station": "BE",
+                        "to_station": "HRI",
+                        "departure_time": "22:54",
+                        "arrival_time": "00:53",
+                        "departure_date": "20250601",
+                        "arrival_date": "20250602",
+                        "class": "Standing",
+                        "status": "Standing"
+                    },
+                    {
+                        "train_number": "13430",
+                        "from_station": "HRI",
+                        "to_station": "LKO",
+                        "departure_time": "00:55",
+                        "arrival_time": "02:50",
+                        "departure_date": "20250602",
+                        "arrival_date": "20250602",
+                        "class": "SECOND AC (2A)",
+                        "coach": "A1",
+                        "seat": "14",
+                        "status": "Seated"
+                    },
+                    {
+                        "train_number": "13430",
+                        "from_station": "LKO",
+                        "to_station": "ARA",
+                        "departure_time": "03:00",
+                        "arrival_time": "12:16",
+                        "departure_date": "20250602",
+                        "arrival_date": "20250602",
+                        "class": "THIRD AC (3A)",
+                        "coach": "B3",
+                        "seat": "12",
+                        "status": "Seated"
+                    },
+                    {
+                        "train_number": "13430",
+                        "from_station": "ARA",
+                        "to_station": "PNBE",
+                        "departure_time": "12:18",
+                        "arrival_time": "13:30",
+                        "departure_date": "20250602",
+                        "arrival_date": "20250602",
+                        "class": "THIRD AC (3A)",
+                        "coach": "B3",
+                        "seat": "57",
+                        "status": "Seated"
+                    }
+                ]
+            },
+            {
+                "segments": [
+                    {
+                        "train_number": "12310",
+                        "from_station": "NDLS",
+                        "to_station": "CNB",
+                        "departure_time": "17:10",
+                        "arrival_time": "21:52",
+                        "departure_date": "20250601",
+                        "arrival_date": "20250601",
+                        "class": "SECOND AC (2A)",
+                        "coach": "A4",
+                        "seat": "7",
+                        "status": "Seated"
+                    },
+                    {
+                        "train_number": "12310",
+                        "from_station": "CNB",
+                        "to_station": "DDU",
+                        "departure_time": "21:57",
+                        "arrival_time": "01:55",
+                        "departure_date": "20250601",
+                        "arrival_date": "20250602",
+                        "class": "FIRST AC (1A)",
+                        "coach": "H2",
+                        "seat": "17",
+                        "status": "Seated"
+                    },
+                    {
+                        "train_number": "12310",
+                        "from_station": "DDU",
+                        "to_station": "PNBE",
+                        "departure_time": "02:05",
+                        "arrival_time": "04:40",
+                        "departure_date": "20250602",
+                        "arrival_date": "20250602",
+                        "class": "Standing",
+                        "status": "Standing"
+                    }
+                ]
+            },
+            {
+                "segments": [
+                    {
+                        "train_number": "12304",
+                        "from_station": "NDLS",
+                        "to_station": "PRYJ",
+                        "departure_time": "17:40",
+                        "arrival_time": "01:15",
+                        "departure_date": "20250601",
+                        "arrival_date": "20250602",
+                        "class": "FIRST AC (1A)",
+                        "coach": "HA1",
+                        "seat": "8",
+                        "status": "Seated"
+                    },
+                    {
+                        "train_number": "12304",
+                        "from_station": "PRYJ",
+                        "to_station": "ARA",
+                        "departure_time": "01:20",
+                        "arrival_time": "05:45",
+                        "departure_date": "20250602",
+                        "arrival_date": "20250602",
+                        "class": "THIRD AC (3A)",
+                        "coach": "B1",
+                        "seat": "65",
+                        "status": "Seated"
+                    },
+                    {
+                        "train_number": "12304",
+                        "from_station": "ARA",
+                        "to_station": "PNBE",
+                        "departure_time": "05:50",
+                        "arrival_time": "06:50",
+                        "departure_date": "20250602",
+                        "arrival_date": "20250602",
+                        "class": "THIRD AC (3A)",
+                        "coach": "B2",
+                        "seat": "28",
+                        "status": "Seated"
+                    }
+                ]
+            }
+        ];
+
         let selectedRoute = null;
 
+        // Updated function to get full station name
         function getStationName(stationCode) {
-            if (stationCode.includes('_')) {
-                return stationCode.split('_')[1];
-            }
-            return stationCode;
+            // Remove any prefix if present (e.g., 'NDLS_NDLS' -> 'NDLS')
+            const code = stationCode.includes('_') ? stationCode.split('_')[0] : stationCode;
+            
+            // Return full name if available, otherwise return the code
+            return STATION_NAMES[code] || code;
         }
 
         function formatTime(timeObj) {
@@ -537,6 +1302,117 @@
             return `${dayNum}${suffix} ${monthNames[month]}, ${year}`;
         }
 
+        // New function to calculate total standing time
+        function calculateStandingTime(segments) {
+            let totalMinutes = 0;
+            
+            segments.forEach(segment => {
+                // Check if segment is standing
+                if (segment.class === 'Standing' || segment.status === 'Standing') {
+                    // Calculate duration from departure and arrival times
+                    const depTime = new Date(`2025-01-01 ${segment.departure_time}`);
+                    const arrTime = new Date(`2025-01-01 ${segment.arrival_time}`);
+                    
+                    // Handle next day arrival
+                    if (arrTime < depTime) {
+                        arrTime.setDate(arrTime.getDate() + 1);
+                    }
+                    
+                    const diffMs = arrTime - depTime;
+                    const minutes = Math.floor(diffMs / (1000 * 60));
+                    totalMinutes += minutes;
+                }
+            });
+            
+            if (totalMinutes === 0) return null;
+            
+            const hours = Math.floor(totalMinutes / 60);
+            const minutes = totalMinutes % 60;
+            
+            if (hours === 0) {
+                return `${minutes}m`;
+            } else if (minutes === 0) {
+                return `${hours}h`;
+            } else {
+                return `${hours}h ${minutes}m`;
+            }
+        }
+
+        // New function to calculate connection time between trains
+        function calculateConnectionTime(segments) {
+            // Get unique train numbers to check if there are multiple trains
+            const trainNumbers = segments
+                .map(s => s.train_number)
+                .filter((num, idx, arr) => arr.indexOf(num) === idx);
+            
+            // If only one train, no connection time
+            if (trainNumbers.length <= 1) return null;
+            
+            let totalConnectionMinutes = 0;
+            
+            // Look for connections between different trains
+            for (let i = 0; i < segments.length - 1; i++) {
+                const currentSegment = segments[i];
+                const nextSegment = segments[i + 1];
+                
+                // If different trains and same intermediate station
+                if (currentSegment.train_number !== nextSegment.train_number &&
+                    currentSegment.to_station === nextSegment.from_station) {
+                    
+                    // Calculate time difference
+                    const arrivalTime = parseTime(currentSegment.arrival_time);
+                    const departureTime = parseTime(nextSegment.departure_time);
+                    
+                    if (arrivalTime && departureTime) {
+                        let connectionMinutes = (departureTime - arrivalTime) / (1000 * 60);
+                        
+                        // Handle next day departure
+                        if (connectionMinutes < 0) {
+                            connectionMinutes += 24 * 60; // Add 24 hours
+                        }
+                        
+                        totalConnectionMinutes += connectionMinutes;
+                    }
+                }
+            }
+            
+            if (totalConnectionMinutes === 0) return null;
+            
+            const hours = Math.floor(totalConnectionMinutes / 60);
+            const minutes = Math.round(totalConnectionMinutes % 60);
+            
+            if (hours === 0) {
+                return `${minutes}m`;
+            } else if (minutes === 0) {
+                return `${hours}h`;
+            } else {
+                return `${hours}h ${minutes}m`;
+            }
+        }
+
+        // Helper function to parse time string to Date object
+        function parseTime(timeStr) {
+            if (!timeStr) return null;
+            
+            // Handle different time formats
+            let cleanTime = timeStr.toString().trim();
+            
+            // If already in HH:MM format
+            if (cleanTime.match(/^\d{1,2}:\d{2}$/)) {
+                const [hours, minutes] = cleanTime.split(':');
+                const date = new Date();
+                date.setHours(parseInt(hours), parseInt(minutes), 0, 0);
+                return date;
+            }
+            
+            // If in 12-hour format (HH:MM AM/PM)
+            if (cleanTime.match(/^\d{1,2}:\d{2}\s*(AM|PM)$/i)) {
+                return new Date(`2025-01-01 ${cleanTime}`);
+            }
+            
+            return null;
+        }
+
         function calculateTotalDuration(segments) {
             if (!segments || segments.length === 0) return 'N/A';
             
@@ -562,25 +1438,11 @@
         }
 
         function hasStandingSegments(segments) {
-            return segments.some(segment => !segment.class || segment.class === 'Standing');
+            return segments.some(segment => segment.class === 'Standing' || segment.status === 'Standing');
         }
 
         function getConfidenceLevel(segments) {
-            const hasDelay = segments.some(s => s.delay_prediction);
-            if (!hasDelay) return 'medium';
-            
-            const avgConfidence = segments
-                .filter(s => s.delay_prediction)
-                .map(s => s.delay_prediction.confidence_level)
-                .reduce((acc, level) => {
-                    if (level === 'high') return acc + 3;
-                    if (level === 'medium') return acc + 2;
-                    return acc + 1;
-                }, 0) / segments.filter(s => s.delay_prediction).length;
-            
-            if (avgConfidence >= 2.5) return 'high';
-            if (avgConfidence >= 1.5) return 'medium';
-            return 'low';
+            return 'medium'; // Default since no delay prediction data
         }
 
         function renderTrainCards() {
@@ -591,6 +1453,8 @@
                 const firstSegment = route.segments[0];
                 const totalDuration = calculateTotalDuration(route.segments);
                 const hasStanding = hasStandingSegments(route.segments);
+                const standingTime = calculateStandingTime(route.segments);
+                const connectionTime = calculateConnectionTime(route.segments);
                 const confidence = getConfidenceLevel(route.segments);
                 
                 const trainNumbers = route.segments
@@ -601,6 +1465,20 @@
                 const card = document.createElement('div');
                 card.className = 'train-card';
                 card.onclick = () => toggleRouteSelection(index);
+
+                // Determine what to show: connection time, standing time, or nothing
+                let alertSection = '';
+                if (connectionTime) {
+                    alertSection = `
+                        <div class="connection-time-alert">
+                            <svg class="connection-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                            </svg>
+                            Connection Time: ${connectionTime}
+                        </div>`;
+                } else if (standingTime) {
+                    alertSection = `<div class="standing-time" style="color: #fbbf24; font-weight: bold;">Standing Time: ${standingTime}</div>`;
+                }
 
                 card.innerHTML = `
                     <div class="train-header">
@@ -638,7 +1516,7 @@
                         </div>
                     </div>
 
-                    ${hasStanding ? '<div class="standing-alert"><p>Contains standing segments</p></div>' : ''}
+                    ${alertSection}
 
                     <div class="segment-preview">
                         ${route.segments.length} segments • Click to view details
@@ -667,102 +1545,111 @@
 
         function showJourneyDetails(routeIndex) {
             const route = routesData[routeIndex];
-            document.getElementById('journeyTitle').textContent = `Route ${routeIndex + 1} - Journey Details`;
+            
+            // Get unique train numbers for the title
+            const trainNumbers = route.segments
+                .map(s => s.train_number)
+                .filter((num, idx, arr) => arr.indexOf(num) === idx);
+            
+            let titleText;
+            if (trainNumbers.length === 1) {
+                titleText = `Journey Details - Train ${trainNumbers[0]}`;
+            } else {
+                titleText = `Journey Details - Trains ${trainNumbers.join(', ')}`;
+            }
+            
+            document.getElementById('journeyTitle').textContent = titleText;
             
             renderSegments(route.segments);
             
-            const hasDelayPrediction = route.segments.some(s => s.delay_prediction);
-            if (hasDelayPrediction) {
-                const delaySegment = route.segments.find(s => s.delay_prediction);
-                updateDelayPrediction(delaySegment.delay_prediction);
-                document.getElementById('delayPrediction').style.display = 'block';
-            } else {
-                document.getElementById('delayPrediction').style.display = 'none';
-            }
+            // No delay prediction data in hardcoded version
+            document.getElementById('delayPrediction').style.display = 'none';
             
             document.getElementById('journeyDetails').classList.add('show');
         }
 
         function renderSegments(segments) {
-            const container = document.getElementById('segments');
-            container.innerHTML = '';
+    const container = document.getElementById('segments');
+    container.innerHTML = '';
 
-            segments.forEach((segment, index) => {
-                const segmentDiv = document.createElement('div');
-                segmentDiv.className = 'segment';
+    segments.forEach((segment, index) => {
+        const segmentDiv = document.createElement('div');
+        segmentDiv.className = 'segment';
 
-                const fromStation = getStationName(segment.from_station);
-                const toStation = getStationName(segment.to_station);
-                const depTime = formatTime(segment.departure_time);
-                const arrTime = formatTime(segment.arrival_time);
-                const depDate = formatDate(segment.departure_date);
-                const arrDate = formatDate(segment.arrival_date);
+        const fromStation = getStationName(segment.from_station);
+        const toStation = getStationName(segment.to_station);
+        const depTime = formatTime(segment.departure_time);
+        const arrTime = formatTime(segment.arrival_time);
 
-                const hasSeats = segment.class && segment.class !== 'Standing';
-                const status = hasSeats ? 'seated' : 'standing';
+        // Calculate segment duration
+        const depTimeObj = new Date(`2025-01-01 ${depTime}`);
+        const arrTimeObj = new Date(`2025-01-01 ${arrTime}`);
+        
+        // Handle next day arrival
+        if (arrTimeObj < depTimeObj) {
+            arrTimeObj.setDate(arrTimeObj.getDate() + 1);
+        }
+        
+        const diffMs = arrTimeObj - depTimeObj;
+        const hours = Math.floor(diffMs / (1000 * 60 * 60));
+        const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+        
+        let durationText = '';
+        if (hours === 0) {
+            durationText = `${minutes}m`;
+        } else if (minutes === 0) {
+            durationText = `${hours}h`;
+        } else {
+            durationText = `${hours}h ${minutes}m`;
+        }
 
-                segmentDiv.innerHTML = `
-                    <div class="segment-content">
-                        <div class="segment-left">
-                            <div class="status-indicator status-${status}"></div>
-                            
-                            <div class="route-info">
-                                <div class="route-stations">
-                                    <span>${fromStation}</span>
-                                    <span class="route-arrow">→</span>
-                                    <span>${toStation}</span>
-                                </div>
-                                <div class="route-times">
-                                    <span>${depTime} - ${arrTime}</span>
-                                    ${depDate ? `<span>•</span><span>${depDate}</span>` : ''}
-                                </div>
-                                <div class="route-times">
-                                    <span>Train ${segment.train_number}</span>
-                                </div>
-                            </div>
-                        </div>
+        const hasSeats = segment.class && segment.class !== 'Standing' && segment.status !== 'Standing';
+        const status = hasSeats ? 'seated' : 'standing';
 
-                        ${hasSeats ? `
-                            <div class="seat-details">
-                                <p>${segment.class || 'N/A'}</p>
-                                <p>Coach: ${segment.coach || 'N/A'} | Seat: ${segment.seat || 'N/A'}</p>
-                            </div>
-                        ` : `
-                            <div class="standing-status">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                </svg>
-                                <span>Standing</span>
-                            </div>
-                        `}
+        segmentDiv.innerHTML = `
+            <div class="segment-content">
+                <div class="segment-left">
+                    <div class="status-indicator status-${status}"></div>
+                    
+                    <div class="route-info">
+    <div class="route-stations">
+        <strong>${fromStation} → ${toStation}</strong>
+    </div>
+    <div class="route-times">
+        <span>${durationText} | Dep: ${depTime} | Arr: ${arrTime}</span>
+    </div>
+</div>
+
+                ${hasSeats ? `
+                    <div class="seat-details">
+                        <p><strong>${segment.class || 'N/A'} - ${segment.coach || 'N/A'}</strong></p>
+                        <p>Seat ${segment.seat || 'N/A'}</p>
                     </div>
-                `;
+                ` : `
+                    <div class="standing-status">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span>Standing (${durationText})</span>
+                    </div>
+                `}
+            </div>
+        `;
 
-                container.appendChild(segmentDiv);
+        container.appendChild(segmentDiv);
 
-                if (index < segments.length - 1) {
-                    const connectionDiv = document.createElement('div');
-                    connectionDiv.className = 'connection-time';
-                    connectionDiv.textContent = 'Connection to next segment';
-                    container.appendChild(connectionDiv);
-                }
-            });
+        if (index < segments.length - 1) {
+            const connectionDiv = document.createElement('div');
+            connectionDiv.className = 'connection-time';
+            connectionDiv.textContent = 'Connection to next segment';
+            container.appendChild(connectionDiv);
         }
-
-        function updateDelayPrediction(delayPrediction) {
-            document.getElementById('delayTime').textContent = `${Math.round(delayPrediction.predicted_delay)} minutes`;
-            document.getElementById('minDelay').textContent = `${Math.round(delayPrediction.min_delay)} min`;
-            document.getElementById('maxDelay').textContent = `${Math.round(delayPrediction.max_delay)} min`;
-            
-            const badge = document.getElementById('confidenceBadge');
-            badge.className = `confidence-badge confidence-${delayPrediction.confidence_level}`;
-            badge.textContent = delayPrediction.confidence_level.toUpperCase();
-        }
-
+    });
+}
+        // Initialize the page
         if (routesData && routesData.length > 0) {
             renderTrainCards();
         }
     </script>
 </body>
-</html>
