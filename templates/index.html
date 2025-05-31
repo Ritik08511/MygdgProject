@@ -643,6 +643,8 @@
         <!-- Main Form -->
         <div class="glass-card" id="mainForm">
             <form id="route-form" action="/" method="post">
+                    <input type="hidden" id="modeInput" name="mode" value="normal">
+
 
 
 
@@ -749,29 +751,29 @@
 
         // Mode toggle functionality
         const modeToggle = document.getElementById('modeToggle');
-        const urgentField = document.getElementById('urgentField');
-        const mainForm = document.getElementById('mainForm');
-        const toggleSlider = modeToggle.querySelector('.toggle-slider');
+const urgentField = document.getElementById('urgentField');
+const mainForm = document.getElementById('mainForm');
+const toggleSlider = modeToggle.querySelector('.toggle-slider');
+const modeInput = document.getElementById('modeInput'); // ADD this line
+
     
 
 
         modeToggle.addEventListener('click', () => {
-            modeToggle.classList.toggle('urgent');
-            
-            if (modeToggle.classList.contains('urgent')) {
-                toggleSlider.textContent = 'Urgent';
-                urgentField.classList.add('show');
-                mainForm.classList.add('urgent-mode');
-            
-
-            } else {
-                toggleSlider.textContent = 'Normal';
-                urgentField.classList.remove('show');
-                mainForm.classList.remove('urgent-mode');
-            
-
-            }
-        });
+    modeToggle.classList.toggle('urgent');
+    
+    if (modeToggle.classList.contains('urgent')) {
+        toggleSlider.textContent = 'Urgent';
+        urgentField.classList.add('show');
+        mainForm.classList.add('urgent-mode');
+        modeInput.value = 'urgent'; // ADD this line
+    } else {
+        toggleSlider.textContent = 'Normal';
+        urgentField.classList.remove('show');
+        mainForm.classList.remove('urgent-mode');
+        modeInput.value = 'normal'; // ADD this line
+    }
+});
         
         // Show loading indicator when form is submitted
         const routeForm = document.getElementById('route-form');

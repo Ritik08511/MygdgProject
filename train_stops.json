@@ -116742,5 +116742,6278 @@
       "departure_time": "Finish",
       "is_dropping_point": true
     }
+  ],
+  " (19168": [
+    {
+      "station_name": "VARANASI CITY",
+      "station_code": "BCY",
+      "arrival_time": "Start",
+      "halt_duration": "09 May 25",
+      "departure_time": "14:05"
+    },
+    {
+      "station_name": "VARANASI JN",
+      "station_code": "BSB",
+      "arrival_time": "14:25",
+      "halt_duration": "05 Mins",
+      "departure_time": "14:30"
+    },
+    {
+      "station_name": "JAUNPUR JN",
+      "station_code": "JNU",
+      "arrival_time": "15:27",
+      "halt_duration": "04 Mins",
+      "departure_time": "15:31"
+    },
+    {
+      "station_name": "SHAHGANJ JN",
+      "station_code": "SHG",
+      "arrival_time": "16:25",
+      "halt_duration": "10 Mins",
+      "departure_time": "16:35"
+    },
+    {
+      "station_name": "MALIPUR",
+      "station_code": "MLPR",
+      "arrival_time": "16:59",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:01"
+    },
+    {
+      "station_name": "AKBARPUR",
+      "station_code": "ABP",
+      "arrival_time": "17:21",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:23"
+    },
+    {
+      "station_name": "GOSHAINGANJ",
+      "station_code": "GGJ",
+      "arrival_time": "17:44",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:46"
+    },
+    {
+      "station_name": "AYODHYA DHAM JN",
+      "station_code": "AY",
+      "arrival_time": "18:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:20"
+    },
+    {
+      "station_name": "AYODHYA CANTT",
+      "station_code": "AYC",
+      "arrival_time": "18:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "18:50"
+    },
+    {
+      "station_name": "SOHWAL",
+      "station_code": "SLW",
+      "arrival_time": "19:08",
+      "halt_duration": "01 Mins",
+      "departure_time": "19:09"
+    },
+    {
+      "station_name": "RUDAULI",
+      "station_code": "RDL",
+      "arrival_time": "19:29",
+      "halt_duration": "01 Mins",
+      "departure_time": "19:30"
+    },
+    {
+      "station_name": "DARYABAD",
+      "station_code": "DYD",
+      "arrival_time": "19:50",
+      "halt_duration": "01 Mins",
+      "departure_time": "19:51"
+    },
+    {
+      "station_name": "BARABANKI JN",
+      "station_code": "BBK",
+      "arrival_time": "21:01",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:03"
+    },
+    {
+      "station_name": "LUCKNOW NR",
+      "station_code": "LKO",
+      "arrival_time": "23:00",
+      "halt_duration": "10 Mins",
+      "departure_time": "23:10",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "UNNAO JN",
+      "station_code": "ON",
+      "arrival_time": "00:20",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:22"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "01:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "01:05"
+    },
+    {
+      "station_name": "POKHRAYAN",
+      "station_code": "PHN",
+      "arrival_time": "02:03",
+      "halt_duration": "02 Mins",
+      "departure_time": "02:05"
+    },
+    {
+      "station_name": "KALPI",
+      "station_code": "KPI",
+      "arrival_time": "02:19",
+      "halt_duration": "02 Mins",
+      "departure_time": "02:21"
+    },
+    {
+      "station_name": "ORAI",
+      "station_code": "ORAI",
+      "arrival_time": "02:46",
+      "halt_duration": "02 Mins",
+      "departure_time": "02:48"
+    },
+    {
+      "station_name": "AIT",
+      "station_code": "AIT",
+      "arrival_time": "03:10",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:12"
+    },
+    {
+      "station_name": "MOTH",
+      "station_code": "MOTH",
+      "arrival_time": "03:36",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:38"
+    },
+    {
+      "station_name": "CHIRGAON",
+      "station_code": "CGN",
+      "arrival_time": "03:56",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:58"
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "04:45",
+      "halt_duration": "08 Mins",
+      "departure_time": "04:53"
+    },
+    {
+      "station_name": "BABINA",
+      "station_code": "BAB",
+      "arrival_time": "05:17",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:19"
+    },
+    {
+      "station_name": "TALBAHAT",
+      "station_code": "TBT",
+      "arrival_time": "05:40",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:42"
+    },
+    {
+      "station_name": "LALITPUR JN",
+      "station_code": "LAR",
+      "arrival_time": "06:42",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:44"
+    },
+    {
+      "station_name": "BINA JN",
+      "station_code": "BINA",
+      "arrival_time": "08:25",
+      "halt_duration": "15 Mins",
+      "departure_time": "08:40"
+    },
+    {
+      "station_name": "MUNGAOLI",
+      "station_code": "MNV",
+      "arrival_time": "09:10",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:12"
+    },
+    {
+      "station_name": "PIPRAIGAON",
+      "station_code": "PIA",
+      "arrival_time": "09:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:30"
+    },
+    {
+      "station_name": "ASHOK NAGAR",
+      "station_code": "ASKN",
+      "arrival_time": "09:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:50"
+    },
+    {
+      "station_name": "GUNA",
+      "station_code": "GUNA",
+      "arrival_time": "10:45",
+      "halt_duration": "10 Mins",
+      "departure_time": "10:55"
+    },
+    {
+      "station_name": "RUTHIYAI",
+      "station_code": "RTA",
+      "arrival_time": "11:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:30"
+    },
+    {
+      "station_name": "KUMBHRAJ",
+      "station_code": "KHRJ",
+      "arrival_time": "11:58",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:00"
+    },
+    {
+      "station_name": "CHACHAURA BNGJ",
+      "station_code": "CBK",
+      "arrival_time": "12:16",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:18"
+    },
+    {
+      "station_name": "BIYAVRA RAJGARH",
+      "station_code": "BRRG",
+      "arrival_time": "12:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:50"
+    },
+    {
+      "station_name": "PACHOR ROAD",
+      "station_code": "PFR",
+      "arrival_time": "13:14",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:16"
+    },
+    {
+      "station_name": "SARANGPUR",
+      "station_code": "SFW",
+      "arrival_time": "14:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:02"
+    },
+    {
+      "station_name": "SHAJAPUR",
+      "station_code": "SFY",
+      "arrival_time": "14:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:50"
+    },
+    {
+      "station_name": "MAKSI",
+      "station_code": "MKC",
+      "arrival_time": "15:45",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:47"
+    },
+    {
+      "station_name": "TARANA ROAD",
+      "station_code": "TAN",
+      "arrival_time": "15:54",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:56"
+    },
+    {
+      "station_name": "UJJAIN JN",
+      "station_code": "UJN",
+      "arrival_time": "16:35",
+      "halt_duration": "10 Mins",
+      "departure_time": "16:45"
+    },
+    {
+      "station_name": "NAGDA JN",
+      "station_code": "NAD",
+      "arrival_time": "17:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "17:45"
+    },
+    {
+      "station_name": "KHACHROD",
+      "station_code": "KUH",
+      "arrival_time": "17:52",
+      "halt_duration": "05 Mins",
+      "departure_time": "17:57"
+    },
+    {
+      "station_name": "RATLAM JN",
+      "station_code": "RTM",
+      "arrival_time": "18:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "18:35"
+    },
+    {
+      "station_name": "MEGHNAGAR",
+      "station_code": "MGN",
+      "arrival_time": "19:36",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:38"
+    },
+    {
+      "station_name": "DAHOD",
+      "station_code": "DHD",
+      "arrival_time": "20:02",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:04"
+    },
+    {
+      "station_name": "GODHRA JN",
+      "station_code": "GDA",
+      "arrival_time": "21:35",
+      "halt_duration": "05 Mins",
+      "departure_time": "21:40"
+    },
+    {
+      "station_name": "CHHAYAPURI",
+      "station_code": "CYI",
+      "arrival_time": "22:21",
+      "halt_duration": "05 Mins",
+      "departure_time": "22:26"
+    },
+    {
+      "station_name": "ANAND JN",
+      "station_code": "ANND",
+      "arrival_time": "23:06",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:08"
+    },
+    {
+      "station_name": "NADIAD JN",
+      "station_code": "ND",
+      "arrival_time": "23:22",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:24"
+    },
+    {
+      "station_name": "MHMDVD KHEDA RD",
+      "station_code": "MHD",
+      "arrival_time": "23:42",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:44"
+    },
+    {
+      "station_name": "MANINAGAR",
+      "station_code": "MAN",
+      "arrival_time": "00:20",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:22"
+    },
+    {
+      "station_name": "AHMEDABAD JN",
+      "station_code": "ADI",
+      "arrival_time": "00:55",
+      "halt_duration": "11 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (12324": [
+    {
+      "station_name": "BARMER",
+      "station_code": "BME",
+      "arrival_time": "Start",
+      "halt_duration": "31 May 25",
+      "departure_time": "16:45"
+    },
+    {
+      "station_name": "BALOTRA JN",
+      "station_code": "BLT",
+      "arrival_time": "17:59",
+      "halt_duration": "05 Mins",
+      "departure_time": "18:04"
+    },
+    {
+      "station_name": "SAMDHARI JN",
+      "station_code": "SMR",
+      "arrival_time": "18:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "18:35"
+    },
+    {
+      "station_name": "JODHPUR JN",
+      "station_code": "JU",
+      "arrival_time": "19:50",
+      "halt_duration": "15 Mins",
+      "departure_time": "20:05"
+    },
+    {
+      "station_name": "MERTA ROAD JN",
+      "station_code": "MTD",
+      "arrival_time": "21:18",
+      "halt_duration": "05 Mins",
+      "departure_time": "21:23"
+    },
+    {
+      "station_name": "DEGANA JN",
+      "station_code": "DNA",
+      "arrival_time": "21:55",
+      "halt_duration": "03 Mins",
+      "departure_time": "21:58"
+    },
+    {
+      "station_name": "CHOTI KHATU",
+      "station_code": "CTKT",
+      "arrival_time": "22:22",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:24"
+    },
+    {
+      "station_name": "DIDWANA",
+      "station_code": "DIA",
+      "arrival_time": "23:22",
+      "halt_duration": "03 Mins",
+      "departure_time": "23:25"
+    },
+    {
+      "station_name": "LADNUN",
+      "station_code": "LAU",
+      "arrival_time": "00:05",
+      "halt_duration": "03 Mins",
+      "departure_time": "00:08"
+    },
+    {
+      "station_name": "SUJANGARH",
+      "station_code": "SUJH",
+      "arrival_time": "00:18",
+      "halt_duration": "03 Mins",
+      "departure_time": "00:21"
+    },
+    {
+      "station_name": "RATANGARH JN",
+      "station_code": "RTGH",
+      "arrival_time": "01:25",
+      "halt_duration": "05 Mins",
+      "departure_time": "01:30"
+    },
+    {
+      "station_name": "CHURU",
+      "station_code": "CUR",
+      "arrival_time": "02:10",
+      "halt_duration": "10 Mins",
+      "departure_time": "02:20"
+    },
+    {
+      "station_name": "SADULPUR JN",
+      "station_code": "SDLP",
+      "arrival_time": "03:10",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:15"
+    },
+    {
+      "station_name": "LOHARU",
+      "station_code": "LHU",
+      "arrival_time": "04:00",
+      "halt_duration": "03 Mins",
+      "departure_time": "04:03"
+    },
+    {
+      "station_name": "REWARI",
+      "station_code": "RE",
+      "arrival_time": "05:49",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:51"
+    },
+    {
+      "station_name": "DELHI",
+      "station_code": "DLI",
+      "arrival_time": "07:40",
+      "halt_duration": "15 Mins",
+      "departure_time": "07:55",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "13:35",
+      "halt_duration": "10 Mins",
+      "departure_time": "13:45"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "16:25",
+      "halt_duration": "05 Mins",
+      "departure_time": "16:30"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "19:15",
+      "halt_duration": "10 Mins",
+      "departure_time": "19:25"
+    },
+    {
+      "station_name": "SASARAM",
+      "station_code": "SSM",
+      "arrival_time": "20:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:32"
+    },
+    {
+      "station_name": "GAYA JN",
+      "station_code": "GAYA",
+      "arrival_time": "22:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "22:10"
+    },
+    {
+      "station_name": "KODERMA JN",
+      "station_code": "KQR",
+      "arrival_time": "23:23",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:25"
+    },
+    {
+      "station_name": "DHANBAD JN",
+      "station_code": "DHN",
+      "arrival_time": "01:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "01:20"
+    },
+    {
+      "station_name": "ASANSOL JN",
+      "station_code": "ASN",
+      "arrival_time": "02:11",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:16"
+    },
+    {
+      "station_name": "HOWRAH JN",
+      "station_code": "HWH",
+      "arrival_time": "05:45",
+      "halt_duration": "02 Jun 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (02394": [
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "Start",
+      "halt_duration": "10 Apr 25",
+      "departure_time": "18:30",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "GOVINDPURI",
+      "station_code": "GOY",
+      "arrival_time": "00:20",
+      "halt_duration": "05 Mins",
+      "departure_time": "00:25"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "02:50",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:55"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "08:10",
+      "halt_duration": "10 Mins",
+      "departure_time": "08:20"
+    },
+    {
+      "station_name": "BUXAR",
+      "station_code": "BXR",
+      "arrival_time": "09:25",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:27"
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "10:35",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:37"
+    },
+    {
+      "station_name": "DANAPUR",
+      "station_code": "DNR",
+      "arrival_time": "11:10",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:12"
+    },
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "12:05",
+      "halt_duration": "10 Mins",
+      "departure_time": "12:15",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "RAJENDRANAGAR T",
+      "station_code": "RJPB",
+      "arrival_time": "12:40",
+      "halt_duration": "11 Apr 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (19483": [
+    {
+      "station_name": "AHMEDABAD JN",
+      "station_code": "ADI",
+      "arrival_time": "Start",
+      "halt_duration": "13 Apr 25",
+      "departure_time": "00:35"
+    },
+    {
+      "station_name": "NADIAD JN",
+      "station_code": "ND",
+      "arrival_time": "01:14",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:16"
+    },
+    {
+      "station_name": "ANAND JN",
+      "station_code": "ANND",
+      "arrival_time": "01:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:32"
+    },
+    {
+      "station_name": "VADODARA JN",
+      "station_code": "BRC",
+      "arrival_time": "02:25",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:30"
+    },
+    {
+      "station_name": "UDHNA JN",
+      "station_code": "UDN",
+      "arrival_time": "04:53",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:58"
+    },
+    {
+      "station_name": "NANDURBAR",
+      "station_code": "NDB",
+      "arrival_time": "08:05",
+      "halt_duration": "10 Mins",
+      "departure_time": "08:15"
+    },
+    {
+      "station_name": "DONDAICHA",
+      "station_code": "DDE",
+      "arrival_time": "08:47",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:49"
+    },
+    {
+      "station_name": "AMALNER",
+      "station_code": "AN",
+      "arrival_time": "09:50",
+      "halt_duration": "03 Mins",
+      "departure_time": "09:53"
+    },
+    {
+      "station_name": "BHUSAVAL JN",
+      "station_code": "BSL",
+      "arrival_time": "11:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "11:35"
+    },
+    {
+      "station_name": "BURHANPUR",
+      "station_code": "BAU",
+      "arrival_time": "12:29",
+      "halt_duration": "01 Mins",
+      "departure_time": "12:30"
+    },
+    {
+      "station_name": "KHANDWA",
+      "station_code": "KNW",
+      "arrival_time": "13:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:50"
+    },
+    {
+      "station_name": "KHIRKIYA",
+      "station_code": "KKN",
+      "arrival_time": "14:35",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:37"
+    },
+    {
+      "station_name": "ITARSI JN",
+      "station_code": "ET",
+      "arrival_time": "16:00",
+      "halt_duration": "10 Mins",
+      "departure_time": "16:10"
+    },
+    {
+      "station_name": "RANI KAMALAPATI",
+      "station_code": "RKMP",
+      "arrival_time": "17:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "17:45",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "LALITPUR JN",
+      "station_code": "LAR",
+      "arrival_time": "20:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:55"
+    },
+    {
+      "station_name": "TIKAMGARH",
+      "station_code": "TKMG",
+      "arrival_time": "21:36",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:38"
+    },
+    {
+      "station_name": "KHARGAPUR",
+      "station_code": "KHGP",
+      "arrival_time": "22:22",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:24"
+    },
+    {
+      "station_name": "MCS CHHATARPUR",
+      "station_code": "MCSC",
+      "arrival_time": "22:50",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:52"
+    },
+    {
+      "station_name": "KHAJURAHO",
+      "station_code": "KURJ",
+      "arrival_time": "00:10",
+      "halt_duration": "25 Mins",
+      "departure_time": "00:35"
+    },
+    {
+      "station_name": "MAHOBA JN",
+      "station_code": "MBA",
+      "arrival_time": "01:50",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:52"
+    },
+    {
+      "station_name": "BANDA JN",
+      "station_code": "BNDA",
+      "arrival_time": "02:50",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:55"
+    },
+    {
+      "station_name": "CHITRAKUTDHAM K",
+      "station_code": "CKTD",
+      "arrival_time": "04:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:02"
+    },
+    {
+      "station_name": "PRAYAGRAJCHEOKI",
+      "station_code": "PCOI",
+      "arrival_time": "07:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:20"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "09:50",
+      "halt_duration": "10 Mins",
+      "departure_time": "10:00"
+    },
+    {
+      "station_name": "BUXAR",
+      "station_code": "BXR",
+      "arrival_time": "11:09",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:11"
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "11:56",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:58"
+    },
+    {
+      "station_name": "DANAPUR",
+      "station_code": "DNR",
+      "arrival_time": "12:45",
+      "halt_duration": "05 Mins",
+      "departure_time": "12:50",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "HAJIPUR JN",
+      "station_code": "HJP",
+      "arrival_time": "14:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "14:20"
+    },
+    {
+      "station_name": "MUZAFFARPUR JN",
+      "station_code": "MFP",
+      "arrival_time": "15:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "15:35"
+    },
+    {
+      "station_name": "SAMASTIPUR JN",
+      "station_code": "SPJ",
+      "arrival_time": "16:45",
+      "halt_duration": "05 Mins",
+      "departure_time": "16:50"
+    },
+    {
+      "station_name": "BARAUNI JN",
+      "station_code": "BJU",
+      "arrival_time": "18:40",
+      "halt_duration": "14 Apr 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (14088": [
+    {
+      "station_name": "JAISALMER",
+      "station_code": "JSM",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "19:00",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "ASHAPURA GOMAT",
+      "station_code": "AQG",
+      "arrival_time": "20:13",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:15"
+    },
+    {
+      "station_name": "RAMDEVRA",
+      "station_code": "RDRA",
+      "arrival_time": "20:27",
+      "halt_duration": "03 Mins",
+      "departure_time": "20:30"
+    },
+    {
+      "station_name": "PHALODI JN",
+      "station_code": "PLCJ",
+      "arrival_time": "21:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "21:10"
+    },
+    {
+      "station_name": "MARWAR LOHWAT",
+      "station_code": "MWT",
+      "arrival_time": "21:35",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:37"
+    },
+    {
+      "station_name": "OSIYAN",
+      "station_code": "OSN",
+      "arrival_time": "22:16",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:18"
+    },
+    {
+      "station_name": "JODHPUR JN",
+      "station_code": "JU",
+      "arrival_time": "23:45",
+      "halt_duration": "25 Mins",
+      "departure_time": "00:10"
+    },
+    {
+      "station_name": "RAIKA BAGH P JN",
+      "station_code": "RKB",
+      "arrival_time": "00:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:20"
+    },
+    {
+      "station_name": "MERTA ROAD JN",
+      "station_code": "MTD",
+      "arrival_time": "01:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "01:45"
+    },
+    {
+      "station_name": "DEGANA JN",
+      "station_code": "DNA",
+      "arrival_time": "02:25",
+      "halt_duration": "03 Mins",
+      "departure_time": "02:28"
+    },
+    {
+      "station_name": "MAKRANA JN",
+      "station_code": "MKN",
+      "arrival_time": "03:00",
+      "halt_duration": "03 Mins",
+      "departure_time": "03:03"
+    },
+    {
+      "station_name": "KUCHAMAN CITY",
+      "station_code": "KMNC",
+      "arrival_time": "03:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:20"
+    },
+    {
+      "station_name": "NAWA CITY",
+      "station_code": "NAC",
+      "arrival_time": "03:34",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:36"
+    },
+    {
+      "station_name": "PHULERA JN",
+      "station_code": "FL",
+      "arrival_time": "04:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:45"
+    },
+    {
+      "station_name": "RENWAL",
+      "station_code": "RNW",
+      "arrival_time": "05:13",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:15"
+    },
+    {
+      "station_name": "RINGAS JN",
+      "station_code": "RGS",
+      "arrival_time": "05:41",
+      "halt_duration": "03 Mins",
+      "departure_time": "05:44"
+    },
+    {
+      "station_name": "SHRI MADHOPUR",
+      "station_code": "SMPR",
+      "arrival_time": "05:54",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:56"
+    },
+    {
+      "station_name": "KANWAT",
+      "station_code": "KAWT",
+      "arrival_time": "06:10",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:12"
+    },
+    {
+      "station_name": "NIM KA THANA",
+      "station_code": "NMK",
+      "arrival_time": "06:31",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:33"
+    },
+    {
+      "station_name": "DABLA",
+      "station_code": "DBLA",
+      "arrival_time": "06:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:55"
+    },
+    {
+      "station_name": "NARNAUL",
+      "station_code": "NNL",
+      "arrival_time": "07:15",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:17"
+    },
+    {
+      "station_name": "ATELI",
+      "station_code": "AEL",
+      "arrival_time": "07:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:32"
+    },
+    {
+      "station_name": "REWARI",
+      "station_code": "RE",
+      "arrival_time": "08:33",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:35"
+    },
+    {
+      "station_name": "GURGAON",
+      "station_code": "GGN",
+      "arrival_time": "09:15",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:17"
+    },
+    {
+      "station_name": "DELHI CANTT",
+      "station_code": "DEC",
+      "arrival_time": "09:34",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:36"
+    },
+    {
+      "station_name": "DELHI",
+      "station_code": "DLI",
+      "arrival_time": "10:35",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (15013": [
+    {
+      "station_name": "JAISALMER",
+      "station_code": "JSM",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "02:40",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "POKARAN",
+      "station_code": "POK",
+      "arrival_time": "04:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:20"
+    },
+    {
+      "station_name": "RAMDEVRA",
+      "station_code": "RDRA",
+      "arrival_time": "04:50",
+      "halt_duration": "03 Mins",
+      "departure_time": "04:53"
+    },
+    {
+      "station_name": "PHALODI JN",
+      "station_code": "PLCJ",
+      "arrival_time": "05:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "05:35"
+    },
+    {
+      "station_name": "MARWAR LOHWAT",
+      "station_code": "MWT",
+      "arrival_time": "06:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:02"
+    },
+    {
+      "station_name": "RAIKA BAGH P JN",
+      "station_code": "RKB",
+      "arrival_time": "07:40",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:42"
+    },
+    {
+      "station_name": "JODHPUR JN",
+      "station_code": "JU",
+      "arrival_time": "08:00",
+      "halt_duration": "15 Mins",
+      "departure_time": "08:15"
+    },
+    {
+      "station_name": "BHAGAT KI KOTHI",
+      "station_code": "BGKT",
+      "arrival_time": "08:23",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:25"
+    },
+    {
+      "station_name": "LUNI JN",
+      "station_code": "LUNI",
+      "arrival_time": "08:50",
+      "halt_duration": "03 Mins",
+      "departure_time": "08:53"
+    },
+    {
+      "station_name": "PALI MARWAR",
+      "station_code": "PMY",
+      "arrival_time": "09:31",
+      "halt_duration": "05 Mins",
+      "departure_time": "09:36"
+    },
+    {
+      "station_name": "MARWAR JN",
+      "station_code": "MJ",
+      "arrival_time": "10:40",
+      "halt_duration": "25 Mins",
+      "departure_time": "11:05"
+    },
+    {
+      "station_name": "BEAWAR",
+      "station_code": "BER",
+      "arrival_time": "12:10",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:12"
+    },
+    {
+      "station_name": "AJMER JN",
+      "station_code": "AII",
+      "arrival_time": "13:05",
+      "halt_duration": "10 Mins",
+      "departure_time": "13:15"
+    },
+    {
+      "station_name": "KISHANGARH",
+      "station_code": "KSG",
+      "arrival_time": "13:43",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:45"
+    },
+    {
+      "station_name": "JAIPUR",
+      "station_code": "JP",
+      "arrival_time": "15:15",
+      "halt_duration": "10 Mins",
+      "departure_time": "15:25"
+    },
+    {
+      "station_name": "GANDHINAGAR JPR",
+      "station_code": "GADJ",
+      "arrival_time": "15:36",
+      "halt_duration": "03 Mins",
+      "departure_time": "15:39"
+    },
+    {
+      "station_name": "DAUSA JN",
+      "station_code": "DO",
+      "arrival_time": "16:16",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:18"
+    },
+    {
+      "station_name": "BANDIKUI JN",
+      "station_code": "BKI",
+      "arrival_time": "16:40",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:42"
+    },
+    {
+      "station_name": "RAJGARH",
+      "station_code": "RHG",
+      "arrival_time": "17:03",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:05"
+    },
+    {
+      "station_name": "ALWAR",
+      "station_code": "AWR",
+      "arrival_time": "17:41",
+      "halt_duration": "03 Mins",
+      "departure_time": "17:44"
+    },
+    {
+      "station_name": "KHAIRTHAL",
+      "station_code": "KRH",
+      "arrival_time": "17:59",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:01"
+    },
+    {
+      "station_name": "BAWAL",
+      "station_code": "BWL",
+      "arrival_time": "18:25",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:27"
+    },
+    {
+      "station_name": "REWARI",
+      "station_code": "RE",
+      "arrival_time": "19:13",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:15"
+    },
+    {
+      "station_name": "PATAUDI ROAD",
+      "station_code": "PTRD",
+      "arrival_time": "19:35",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:37"
+    },
+    {
+      "station_name": "GURGAON",
+      "station_code": "GGN",
+      "arrival_time": "20:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:02"
+    },
+    {
+      "station_name": "DELHI CANTT",
+      "station_code": "DEC",
+      "arrival_time": "20:19",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:21"
+    },
+    {
+      "station_name": "DELHI S ROHILLA",
+      "station_code": "DEE",
+      "arrival_time": "20:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:40"
+    },
+    {
+      "station_name": "DELHI",
+      "station_code": "DLI",
+      "arrival_time": "21:50",
+      "halt_duration": "15 Mins",
+      "departure_time": "22:05",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "SAHIBABAD",
+      "station_code": "SBB",
+      "arrival_time": "22:29",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:31"
+    },
+    {
+      "station_name": "GHAZIABAD",
+      "station_code": "GZB",
+      "arrival_time": "23:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:02"
+    },
+    {
+      "station_name": "HAPUR",
+      "station_code": "HPU",
+      "arrival_time": "23:39",
+      "halt_duration": "05 Mins",
+      "departure_time": "23:44"
+    },
+    {
+      "station_name": "MORADABAD",
+      "station_code": "MB",
+      "arrival_time": "01:35",
+      "halt_duration": "13 Mins",
+      "departure_time": "01:48"
+    },
+    {
+      "station_name": "RAMPUR",
+      "station_code": "RMU",
+      "arrival_time": "02:22",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:27"
+    },
+    {
+      "station_name": "BILASPUR ROAD",
+      "station_code": "BLQR",
+      "arrival_time": "02:46",
+      "halt_duration": "02 Mins",
+      "departure_time": "02:48"
+    },
+    {
+      "station_name": "RUDRAPUR CITY",
+      "station_code": "RUPC",
+      "arrival_time": "03:03",
+      "halt_duration": "08 Mins",
+      "departure_time": "03:11"
+    },
+    {
+      "station_name": "LAL KUAN",
+      "station_code": "LKU",
+      "arrival_time": "03:39",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:44"
+    },
+    {
+      "station_name": "HALDWANI",
+      "station_code": "HDW",
+      "arrival_time": "04:25",
+      "halt_duration": "10 Mins",
+      "departure_time": "04:35"
+    },
+    {
+      "station_name": "KATHGODAM",
+      "station_code": "KGM",
+      "arrival_time": "05:05",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish"
+    },
+    {
+      "station_name": "MORADABAD",
+      "station_code": "MB",
+      "arrival_time": "01:35",
+      "halt_duration": "57 Mins",
+      "departure_time": "02:32"
+    },
+    {
+      "station_name": "KASHIPUR",
+      "station_code": "KPV",
+      "arrival_time": "03:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:35"
+    },
+    {
+      "station_name": "RAMNAGAR",
+      "station_code": "RMR",
+      "arrival_time": "04:15",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (12259": [
+    {
+      "station_name": "SEALDAH",
+      "station_code": "SDAH",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "17:00",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "DHANBAD JN",
+      "station_code": "DHN",
+      "arrival_time": "20:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "20:35"
+    },
+    {
+      "station_name": "KODERMA JN",
+      "station_code": "KQR",
+      "arrival_time": "21:45",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:47"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "01:20",
+      "halt_duration": "10 Mins",
+      "departure_time": "01:30"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "05:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "05:35"
+    },
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "11:00",
+      "halt_duration": "15 Mins",
+      "departure_time": "11:15",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "LOHARU",
+      "station_code": "LHU",
+      "arrival_time": "13:50",
+      "halt_duration": "03 Mins",
+      "departure_time": "13:53"
+    },
+    {
+      "station_name": "SADULPUR JN",
+      "station_code": "SDLP",
+      "arrival_time": "14:26",
+      "halt_duration": "03 Mins",
+      "departure_time": "14:29"
+    },
+    {
+      "station_name": "CHURU",
+      "station_code": "CUR",
+      "arrival_time": "15:20",
+      "halt_duration": "03 Mins",
+      "departure_time": "15:23"
+    },
+    {
+      "station_name": "RATANGARH JN",
+      "station_code": "RTGH",
+      "arrival_time": "15:52",
+      "halt_duration": "03 Mins",
+      "departure_time": "15:55"
+    },
+    {
+      "station_name": "SRI DUNGARGARH",
+      "station_code": "SDGH",
+      "arrival_time": "16:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:40"
+    },
+    {
+      "station_name": "BIKANER JN",
+      "station_code": "BKN",
+      "arrival_time": "18:35",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (03255": [
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "22:20",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "DANAPUR",
+      "station_code": "DNR",
+      "arrival_time": "22:43",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:45"
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "23:15",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:17"
+    },
+    {
+      "station_name": "BUXAR",
+      "station_code": "BXR",
+      "arrival_time": "00:15",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:17"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "02:10",
+      "halt_duration": "10 Mins",
+      "departure_time": "02:20"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "04:55",
+      "halt_duration": "10 Mins",
+      "departure_time": "05:05"
+    },
+    {
+      "station_name": "GOVINDPURI",
+      "station_code": "GOY",
+      "arrival_time": "07:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "07:45"
+    },
+    {
+      "station_name": "ANAND VIHAR TRM",
+      "station_code": "ANVT",
+      "arrival_time": "18:35",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (12393": [
+    {
+      "station_name": "RAJENDRANAGAR T",
+      "station_code": "RJPB",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "19:25"
+    },
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "19:35",
+      "halt_duration": "10 Mins",
+      "departure_time": "19:45",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "20:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:20"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "22:20",
+      "halt_duration": "10 Mins",
+      "departure_time": "22:30"
+    },
+    {
+      "station_name": "MIRZAPUR",
+      "station_code": "MZP",
+      "arrival_time": "23:21",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:23"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "02:25",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:30"
+    },
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "07:55",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (22405": [
+    {
+      "station_name": "BHAGALPUR",
+      "station_code": "BGP",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "13:55"
+    },
+    {
+      "station_name": "SULTANGANJ",
+      "station_code": "SGG",
+      "arrival_time": "14:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:10"
+    },
+    {
+      "station_name": "JAMALPUR JN",
+      "station_code": "JMP",
+      "arrival_time": "14:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "14:45"
+    },
+    {
+      "station_name": "ABHAIPUR",
+      "station_code": "AHA",
+      "arrival_time": "15:04",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:06"
+    },
+    {
+      "station_name": "KIUL JN",
+      "station_code": "KIUL",
+      "arrival_time": "16:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "16:05"
+    },
+    {
+      "station_name": "RAJENDRANAGAR T",
+      "station_code": "RJPB",
+      "arrival_time": "17:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:40"
+    },
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "18:10",
+      "halt_duration": "10 Mins",
+      "departure_time": "18:20",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "DANAPUR",
+      "station_code": "DNR",
+      "arrival_time": "18:31",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:33"
+    },
+    {
+      "station_name": "BIHTA",
+      "station_code": "BTA",
+      "arrival_time": "18:46",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:48"
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "19:04",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:06"
+    },
+    {
+      "station_name": "BIHIYA",
+      "station_code": "BEA",
+      "arrival_time": "19:20",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:22"
+    },
+    {
+      "station_name": "DUMRAON",
+      "station_code": "DURE",
+      "arrival_time": "19:40",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:42"
+    },
+    {
+      "station_name": "BUXAR",
+      "station_code": "BXR",
+      "arrival_time": "19:58",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:00"
+    },
+    {
+      "station_name": "DILDARNAGAR JN",
+      "station_code": "DLN",
+      "arrival_time": "20:23",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:25"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "22:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "22:50"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "00:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:55"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "03:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:20"
+    },
+    {
+      "station_name": "TUNDLA JN",
+      "station_code": "TDL",
+      "arrival_time": "06:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:02"
+    },
+    {
+      "station_name": "ALIGARH JN",
+      "station_code": "ALJN",
+      "arrival_time": "06:55",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:57"
+    },
+    {
+      "station_name": "ANAND VIHAR TRM",
+      "station_code": "ANVT",
+      "arrival_time": "09:00",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (12309": [
+    {
+      "station_name": "RAJENDRANAGAR T",
+      "station_code": "RJPB",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "19:10"
+    },
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "19:25",
+      "halt_duration": "10 Mins",
+      "departure_time": "19:35",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "22:10",
+      "halt_duration": "10 Mins",
+      "departure_time": "22:20"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "00:10",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:12"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "02:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:20"
+    },
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "07:40",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (12423": [
+    {
+      "station_name": "DIBRUGARH",
+      "station_code": "DBRG",
+      "arrival_time": "20:54",
+      "halt_duration": "01 Mins",
+      "departure_time": "20:55"
+    },
+    {
+      "station_name": "NEW TINSUKIA JN",
+      "station_code": "NTSK",
+      "arrival_time": "21:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "21:50"
+    },
+    {
+      "station_name": "MARIANI JN",
+      "station_code": "MXN",
+      "arrival_time": "00:02",
+      "halt_duration": "05 Mins",
+      "departure_time": "00:07"
+    },
+    {
+      "station_name": "DIMAPUR",
+      "station_code": "DMV",
+      "arrival_time": "02:00",
+      "halt_duration": "07 Mins",
+      "departure_time": "02:07"
+    },
+    {
+      "station_name": "LUMDING JN",
+      "station_code": "LMG",
+      "arrival_time": "03:18",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:23"
+    },
+    {
+      "station_name": "CHAPARMUKH JN",
+      "station_code": "CPK",
+      "arrival_time": "04:39",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:41"
+    },
+    {
+      "station_name": "GUWAHATI",
+      "station_code": "GHY",
+      "arrival_time": "06:30",
+      "halt_duration": "15 Mins",
+      "departure_time": "06:45"
+    },
+    {
+      "station_name": "RANGIYA JN",
+      "station_code": "RNY",
+      "arrival_time": "07:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:40"
+    },
+    {
+      "station_name": "NEW BONGAIGAON",
+      "station_code": "NBQ",
+      "arrival_time": "09:20",
+      "halt_duration": "05 Mins",
+      "departure_time": "09:25"
+    },
+    {
+      "station_name": "KOKRAJHAR",
+      "station_code": "KOJ",
+      "arrival_time": "09:50",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:52"
+    },
+    {
+      "station_name": "NEW COOCH BEHAR",
+      "station_code": "NCB",
+      "arrival_time": "10:58",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:00"
+    },
+    {
+      "station_name": "NEW JALPAIGURI",
+      "station_code": "NJP",
+      "arrival_time": "13:05",
+      "halt_duration": "10 Mins",
+      "departure_time": "13:15"
+    },
+    {
+      "station_name": "KISHANGANJ",
+      "station_code": "KNE",
+      "arrival_time": "14:20",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:22"
+    },
+    {
+      "station_name": "KATIHAR JN",
+      "station_code": "KIR",
+      "arrival_time": "16:20",
+      "halt_duration": "10 Mins",
+      "departure_time": "16:30"
+    },
+    {
+      "station_name": "NAUGACHIA",
+      "station_code": "NNA",
+      "arrival_time": "17:16",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:18"
+    },
+    {
+      "station_name": "MANSI JN",
+      "station_code": "MNE",
+      "arrival_time": "18:01",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:03"
+    },
+    {
+      "station_name": "BARAUNI JN",
+      "station_code": "BJU",
+      "arrival_time": "19:05",
+      "halt_duration": "10 Mins",
+      "departure_time": "19:15"
+    },
+    {
+      "station_name": "PATLIPUTRA",
+      "station_code": "PPTA",
+      "arrival_time": "21:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "21:50",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "DANAPUR",
+      "station_code": "DNR",
+      "arrival_time": "22:03",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:05"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "00:50",
+      "halt_duration": "10 Mins",
+      "departure_time": "01:00"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "02:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "02:55"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "05:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "05:05"
+    },
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "10:30",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (12367": [
+    {
+      "station_name": "BHAGALPUR",
+      "station_code": "BGP",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "11:55"
+    },
+    {
+      "station_name": "SULTANGANJ",
+      "station_code": "SGG",
+      "arrival_time": "12:08",
+      "halt_duration": "05 Mins",
+      "departure_time": "12:13"
+    },
+    {
+      "station_name": "BARIARPUR",
+      "station_code": "BUP",
+      "arrival_time": "12:32",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:34"
+    },
+    {
+      "station_name": "JAMALPUR JN",
+      "station_code": "JMP",
+      "arrival_time": "12:49",
+      "halt_duration": "05 Mins",
+      "departure_time": "12:54"
+    },
+    {
+      "station_name": "DHARHARA",
+      "station_code": "DRH",
+      "arrival_time": "13:07",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:09"
+    },
+    {
+      "station_name": "ABHAIPUR",
+      "station_code": "AHA",
+      "arrival_time": "13:20",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:22"
+    },
+    {
+      "station_name": "KAJRA",
+      "station_code": "KJH",
+      "arrival_time": "13:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:32"
+    },
+    {
+      "station_name": "KIUL JN",
+      "station_code": "KIUL",
+      "arrival_time": "14:20",
+      "halt_duration": "05 Mins",
+      "departure_time": "14:25"
+    },
+    {
+      "station_name": "LUCKEESARAI JN",
+      "station_code": "LKR",
+      "arrival_time": "14:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:30"
+    },
+    {
+      "station_name": "BARHIYA",
+      "station_code": "BRYA",
+      "arrival_time": "14:43",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:45"
+    },
+    {
+      "station_name": "HATHIDAH JN",
+      "station_code": "HTZ",
+      "arrival_time": "14:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:55"
+    },
+    {
+      "station_name": "MOKAMEH JN",
+      "station_code": "MKA",
+      "arrival_time": "15:03",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:05"
+    },
+    {
+      "station_name": "BARH",
+      "station_code": "BARH",
+      "arrival_time": "15:22",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:24"
+    },
+    {
+      "station_name": "BAKHTIYARPUR JN",
+      "station_code": "BKP",
+      "arrival_time": "15:37",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:39"
+    },
+    {
+      "station_name": "KHUSROPUR",
+      "station_code": "KOO",
+      "arrival_time": "15:50",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:52"
+    },
+    {
+      "station_name": "FATUHA JN",
+      "station_code": "FUT",
+      "arrival_time": "16:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:02"
+    },
+    {
+      "station_name": "PATNA SAHEB",
+      "station_code": "PNC",
+      "arrival_time": "16:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "16:20"
+    },
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "16:50",
+      "halt_duration": "10 Mins",
+      "departure_time": "17:00",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "17:36",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:38"
+    },
+    {
+      "station_name": "BUXAR",
+      "station_code": "BXR",
+      "arrival_time": "18:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:20"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "20:20",
+      "halt_duration": "10 Mins",
+      "departure_time": "20:30"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "01:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "01:10"
+    },
+    {
+      "station_name": "ANAND VIHAR TRM",
+      "station_code": "ANVT",
+      "arrival_time": "07:20",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (20801": [
+    {
+      "station_name": "ISLAMPUR",
+      "station_code": "IPR",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "15:30"
+    },
+    {
+      "station_name": "EKANGARSARAI",
+      "station_code": "EKR",
+      "arrival_time": "15:40",
+      "halt_duration": "01 Mins",
+      "departure_time": "15:41"
+    },
+    {
+      "station_name": "HILSA",
+      "station_code": "HIL",
+      "arrival_time": "15:52",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:54"
+    },
+    {
+      "station_name": "DANIYAWAN BZR H",
+      "station_code": "DNWH",
+      "arrival_time": "16:15",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:17"
+    },
+    {
+      "station_name": "FATUHA JN",
+      "station_code": "FUT",
+      "arrival_time": "16:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:32"
+    },
+    {
+      "station_name": "PATNA SAHEB",
+      "station_code": "PNC",
+      "arrival_time": "16:48",
+      "halt_duration": "05 Mins",
+      "departure_time": "16:53"
+    },
+    {
+      "station_name": "RAJENDRANAGAR T",
+      "station_code": "RJPB",
+      "arrival_time": "17:01",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:03"
+    },
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "17:20",
+      "halt_duration": "10 Mins",
+      "departure_time": "17:30",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "PHULWARI SHARIF",
+      "station_code": "PWS",
+      "arrival_time": "17:40",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:42"
+    },
+    {
+      "station_name": "DANAPUR",
+      "station_code": "DNR",
+      "arrival_time": "17:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:50"
+    },
+    {
+      "station_name": "BIHTA",
+      "station_code": "BTA",
+      "arrival_time": "18:04",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:06"
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "18:24",
+      "halt_duration": "05 Mins",
+      "departure_time": "18:29"
+    },
+    {
+      "station_name": "BIHIYA",
+      "station_code": "BEA",
+      "arrival_time": "18:42",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:44"
+    },
+    {
+      "station_name": "RAGHUNATHPUR",
+      "station_code": "RPR",
+      "arrival_time": "18:55",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:57"
+    },
+    {
+      "station_name": "DUMRAON",
+      "station_code": "DURE",
+      "arrival_time": "19:09",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:11"
+    },
+    {
+      "station_name": "BUXAR",
+      "station_code": "BXR",
+      "arrival_time": "19:26",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:28"
+    },
+    {
+      "station_name": "DILDARNAGAR JN",
+      "station_code": "DLN",
+      "arrival_time": "19:56",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:58"
+    },
+    {
+      "station_name": "ZAMANIA",
+      "station_code": "ZNA",
+      "arrival_time": "20:10",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:12"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "21:50",
+      "halt_duration": "10 Mins",
+      "departure_time": "22:00"
+    },
+    {
+      "station_name": "MIRZAPUR",
+      "station_code": "MZP",
+      "arrival_time": "23:05",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:07"
+    },
+    {
+      "station_name": "VINDHYACHAL",
+      "station_code": "BDL",
+      "arrival_time": "23:25",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:27"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "01:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "01:20"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "04:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:05"
+    },
+    {
+      "station_name": "ETAWAH JN",
+      "station_code": "ETW",
+      "arrival_time": "05:43",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:45"
+    },
+    {
+      "station_name": "FIROZABAD",
+      "station_code": "FZD",
+      "arrival_time": "06:58",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:00"
+    },
+    {
+      "station_name": "TUNDLA JN",
+      "station_code": "TDL",
+      "arrival_time": "07:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:50"
+    },
+    {
+      "station_name": "ALIGARH JN",
+      "station_code": "ALJN",
+      "arrival_time": "09:05",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:07"
+    },
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "12:00",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  "04067": [
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "22:20",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "DANAPUR",
+      "station_code": "DNR",
+      "arrival_time": "22:43",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:45"
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "23:15",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:17"
+    },
+    {
+      "station_name": "BUXAR",
+      "station_code": "BXR",
+      "arrival_time": "00:15",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:17"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "02:10",
+      "halt_duration": "10 Mins",
+      "departure_time": "02:20"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "04:55",
+      "halt_duration": "10 Mins",
+      "departure_time": "05:05"
+    },
+    {
+      "station_name": "GOVINDPURI",
+      "station_code": "GOY",
+      "arrival_time": "07:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "07:45"
+    },
+    {
+      "station_name": "ANAND VIHAR TRM",
+      "station_code": "ANVT",
+      "arrival_time": "18:35",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (15054": [
+    {
+      "station_name": "LUCKNOW NE",
+      "station_code": "LJN",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "21:00",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "BADSHAHNAGAR",
+      "station_code": "BNZ",
+      "arrival_time": "21:35",
+      "halt_duration": "03 Mins",
+      "departure_time": "21:38"
+    },
+    {
+      "station_name": "GOMATI NAGAR",
+      "station_code": "GTNR",
+      "arrival_time": "21:44",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:46"
+    },
+    {
+      "station_name": "AYODHYA CANTT",
+      "station_code": "AYC",
+      "arrival_time": "01:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "01:05"
+    },
+    {
+      "station_name": "AYODHYA DHAM JN",
+      "station_code": "AY",
+      "arrival_time": "01:22",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:24"
+    },
+    {
+      "station_name": "SHAHGANJ JN",
+      "station_code": "SHG",
+      "arrival_time": "03:10",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:15"
+    },
+    {
+      "station_name": "JAUNPUR JN",
+      "station_code": "JNU",
+      "arrival_time": "03:56",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:58"
+    },
+    {
+      "station_name": "VARANASI JN",
+      "station_code": "BSB",
+      "arrival_time": "06:15",
+      "halt_duration": "10 Mins",
+      "departure_time": "06:25"
+    },
+    {
+      "station_name": "AUNRIHAR JN",
+      "station_code": "ARJ",
+      "arrival_time": "07:11",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:13"
+    },
+    {
+      "station_name": "GHAZIPUR CITY",
+      "station_code": "GCT",
+      "arrival_time": "07:50",
+      "halt_duration": "05 Mins",
+      "departure_time": "07:55"
+    },
+    {
+      "station_name": "YUSUFPUR",
+      "station_code": "YFP",
+      "arrival_time": "08:13",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:15"
+    },
+    {
+      "station_name": "KARIMUDDIN PUR",
+      "station_code": "KMDR",
+      "arrival_time": "08:32",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:34"
+    },
+    {
+      "station_name": "BALLIA",
+      "station_code": "BUI",
+      "arrival_time": "09:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "09:10"
+    },
+    {
+      "station_name": "SURAIMANPUR",
+      "station_code": "SIP",
+      "arrival_time": "10:06",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:08"
+    },
+    {
+      "station_name": "CHHAPRA",
+      "station_code": "CPR",
+      "arrival_time": "11:20",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (15113": [
+    {
+      "station_name": "GOMATI NAGAR",
+      "station_code": "GTNR",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "21:10",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "BARABANKI JN",
+      "station_code": "BBK",
+      "arrival_time": "21:46",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:48"
+    },
+    {
+      "station_name": "GONDA JN",
+      "station_code": "GD",
+      "arrival_time": "23:25",
+      "halt_duration": "05 Mins",
+      "departure_time": "23:30"
+    },
+    {
+      "station_name": "MANKAPUR JN",
+      "station_code": "MUR",
+      "arrival_time": "23:54",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:56"
+    },
+    {
+      "station_name": "BASTI",
+      "station_code": "BST",
+      "arrival_time": "01:10",
+      "halt_duration": "03 Mins",
+      "departure_time": "01:13"
+    },
+    {
+      "station_name": "GORAKHPUR JN",
+      "station_code": "GKP",
+      "arrival_time": "02:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "02:50"
+    },
+    {
+      "station_name": "PIPRAICH",
+      "station_code": "PPC",
+      "arrival_time": "03:15",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:17"
+    },
+    {
+      "station_name": "KAPTANGANJ JN",
+      "station_code": "CPJ",
+      "arrival_time": "03:35",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:40"
+    },
+    {
+      "station_name": "RAMKOLA",
+      "station_code": "RKL",
+      "arrival_time": "04:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:02"
+    },
+    {
+      "station_name": "PADRAUNA",
+      "station_code": "POU",
+      "arrival_time": "04:16",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:18"
+    },
+    {
+      "station_name": "DUDAHI",
+      "station_code": "DUE",
+      "arrival_time": "04:36",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:38"
+    },
+    {
+      "station_name": "TAMKUHI ROAD",
+      "station_code": "TOI",
+      "arrival_time": "04:51",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:53"
+    },
+    {
+      "station_name": "THAWE JN",
+      "station_code": "THE",
+      "arrival_time": "05:35",
+      "halt_duration": "20 Mins",
+      "departure_time": "05:55"
+    },
+    {
+      "station_name": "GOPALGANJ",
+      "station_code": "GOPG",
+      "arrival_time": "06:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:10"
+    },
+    {
+      "station_name": "SIDHWALIA",
+      "station_code": "SQW",
+      "arrival_time": "06:46",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:48"
+    },
+    {
+      "station_name": "DIGHWA DUBAULI",
+      "station_code": "DWDI",
+      "arrival_time": "06:56",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:58"
+    },
+    {
+      "station_name": "RAJAPATTI",
+      "station_code": "RPV",
+      "arrival_time": "07:16",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:18"
+    },
+    {
+      "station_name": "MASRAKH",
+      "station_code": "MHC",
+      "arrival_time": "07:31",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:33"
+    },
+    {
+      "station_name": "MARHAURA",
+      "station_code": "MEW",
+      "arrival_time": "07:58",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:00"
+    },
+    {
+      "station_name": "CHHAPRA KACHERI",
+      "station_code": "CI",
+      "arrival_time": "08:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "08:45"
+    },
+    {
+      "station_name": "CHHAPRA",
+      "station_code": "CPR",
+      "arrival_time": "09:00",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (11123": [
+    {
+      "station_name": "GWALIOR",
+      "station_code": "GWL",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "12:05"
+    },
+    {
+      "station_name": "DABRA",
+      "station_code": "DBA",
+      "arrival_time": "12:40",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:42"
+    },
+    {
+      "station_name": "DATIA",
+      "station_code": "DAA",
+      "arrival_time": "13:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:10"
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "13:40",
+      "halt_duration": "20 Mins",
+      "departure_time": "14:00"
+    },
+    {
+      "station_name": "MOTH",
+      "station_code": "MOTH",
+      "arrival_time": "14:40",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:42"
+    },
+    {
+      "station_name": "AIT",
+      "station_code": "AIT",
+      "arrival_time": "15:06",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:08"
+    },
+    {
+      "station_name": "ORAI",
+      "station_code": "ORAI",
+      "arrival_time": "15:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:32"
+    },
+    {
+      "station_name": "KALPI",
+      "station_code": "KPI",
+      "arrival_time": "16:01",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:03"
+    },
+    {
+      "station_name": "POKHRAYAN",
+      "station_code": "PHN",
+      "arrival_time": "16:17",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:19"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "18:50",
+      "halt_duration": "10 Mins",
+      "departure_time": "19:00"
+    },
+    {
+      "station_name": "UNNAO JN",
+      "station_code": "ON",
+      "arrival_time": "19:26",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:28"
+    },
+    {
+      "station_name": "LUCKNOW NR",
+      "station_code": "LKO",
+      "arrival_time": "20:35",
+      "halt_duration": "10 Mins",
+      "departure_time": "20:45",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "BARABANKI JN",
+      "station_code": "BBK",
+      "arrival_time": "21:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:30"
+    },
+    {
+      "station_name": "BURHWAL",
+      "station_code": "BUW",
+      "arrival_time": "21:54",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:56"
+    },
+    {
+      "station_name": "COLONELGANJ",
+      "station_code": "CLJ",
+      "arrival_time": "22:24",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:26"
+    },
+    {
+      "station_name": "GONDA JN",
+      "station_code": "GD",
+      "arrival_time": "23:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "23:10"
+    },
+    {
+      "station_name": "MANKAPUR JN",
+      "station_code": "MUR",
+      "arrival_time": "23:32",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:34"
+    },
+    {
+      "station_name": "MASKANWA",
+      "station_code": "MSW",
+      "arrival_time": "23:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:50"
+    },
+    {
+      "station_name": "BABHNAN",
+      "station_code": "BV",
+      "arrival_time": "00:05",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:07"
+    },
+    {
+      "station_name": "BASTI",
+      "station_code": "BST",
+      "arrival_time": "00:34",
+      "halt_duration": "03 Mins",
+      "departure_time": "00:37"
+    },
+    {
+      "station_name": "KHALILABAD",
+      "station_code": "KLD",
+      "arrival_time": "00:58",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:00"
+    },
+    {
+      "station_name": "SAHJANWA",
+      "station_code": "SWA",
+      "arrival_time": "01:16",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:18"
+    },
+    {
+      "station_name": "GORAKHPUR JN",
+      "station_code": "GKP",
+      "arrival_time": "02:15",
+      "halt_duration": "10 Mins",
+      "departure_time": "02:25"
+    },
+    {
+      "station_name": "DEORIA SADAR",
+      "station_code": "DEOS",
+      "arrival_time": "03:26",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:31"
+    },
+    {
+      "station_name": "BHATNI JN",
+      "station_code": "BTT",
+      "arrival_time": "03:55",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:00"
+    },
+    {
+      "station_name": "BHATPAR RANI",
+      "station_code": "BHTR",
+      "arrival_time": "04:13",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:15"
+    },
+    {
+      "station_name": "BANKATA",
+      "station_code": "BTK",
+      "arrival_time": "04:25",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:27"
+    },
+    {
+      "station_name": "MAIRWA",
+      "station_code": "MW",
+      "arrival_time": "04:36",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:38"
+    },
+    {
+      "station_name": "SIWAN JN",
+      "station_code": "SV",
+      "arrival_time": "05:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "05:05"
+    },
+    {
+      "station_name": "DURAUNDHA JN",
+      "station_code": "DDA",
+      "arrival_time": "05:23",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:25"
+    },
+    {
+      "station_name": "EKMA",
+      "station_code": "EKMA",
+      "arrival_time": "05:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:40"
+    },
+    {
+      "station_name": "CHHAPRA",
+      "station_code": "CPR",
+      "arrival_time": "06:30",
+      "halt_duration": "10 Mins",
+      "departure_time": "06:40",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "DIGHWARA",
+      "station_code": "DGA",
+      "arrival_time": "07:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:30"
+    },
+    {
+      "station_name": "SONPUR JN",
+      "station_code": "SEE",
+      "arrival_time": "08:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "08:05"
+    },
+    {
+      "station_name": "HAJIPUR JN",
+      "station_code": "HJP",
+      "arrival_time": "08:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "08:20"
+    },
+    {
+      "station_name": "BHAGWANPUR",
+      "station_code": "BNR",
+      "arrival_time": "08:37",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:39"
+    },
+    {
+      "station_name": "MUZAFFARPUR JN",
+      "station_code": "MFP",
+      "arrival_time": "09:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "09:20"
+    },
+    {
+      "station_name": "DHOLI",
+      "station_code": "DOL",
+      "arrival_time": "09:43",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:45"
+    },
+    {
+      "station_name": "KHUDIRAM B PUSA",
+      "station_code": "KRBP",
+      "arrival_time": "10:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:10"
+    },
+    {
+      "station_name": "SAMASTIPUR JN",
+      "station_code": "SPJ",
+      "arrival_time": "10:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "10:45"
+    },
+    {
+      "station_name": "DALSINGH SARAI",
+      "station_code": "DSS",
+      "arrival_time": "11:11",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:13"
+    },
+    {
+      "station_name": "BARAUNI JN",
+      "station_code": "BJU",
+      "arrival_time": "12:55",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (04072": [
+    {
+      "station_name": "DELHI",
+      "station_code": "DLI",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "11:00"
+    },
+    {
+      "station_name": "ALIGARH JN",
+      "station_code": "ALJN",
+      "arrival_time": "13:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:30"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "18:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "18:50"
+    },
+    {
+      "station_name": "UNNAO JN",
+      "station_code": "ON",
+      "arrival_time": "19:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:20"
+    },
+    {
+      "station_name": "LUCKNOW NR",
+      "station_code": "LKO",
+      "arrival_time": "20:50",
+      "halt_duration": "10 Mins",
+      "departure_time": "21:00",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "SULTANPUR",
+      "station_code": "SLN",
+      "arrival_time": "23:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "23:10"
+    },
+    {
+      "station_name": "JAUNPUR CITY",
+      "station_code": "JOP",
+      "arrival_time": "00:23",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:25"
+    },
+    {
+      "station_name": "VARANASI JN",
+      "station_code": "BSB",
+      "arrival_time": "02:00",
+      "halt_duration": "10 Mins",
+      "departure_time": "02:10"
+    },
+    {
+      "station_name": "AUNRIHAR JN",
+      "station_code": "ARJ",
+      "arrival_time": "03:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:10"
+    },
+    {
+      "station_name": "GHAZIPUR CITY",
+      "station_code": "GCT",
+      "arrival_time": "04:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:10"
+    },
+    {
+      "station_name": "BALLIA",
+      "station_code": "BUI",
+      "arrival_time": "05:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:10"
+    },
+    {
+      "station_name": "SURAIMANPUR",
+      "station_code": "SIP",
+      "arrival_time": "05:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:50"
+    },
+    {
+      "station_name": "CHHAPRA",
+      "station_code": "CPR",
+      "arrival_time": "07:00",
+      "halt_duration": "10 Mins",
+      "departure_time": "07:10",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "HAJIPUR JN",
+      "station_code": "HJP",
+      "arrival_time": "08:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "08:45"
+    },
+    {
+      "station_name": "MUZAFFARPUR JN",
+      "station_code": "MFP",
+      "arrival_time": "09:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "09:45"
+    },
+    {
+      "station_name": "SAMASTIPUR JN",
+      "station_code": "SPJ",
+      "arrival_time": "11:10",
+      "halt_duration": "30 Mins",
+      "departure_time": "11:40"
+    },
+    {
+      "station_name": "DARBHANGA JN",
+      "station_code": "DBG",
+      "arrival_time": "13:30",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (15084": [
+    {
+      "station_name": "FARRUKHABAD",
+      "station_code": "FBD",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "14:30"
+    },
+    {
+      "station_name": "GURSAHAIGANJ",
+      "station_code": "GHJ",
+      "arrival_time": "15:20",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:22"
+    },
+    {
+      "station_name": "KANNAUJ",
+      "station_code": "KJN",
+      "arrival_time": "15:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "15:45"
+    },
+    {
+      "station_name": "BILHAUR",
+      "station_code": "BLU",
+      "arrival_time": "16:05",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:07"
+    },
+    {
+      "station_name": "KANPUR ANWRGANJ",
+      "station_code": "CPA",
+      "arrival_time": "17:25",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:27"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "17:45",
+      "halt_duration": "10 Mins",
+      "departure_time": "17:55"
+    },
+    {
+      "station_name": "UNNAO JN",
+      "station_code": "ON",
+      "arrival_time": "18:21",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:23"
+    },
+    {
+      "station_name": "AISHBAGH",
+      "station_code": "ASH",
+      "arrival_time": "19:30",
+      "halt_duration": "10 Mins",
+      "departure_time": "19:40",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "LUCKNOW CITY",
+      "station_code": "LC",
+      "arrival_time": "19:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:50"
+    },
+    {
+      "station_name": "BADSHAHNAGAR",
+      "station_code": "BNZ",
+      "arrival_time": "20:07",
+      "halt_duration": "03 Mins",
+      "departure_time": "20:10"
+    },
+    {
+      "station_name": "BARABANKI JN",
+      "station_code": "BBK",
+      "arrival_time": "20:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:50"
+    },
+    {
+      "station_name": "DARYABAD",
+      "station_code": "DYD",
+      "arrival_time": "21:26",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:28"
+    },
+    {
+      "station_name": "RUDAULI",
+      "station_code": "RDL",
+      "arrival_time": "21:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:50"
+    },
+    {
+      "station_name": "AYODHYA CANTT",
+      "station_code": "AYC",
+      "arrival_time": "22:35",
+      "halt_duration": "05 Mins",
+      "departure_time": "22:40"
+    },
+    {
+      "station_name": "AYODHYA DHAM JN",
+      "station_code": "AY",
+      "arrival_time": "22:56",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:58"
+    },
+    {
+      "station_name": "GOSHAINGANJ",
+      "station_code": "GGJ",
+      "arrival_time": "23:35",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:37"
+    },
+    {
+      "station_name": "AKBARPUR",
+      "station_code": "ABP",
+      "arrival_time": "00:36",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:38"
+    },
+    {
+      "station_name": "SHAHGANJ JN",
+      "station_code": "SHG",
+      "arrival_time": "02:15",
+      "halt_duration": "25 Mins",
+      "departure_time": "02:40"
+    },
+    {
+      "station_name": "AZAMGARH",
+      "station_code": "AMH",
+      "arrival_time": "03:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:35"
+    },
+    {
+      "station_name": "SATHIAON",
+      "station_code": "SAA",
+      "arrival_time": "03:51",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:53"
+    },
+    {
+      "station_name": "MUHAMMADABAD",
+      "station_code": "MMA",
+      "arrival_time": "04:03",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:05"
+    },
+    {
+      "station_name": "MAU JN",
+      "station_code": "MAU",
+      "arrival_time": "04:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:35"
+    },
+    {
+      "station_name": "INDARA JN",
+      "station_code": "IAA",
+      "arrival_time": "04:50",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:52"
+    },
+    {
+      "station_name": "RATANPURA",
+      "station_code": "RTP",
+      "arrival_time": "05:05",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:07"
+    },
+    {
+      "station_name": "RASRA",
+      "station_code": "RSR",
+      "arrival_time": "05:23",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:25"
+    },
+    {
+      "station_name": "BALLIA",
+      "station_code": "BUI",
+      "arrival_time": "06:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "06:10"
+    },
+    {
+      "station_name": "SAHATWAR",
+      "station_code": "STW",
+      "arrival_time": "06:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:30"
+    },
+    {
+      "station_name": "REOTI",
+      "station_code": "ROI",
+      "arrival_time": "06:42",
+      "halt_duration": "01 Mins",
+      "departure_time": "06:43"
+    },
+    {
+      "station_name": "SURAIMANPUR",
+      "station_code": "SIP",
+      "arrival_time": "06:56",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:58"
+    },
+    {
+      "station_name": "MANJHI",
+      "station_code": "MHT",
+      "arrival_time": "07:14",
+      "halt_duration": "01 Mins",
+      "departure_time": "07:15"
+    },
+    {
+      "station_name": "GAUTAMSTHAN",
+      "station_code": "GTST",
+      "arrival_time": "07:23",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:25"
+    },
+    {
+      "station_name": "CHHAPRA",
+      "station_code": "CPR",
+      "arrival_time": "08:25",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (15014": [
+    {
+      "station_name": "KATHGODAM",
+      "station_code": "KGM",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "20:35"
+    },
+    {
+      "station_name": "HALDWANI",
+      "station_code": "HDW",
+      "arrival_time": "20:45",
+      "halt_duration": "05 Mins",
+      "departure_time": "20:50"
+    },
+    {
+      "station_name": "LAL KUAN",
+      "station_code": "LKU",
+      "arrival_time": "21:23",
+      "halt_duration": "05 Mins",
+      "departure_time": "21:28"
+    },
+    {
+      "station_name": "RUDRAPUR CITY",
+      "station_code": "RUPC",
+      "arrival_time": "22:08",
+      "halt_duration": "05 Mins",
+      "departure_time": "22:13"
+    },
+    {
+      "station_name": "BILASPUR ROAD",
+      "station_code": "BLQR",
+      "arrival_time": "22:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:30"
+    },
+    {
+      "station_name": "RAMPUR",
+      "station_code": "RMU",
+      "arrival_time": "23:04",
+      "halt_duration": "03 Mins",
+      "departure_time": "23:07"
+    },
+    {
+      "station_name": "MORADABAD",
+      "station_code": "MB",
+      "arrival_time": "23:45",
+      "halt_duration": "50 Mins",
+      "departure_time": "00:35"
+    },
+    {
+      "station_name": "HAPUR",
+      "station_code": "HPU",
+      "arrival_time": "01:55",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:00"
+    },
+    {
+      "station_name": "GHAZIABAD",
+      "station_code": "GZB",
+      "arrival_time": "03:15",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:17"
+    },
+    {
+      "station_name": "SAHIBABAD",
+      "station_code": "SBB",
+      "arrival_time": "03:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:30"
+    },
+    {
+      "station_name": "DELHI",
+      "station_code": "DLI",
+      "arrival_time": "04:10",
+      "halt_duration": "20 Mins",
+      "departure_time": "04:30",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "DELHI S ROHILLA",
+      "station_code": "DEE",
+      "arrival_time": "04:44",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:46"
+    },
+    {
+      "station_name": "DELHI CANTT",
+      "station_code": "DEC",
+      "arrival_time": "05:03",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:05"
+    },
+    {
+      "station_name": "GURGAON",
+      "station_code": "GGN",
+      "arrival_time": "05:21",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:23"
+    },
+    {
+      "station_name": "PATAUDI ROAD",
+      "station_code": "PTRD",
+      "arrival_time": "05:44",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:46"
+    },
+    {
+      "station_name": "REWARI",
+      "station_code": "RE",
+      "arrival_time": "06:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:20"
+    },
+    {
+      "station_name": "BAWAL",
+      "station_code": "BWL",
+      "arrival_time": "06:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:40"
+    },
+    {
+      "station_name": "KHAIRTHAL",
+      "station_code": "KRH",
+      "arrival_time": "07:04",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:06"
+    },
+    {
+      "station_name": "ALWAR",
+      "station_code": "AWR",
+      "arrival_time": "07:26",
+      "halt_duration": "03 Mins",
+      "departure_time": "07:29"
+    },
+    {
+      "station_name": "RAJGARH",
+      "station_code": "RHG",
+      "arrival_time": "07:57",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:59"
+    },
+    {
+      "station_name": "BANDIKUI JN",
+      "station_code": "BKI",
+      "arrival_time": "08:17",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:19"
+    },
+    {
+      "station_name": "DAUSA JN",
+      "station_code": "DO",
+      "arrival_time": "08:41",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:43"
+    },
+    {
+      "station_name": "GANDHINAGAR JPR",
+      "station_code": "GADJ",
+      "arrival_time": "09:33",
+      "halt_duration": "03 Mins",
+      "departure_time": "09:36"
+    },
+    {
+      "station_name": "JAIPUR",
+      "station_code": "JP",
+      "arrival_time": "10:00",
+      "halt_duration": "10 Mins",
+      "departure_time": "10:10"
+    },
+    {
+      "station_name": "KISHANGARH",
+      "station_code": "KSG",
+      "arrival_time": "11:29",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:31"
+    },
+    {
+      "station_name": "AJMER JN",
+      "station_code": "AII",
+      "arrival_time": "12:10",
+      "halt_duration": "10 Mins",
+      "departure_time": "12:20"
+    },
+    {
+      "station_name": "BEAWAR",
+      "station_code": "BER",
+      "arrival_time": "13:06",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:08"
+    },
+    {
+      "station_name": "MARWAR JN",
+      "station_code": "MJ",
+      "arrival_time": "14:30",
+      "halt_duration": "25 Mins",
+      "departure_time": "14:55"
+    },
+    {
+      "station_name": "PALI MARWAR",
+      "station_code": "PMY",
+      "arrival_time": "15:23",
+      "halt_duration": "05 Mins",
+      "departure_time": "15:28"
+    },
+    {
+      "station_name": "LUNI JN",
+      "station_code": "LUNI",
+      "arrival_time": "15:55",
+      "halt_duration": "03 Mins",
+      "departure_time": "15:58"
+    },
+    {
+      "station_name": "BHAGAT KI KOTHI",
+      "station_code": "BGKT",
+      "arrival_time": "16:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:32"
+    },
+    {
+      "station_name": "JODHPUR JN",
+      "station_code": "JU",
+      "arrival_time": "16:45",
+      "halt_duration": "15 Mins",
+      "departure_time": "17:00"
+    },
+    {
+      "station_name": "RAIKA BAGH P JN",
+      "station_code": "RKB",
+      "arrival_time": "17:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:10"
+    },
+    {
+      "station_name": "MARWAR LOHWAT",
+      "station_code": "MWT",
+      "arrival_time": "19:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:02"
+    },
+    {
+      "station_name": "PHALODI JN",
+      "station_code": "PLCJ",
+      "arrival_time": "19:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "19:35"
+    },
+    {
+      "station_name": "RAMDEVRA",
+      "station_code": "RDRA",
+      "arrival_time": "20:20",
+      "halt_duration": "03 Mins",
+      "departure_time": "20:23"
+    },
+    {
+      "station_name": "POKARAN",
+      "station_code": "POK",
+      "arrival_time": "20:50",
+      "halt_duration": "05 Mins",
+      "departure_time": "20:55"
+    },
+    {
+      "station_name": "JAISALMER",
+      "station_code": "JSM",
+      "arrival_time": "23:00",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (25014": [
+    {
+      "station_name": "RAMNAGAR",
+      "station_code": "RMR",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "22:15"
+    },
+    {
+      "station_name": "KASHIPUR",
+      "station_code": "KPV",
+      "arrival_time": "22:45",
+      "halt_duration": "05 Mins",
+      "departure_time": "22:50"
+    },
+    {
+      "station_name": "MORADABAD",
+      "station_code": "MB",
+      "arrival_time": "00:02",
+      "halt_duration": "33 Mins",
+      "departure_time": "00:35"
+    },
+    {
+      "station_name": "HAPUR",
+      "station_code": "HPU",
+      "arrival_time": "01:55",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:00"
+    },
+    {
+      "station_name": "GHAZIABAD",
+      "station_code": "GZB",
+      "arrival_time": "03:15",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:17"
+    },
+    {
+      "station_name": "SAHIBABAD",
+      "station_code": "SBB",
+      "arrival_time": "03:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:30"
+    },
+    {
+      "station_name": "DELHI",
+      "station_code": "DLI",
+      "arrival_time": "04:10",
+      "halt_duration": "20 Mins",
+      "departure_time": "04:30",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "DELHI S ROHILLA",
+      "station_code": "DEE",
+      "arrival_time": "04:44",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:46"
+    },
+    {
+      "station_name": "DELHI CANTT",
+      "station_code": "DEC",
+      "arrival_time": "05:03",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:05"
+    },
+    {
+      "station_name": "GURGAON",
+      "station_code": "GGN",
+      "arrival_time": "05:21",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:23"
+    },
+    {
+      "station_name": "PATAUDI ROAD",
+      "station_code": "PTRD",
+      "arrival_time": "05:44",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:46"
+    },
+    {
+      "station_name": "REWARI",
+      "station_code": "RE",
+      "arrival_time": "06:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:20"
+    },
+    {
+      "station_name": "BAWAL",
+      "station_code": "BWL",
+      "arrival_time": "06:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:40"
+    },
+    {
+      "station_name": "KHAIRTHAL",
+      "station_code": "KRH",
+      "arrival_time": "07:04",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:06"
+    },
+    {
+      "station_name": "ALWAR",
+      "station_code": "AWR",
+      "arrival_time": "07:26",
+      "halt_duration": "03 Mins",
+      "departure_time": "07:29"
+    },
+    {
+      "station_name": "RAJGARH",
+      "station_code": "RHG",
+      "arrival_time": "07:57",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:59"
+    },
+    {
+      "station_name": "BANDIKUI JN",
+      "station_code": "BKI",
+      "arrival_time": "08:17",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:19"
+    },
+    {
+      "station_name": "DAUSA JN",
+      "station_code": "DO",
+      "arrival_time": "08:41",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:43"
+    },
+    {
+      "station_name": "GANDHINAGAR JPR",
+      "station_code": "GADJ",
+      "arrival_time": "09:33",
+      "halt_duration": "03 Mins",
+      "departure_time": "09:36"
+    },
+    {
+      "station_name": "JAIPUR",
+      "station_code": "JP",
+      "arrival_time": "10:00",
+      "halt_duration": "10 Mins",
+      "departure_time": "10:10"
+    },
+    {
+      "station_name": "KISHANGARH",
+      "station_code": "KSG",
+      "arrival_time": "11:29",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:31"
+    },
+    {
+      "station_name": "AJMER JN",
+      "station_code": "AII",
+      "arrival_time": "12:10",
+      "halt_duration": "10 Mins",
+      "departure_time": "12:20"
+    },
+    {
+      "station_name": "BEAWAR",
+      "station_code": "BER",
+      "arrival_time": "13:06",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:08"
+    },
+    {
+      "station_name": "MARWAR JN",
+      "station_code": "MJ",
+      "arrival_time": "14:30",
+      "halt_duration": "25 Mins",
+      "departure_time": "14:55"
+    },
+    {
+      "station_name": "PALI MARWAR",
+      "station_code": "PMY",
+      "arrival_time": "15:23",
+      "halt_duration": "05 Mins",
+      "departure_time": "15:28"
+    },
+    {
+      "station_name": "BHAGAT KI KOTHI",
+      "station_code": "BGKT",
+      "arrival_time": "16:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:32"
+    },
+    {
+      "station_name": "JODHPUR JN",
+      "station_code": "JU",
+      "arrival_time": "16:45",
+      "halt_duration": "15 Mins",
+      "departure_time": "17:00"
+    },
+    {
+      "station_name": "RAIKA BAGH P JN",
+      "station_code": "RKB",
+      "arrival_time": "17:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:10"
+    },
+    {
+      "station_name": "MARWAR LOHWAT",
+      "station_code": "MWT",
+      "arrival_time": "19:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:02"
+    },
+    {
+      "station_name": "PHALODI JN",
+      "station_code": "PLCJ",
+      "arrival_time": "19:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "19:35"
+    },
+    {
+      "station_name": "RAMDEVRA",
+      "station_code": "RDRA",
+      "arrival_time": "20:20",
+      "halt_duration": "03 Mins",
+      "departure_time": "20:23"
+    },
+    {
+      "station_name": "JAISALMER",
+      "station_code": "JSM",
+      "arrival_time": "23:00",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (14087": [
+    {
+      "station_name": "DELHI",
+      "station_code": "DLI",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "08:55",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "DELHI CANTT",
+      "station_code": "DEC",
+      "arrival_time": "09:21",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:23"
+    },
+    {
+      "station_name": "GURGAON",
+      "station_code": "GGN",
+      "arrival_time": "09:41",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:43"
+    },
+    {
+      "station_name": "REWARI",
+      "station_code": "RE",
+      "arrival_time": "10:35",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:37"
+    },
+    {
+      "station_name": "ATELI",
+      "station_code": "AEL",
+      "arrival_time": "11:11",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:13"
+    },
+    {
+      "station_name": "NARNAUL",
+      "station_code": "NNL",
+      "arrival_time": "11:26",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:28"
+    },
+    {
+      "station_name": "DABLA",
+      "station_code": "DBLA",
+      "arrival_time": "11:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:50"
+    },
+    {
+      "station_name": "NIM KA THANA",
+      "station_code": "NMK",
+      "arrival_time": "12:10",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:12"
+    },
+    {
+      "station_name": "KANWAT",
+      "station_code": "KAWT",
+      "arrival_time": "12:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:30"
+    },
+    {
+      "station_name": "SHRI MADHOPUR",
+      "station_code": "SMPR",
+      "arrival_time": "12:44",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:46"
+    },
+    {
+      "station_name": "RINGAS JN",
+      "station_code": "RGS",
+      "arrival_time": "13:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "13:05"
+    },
+    {
+      "station_name": "RENWAL",
+      "station_code": "RNW",
+      "arrival_time": "13:47",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:49"
+    },
+    {
+      "station_name": "PHULERA JN",
+      "station_code": "FL",
+      "arrival_time": "15:20",
+      "halt_duration": "05 Mins",
+      "departure_time": "15:25"
+    },
+    {
+      "station_name": "NAWA CITY",
+      "station_code": "NAC",
+      "arrival_time": "15:55",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:57"
+    },
+    {
+      "station_name": "KUCHAMAN CITY",
+      "station_code": "KMNC",
+      "arrival_time": "16:12",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:14"
+    },
+    {
+      "station_name": "MAKRANA JN",
+      "station_code": "MKN",
+      "arrival_time": "16:27",
+      "halt_duration": "03 Mins",
+      "departure_time": "16:30"
+    },
+    {
+      "station_name": "DEGANA JN",
+      "station_code": "DNA",
+      "arrival_time": "17:00",
+      "halt_duration": "03 Mins",
+      "departure_time": "17:03"
+    },
+    {
+      "station_name": "MERTA ROAD JN",
+      "station_code": "MTD",
+      "arrival_time": "17:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "17:45"
+    },
+    {
+      "station_name": "RAIKA BAGH P JN",
+      "station_code": "RKB",
+      "arrival_time": "19:10",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:12"
+    },
+    {
+      "station_name": "JODHPUR JN",
+      "station_code": "JU",
+      "arrival_time": "20:00",
+      "halt_duration": "15 Mins",
+      "departure_time": "20:15"
+    },
+    {
+      "station_name": "OSIYAN",
+      "station_code": "OSN",
+      "arrival_time": "21:26",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:28"
+    },
+    {
+      "station_name": "MARWAR LOHWAT",
+      "station_code": "MWT",
+      "arrival_time": "22:14",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:16"
+    },
+    {
+      "station_name": "PHALODI JN",
+      "station_code": "PLCJ",
+      "arrival_time": "23:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "23:05"
+    },
+    {
+      "station_name": "RAMDEVRA",
+      "station_code": "RDRA",
+      "arrival_time": "23:52",
+      "halt_duration": "03 Mins",
+      "departure_time": "23:55"
+    },
+    {
+      "station_name": "ASHAPURA GOMAT",
+      "station_code": "AQG",
+      "arrival_time": "00:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "00:10"
+    },
+    {
+      "station_name": "JAISALMER",
+      "station_code": "JSM",
+      "arrival_time": "02:30",
+      "halt_duration": "31 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (12286": [
+    {
+      "station_name": "H NIZAMUDDIN",
+      "station_code": "NZM",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "15:55",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "20:45",
+      "halt_duration": "05 Mins",
+      "departure_time": "20:50"
+    },
+    {
+      "station_name": "RANI KAMALAPATI",
+      "station_code": "RKMP",
+      "arrival_time": "00:12",
+      "halt_duration": "08 Mins",
+      "departure_time": "00:20"
+    },
+    {
+      "station_name": "NAGPUR",
+      "station_code": "NGP",
+      "arrival_time": "05:35",
+      "halt_duration": "05 Mins",
+      "departure_time": "05:40"
+    },
+    {
+      "station_name": "BALHARSHAH",
+      "station_code": "BPQ",
+      "arrival_time": "08:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "08:35"
+    },
+    {
+      "station_name": "SECUNDERABAD JN",
+      "station_code": "SC",
+      "arrival_time": "14:30",
+      "halt_duration": "31 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (22706": [
+    {
+      "station_name": "JAMMU TAWI",
+      "station_code": "JAT",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "05:45"
+    },
+    {
+      "station_name": "JALANDHAR CANT",
+      "station_code": "JRC",
+      "arrival_time": "09:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "09:20"
+    },
+    {
+      "station_name": "LUDHIANA JN",
+      "station_code": "LDH",
+      "arrival_time": "11:00",
+      "halt_duration": "10 Mins",
+      "departure_time": "11:10"
+    },
+    {
+      "station_name": "AMBALA CANT JN",
+      "station_code": "UMB",
+      "arrival_time": "13:05",
+      "halt_duration": "15 Mins",
+      "departure_time": "13:20"
+    },
+    {
+      "station_name": "DELHI SAFDARJNG",
+      "station_code": "DSJ",
+      "arrival_time": "16:49",
+      "halt_duration": "03 Mins",
+      "departure_time": "16:52",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "22:50",
+      "halt_duration": "08 Mins",
+      "departure_time": "22:58"
+    },
+    {
+      "station_name": "RANI KAMALAPATI",
+      "station_code": "RKMP",
+      "arrival_time": "02:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "02:50"
+    },
+    {
+      "station_name": "NAGPUR",
+      "station_code": "NGP",
+      "arrival_time": "08:55",
+      "halt_duration": "05 Mins",
+      "departure_time": "09:00"
+    },
+    {
+      "station_name": "BALHARSHAH",
+      "station_code": "BPQ",
+      "arrival_time": "12:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "12:45"
+    },
+    {
+      "station_name": "KAZIPET JN",
+      "station_code": "KZJ",
+      "arrival_time": "15:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:50"
+    },
+    {
+      "station_name": "SECUNDERABAD JN",
+      "station_code": "SC",
+      "arrival_time": "18:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "18:05",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "RAICHUR JN",
+      "station_code": "RC",
+      "arrival_time": "22:43",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:45"
+    },
+    {
+      "station_name": "GUNTAKAL JN",
+      "station_code": "GTL",
+      "arrival_time": "00:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "00:45"
+    },
+    {
+      "station_name": "TIRUPATI",
+      "station_code": "TPTY",
+      "arrival_time": "06:40",
+      "halt_duration": "01 Jun 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (03256": [
+    {
+      "station_name": "ANAND VIHAR TRM",
+      "station_code": "ANVT",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "23:30",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "GOVINDPURI",
+      "station_code": "GOY",
+      "arrival_time": "06:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "06:20"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "10:00",
+      "halt_duration": "10 Mins",
+      "departure_time": "10:10"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "14:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "14:50"
+    },
+    {
+      "station_name": "BUXAR",
+      "station_code": "BXR",
+      "arrival_time": "15:56",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:58"
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "16:40",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:42"
+    },
+    {
+      "station_name": "DANAPUR",
+      "station_code": "DNR",
+      "arrival_time": "17:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:30"
+    },
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "18:35",
+      "halt_duration": "31 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (04088": [
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "15:50",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "GOVINDPURI",
+      "station_code": "GOY",
+      "arrival_time": "23:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "23:20"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "02:20",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:25"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "05:15",
+      "halt_duration": "10 Mins",
+      "departure_time": "05:25"
+    },
+    {
+      "station_name": "BUXAR",
+      "station_code": "BXR",
+      "arrival_time": "06:25",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:27"
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "07:10",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:12"
+    },
+    {
+      "station_name": "DANAPUR",
+      "station_code": "DNR",
+      "arrival_time": "07:35",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:37"
+    },
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "08:40",
+      "halt_duration": "31 May 25",
+      "departure_time": "Finish",
+      "is_dropping_point": true
+    }
+  ],
+  " (22406": [
+    {
+      "station_name": "ANAND VIHAR TRM",
+      "station_code": "ANVT",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "17:20",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "ALIGARH JN",
+      "station_code": "ALJN",
+      "arrival_time": "18:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:55"
+    },
+    {
+      "station_name": "TUNDLA JN",
+      "station_code": "TDL",
+      "arrival_time": "19:50",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:52"
+    },
+    {
+      "station_name": "KANPUR CENTRAL",
+      "station_code": "CNB",
+      "arrival_time": "22:12",
+      "halt_duration": "05 Mins",
+      "departure_time": "22:17"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "00:23",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:25"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "02:30",
+      "halt_duration": "10 Mins",
+      "departure_time": "02:40"
+    },
+    {
+      "station_name": "DILDARNAGAR JN",
+      "station_code": "DLN",
+      "arrival_time": "03:23",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:25"
+    },
+    {
+      "station_name": "BUXAR",
+      "station_code": "BXR",
+      "arrival_time": "03:51",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:53"
+    },
+    {
+      "station_name": "DUMRAON",
+      "station_code": "DURE",
+      "arrival_time": "04:07",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:09"
+    },
+    {
+      "station_name": "BIHIYA",
+      "station_code": "BEA",
+      "arrival_time": "04:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:30"
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "04:44",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:46"
+    },
+    {
+      "station_name": "BIHTA",
+      "station_code": "BTA",
+      "arrival_time": "05:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:02"
+    },
+    {
+      "station_name": "DANAPUR",
+      "station_code": "DNR",
+      "arrival_time": "05:26",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:28"
+    },
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "05:45",
+      "halt_duration": "10 Mins",
+      "departure_time": "05:55",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "RAJENDRANAGAR T",
+      "station_code": "RJPB",
+      "arrival_time": "06:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:02"
+    },
+    {
+      "station_name": "KIUL JN",
+      "station_code": "KIUL",
+      "arrival_time": "08:25",
+      "halt_duration": "05 Mins",
+      "departure_time": "08:30"
+    },
+    {
+      "station_name": "ABHAIPUR",
+      "station_code": "AHA",
+      "arrival_time": "08:51",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:53"
+    },
+    {
+      "station_name": "JAMALPUR JN",
+      "station_code": "JMP",
+      "arrival_time": "09:10",
+      "halt_duration": "10 Mins",
+      "departure_time": "09:20"
+    },
+    {
+      "station_name": "SULTANGANJ",
+      "station_code": "SGG",
+      "arrival_time": "09:45",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:47"
+    },
+    {
+      "station_name": "BHAGALPUR",
+      "station_code": "BGP",
+      "arrival_time": "11:00",
+      "halt_duration": "31 May 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (04070": [
+    {
+      "station_name": "ANAND VIHAR TRM",
+      "station_code": "ANVT",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "00:20",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "GOVINDPURI",
+      "station_code": "GOY",
+      "arrival_time": "06:35",
+      "halt_duration": "05 Mins",
+      "departure_time": "06:40"
+    },
+    {
+      "station_name": "PRAYAGRAJ JN.",
+      "station_code": "PRYJ",
+      "arrival_time": "10:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "10:05"
+    },
+    {
+      "station_name": "DD UPADHYAYA JN",
+      "station_code": "DDU",
+      "arrival_time": "13:20",
+      "halt_duration": "10 Mins",
+      "departure_time": "13:30"
+    },
+    {
+      "station_name": "BUXAR",
+      "station_code": "BXR",
+      "arrival_time": "14:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:32"
+    },
+    {
+      "station_name": "ARA JN",
+      "station_code": "ARA",
+      "arrival_time": "15:17",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:19"
+    },
+    {
+      "station_name": "PATNA JN",
+      "station_code": "PNBE",
+      "arrival_time": "16:15",
+      "halt_duration": "10 Mins",
+      "departure_time": "16:25",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "BAKHTIYARPUR JN",
+      "station_code": "BKP",
+      "arrival_time": "17:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:20"
+    },
+    {
+      "station_name": "BIHAR SHARIF",
+      "station_code": "BEHS",
+      "arrival_time": "18:20",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:22"
+    },
+    {
+      "station_name": "RAJGIR",
+      "station_code": "RGD",
+      "arrival_time": "19:50",
+      "halt_duration": "30 May 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (20424": [
+    {
+      "station_name": "FIROZPUR CANT",
+      "station_code": "FZR",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "04:10"
+    },
+    {
+      "station_name": "FARIDKOT",
+      "station_code": "FDK",
+      "arrival_time": "04:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:40"
+    },
+    {
+      "station_name": "KOT KAPURA",
+      "station_code": "KKP",
+      "arrival_time": "04:55",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:57"
+    },
+    {
+      "station_name": "GANGSAR JAITU",
+      "station_code": "GJUT",
+      "arrival_time": "05:11",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:13"
+    },
+    {
+      "station_name": "GONEANA B JAGTA",
+      "station_code": "GNA",
+      "arrival_time": "05:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:30"
+    },
+    {
+      "station_name": "BATHINDA JN",
+      "station_code": "BTI",
+      "arrival_time": "06:00",
+      "halt_duration": "25 Mins",
+      "departure_time": "06:25"
+    },
+    {
+      "station_name": "MAUR",
+      "station_code": "MAUR",
+      "arrival_time": "06:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:50"
+    },
+    {
+      "station_name": "MANSA",
+      "station_code": "MSZ",
+      "arrival_time": "07:04",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:06"
+    },
+    {
+      "station_name": "BUDHLADA",
+      "station_code": "BLZ",
+      "arrival_time": "07:19",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:21"
+    },
+    {
+      "station_name": "BARETA",
+      "station_code": "BRZ",
+      "arrival_time": "07:33",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:35"
+    },
+    {
+      "station_name": "JAKHAL JN",
+      "station_code": "JHL",
+      "arrival_time": "07:49",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:51"
+    },
+    {
+      "station_name": "TOHANA",
+      "station_code": "TUN",
+      "arrival_time": "08:02",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:04"
+    },
+    {
+      "station_name": "NARWANA JN",
+      "station_code": "NRW",
+      "arrival_time": "08:23",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:25"
+    },
+    {
+      "station_name": "UCHANA",
+      "station_code": "UCA",
+      "arrival_time": "08:37",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:39"
+    },
+    {
+      "station_name": "JIND JN",
+      "station_code": "JIND",
+      "arrival_time": "08:56",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:58"
+    },
+    {
+      "station_name": "ROHTAK JN",
+      "station_code": "ROK",
+      "arrival_time": "09:39",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:41"
+    },
+    {
+      "station_name": "BAHADURGARH",
+      "station_code": "BGZ",
+      "arrival_time": "10:09",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:11"
+    },
+    {
+      "station_name": "NANGLOI",
+      "station_code": "NNO",
+      "arrival_time": "10:22",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:24"
+    },
+    {
+      "station_name": "SHAKURBASTI",
+      "station_code": "SSB",
+      "arrival_time": "10:44",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:46"
+    },
+    {
+      "station_name": "DELHI SAFDARJNG",
+      "station_code": "DSJ",
+      "arrival_time": "11:16",
+      "halt_duration": "04 Mins",
+      "departure_time": "11:20",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "MATHURA JN",
+      "station_code": "MTJ",
+      "arrival_time": "13:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "13:35"
+    },
+    {
+      "station_name": "AGRA CANTT",
+      "station_code": "AGC",
+      "arrival_time": "14:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "14:20"
+    },
+    {
+      "station_name": "GWALIOR",
+      "station_code": "GWL",
+      "arrival_time": "16:05",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:07"
+    },
+    {
+      "station_name": "DABRA",
+      "station_code": "DBA",
+      "arrival_time": "16:42",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:44"
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "17:45",
+      "halt_duration": "08 Mins",
+      "departure_time": "17:53"
+    },
+    {
+      "station_name": "LALITPUR JN",
+      "station_code": "LAR",
+      "arrival_time": "18:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:50"
+    },
+    {
+      "station_name": "BINA JN",
+      "station_code": "BINA",
+      "arrival_time": "19:55",
+      "halt_duration": "05 Mins",
+      "departure_time": "20:00"
+    },
+    {
+      "station_name": "GANJ BASODA",
+      "station_code": "BAQ",
+      "arrival_time": "20:31",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:33"
+    },
+    {
+      "station_name": "VIDISHA",
+      "station_code": "BHS",
+      "arrival_time": "20:58",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:00"
+    },
+    {
+      "station_name": "BHOPAL JN",
+      "station_code": "BPL",
+      "arrival_time": "21:50",
+      "halt_duration": "05 Mins",
+      "departure_time": "21:55",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "RANI KAMALAPATI",
+      "station_code": "RKMP",
+      "arrival_time": "22:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:10"
+    },
+    {
+      "station_name": "NARMADAPURAM",
+      "station_code": "NDPM",
+      "arrival_time": "23:06",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:08"
+    },
+    {
+      "station_name": "ITARSI JN",
+      "station_code": "ET",
+      "arrival_time": "23:45",
+      "halt_duration": "10 Mins",
+      "departure_time": "23:55"
+    },
+    {
+      "station_name": "GHORADONGRI",
+      "station_code": "GDYA",
+      "arrival_time": "00:58",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:00"
+    },
+    {
+      "station_name": "BETUL",
+      "station_code": "BZU",
+      "arrival_time": "01:33",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:35"
+    },
+    {
+      "station_name": "AMLA JN",
+      "station_code": "AMLA",
+      "arrival_time": "02:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:10"
+    },
+    {
+      "station_name": "BORDHAI",
+      "station_code": "BXY",
+      "arrival_time": "02:34",
+      "halt_duration": "01 Mins",
+      "departure_time": "02:35"
+    },
+    {
+      "station_name": "NAWAGAON",
+      "station_code": "NVG",
+      "arrival_time": "02:49",
+      "halt_duration": "01 Mins",
+      "departure_time": "02:50"
+    },
+    {
+      "station_name": "JUNNOR DEO",
+      "station_code": "JNO",
+      "arrival_time": "03:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:10"
+    },
+    {
+      "station_name": "PARASIA",
+      "station_code": "PUX",
+      "arrival_time": "03:33",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:35"
+    },
+    {
+      "station_name": "CHHINDWARA JN",
+      "station_code": "CWA",
+      "arrival_time": "05:05",
+      "halt_duration": "10 Mins",
+      "departure_time": "05:15"
+    },
+    {
+      "station_name": "CHOURAI",
+      "station_code": "CHUA",
+      "arrival_time": "05:43",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:45"
+    },
+    {
+      "station_name": "SEONI",
+      "station_code": "SEY",
+      "arrival_time": "06:20",
+      "halt_duration": "31 May 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (12644": [
+    {
+      "station_name": "H NIZAMUDDIN",
+      "station_code": "NZM",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "05:10",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "MATHURA JN",
+      "station_code": "MTJ",
+      "arrival_time": "06:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "06:45"
+    },
+    {
+      "station_name": "AGRA CANTT",
+      "station_code": "AGC",
+      "arrival_time": "07:25",
+      "halt_duration": "05 Mins",
+      "departure_time": "07:30"
+    },
+    {
+      "station_name": "GWALIOR",
+      "station_code": "GWL",
+      "arrival_time": "09:41",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:43"
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "11:20",
+      "halt_duration": "08 Mins",
+      "departure_time": "11:28"
+    },
+    {
+      "station_name": "BINA JN",
+      "station_code": "BINA",
+      "arrival_time": "13:35",
+      "halt_duration": "05 Mins",
+      "departure_time": "13:40"
+    },
+    {
+      "station_name": "BHOPAL JN",
+      "station_code": "BPL",
+      "arrival_time": "15:25",
+      "halt_duration": "05 Mins",
+      "departure_time": "15:30",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "ITARSI JN",
+      "station_code": "ET",
+      "arrival_time": "17:10",
+      "halt_duration": "10 Mins",
+      "departure_time": "17:20"
+    },
+    {
+      "station_name": "BETUL",
+      "station_code": "BZU",
+      "arrival_time": "19:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:02"
+    },
+    {
+      "station_name": "AMLA JN",
+      "station_code": "AMLA",
+      "arrival_time": "19:19",
+      "halt_duration": "01 Mins",
+      "departure_time": "19:20"
+    },
+    {
+      "station_name": "NAGPUR",
+      "station_code": "NGP",
+      "arrival_time": "21:50",
+      "halt_duration": "05 Mins",
+      "departure_time": "21:55"
+    },
+    {
+      "station_name": "BALHARSHAH",
+      "station_code": "BPQ",
+      "arrival_time": "01:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "01:20"
+    },
+    {
+      "station_name": "WARANGAL",
+      "station_code": "WL",
+      "arrival_time": "04:20",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:25"
+    },
+    {
+      "station_name": "VIJAYAWADA JN",
+      "station_code": "BZA",
+      "arrival_time": "07:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "07:50"
+    },
+    {
+      "station_name": "GUDUR JN",
+      "station_code": "GDR",
+      "arrival_time": "12:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:20"
+    },
+    {
+      "station_name": "RENIGUNTA JN",
+      "station_code": "RU",
+      "arrival_time": "13:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "13:50"
+    },
+    {
+      "station_name": "TIRUPATI",
+      "station_code": "TPTY",
+      "arrival_time": "14:20",
+      "halt_duration": "05 Mins",
+      "departure_time": "14:25"
+    },
+    {
+      "station_name": "CHITTOOR",
+      "station_code": "CTO",
+      "arrival_time": "15:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:30"
+    },
+    {
+      "station_name": "KATPADI JN",
+      "station_code": "KPD",
+      "arrival_time": "16:35",
+      "halt_duration": "05 Mins",
+      "departure_time": "16:40"
+    },
+    {
+      "station_name": "SALEM JN",
+      "station_code": "SA",
+      "arrival_time": "19:22",
+      "halt_duration": "03 Mins",
+      "departure_time": "19:25"
+    },
+    {
+      "station_name": "ERODE JN",
+      "station_code": "ED",
+      "arrival_time": "20:20",
+      "halt_duration": "10 Mins",
+      "departure_time": "20:30"
+    },
+    {
+      "station_name": "TIRUPPUR",
+      "station_code": "TUP",
+      "arrival_time": "21:13",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:15"
+    },
+    {
+      "station_name": "COIMBATORE JN",
+      "station_code": "CBE",
+      "arrival_time": "22:12",
+      "halt_duration": "03 Mins",
+      "departure_time": "22:15"
+    },
+    {
+      "station_name": "PALAKKAD JN",
+      "station_code": "PGT",
+      "arrival_time": "23:42",
+      "halt_duration": "03 Mins",
+      "departure_time": "23:45"
+    },
+    {
+      "station_name": "THRISUR",
+      "station_code": "TCR",
+      "arrival_time": "00:55",
+      "halt_duration": "03 Mins",
+      "departure_time": "00:58"
+    },
+    {
+      "station_name": "ALUVA",
+      "station_code": "AWY",
+      "arrival_time": "01:50",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:52"
+    },
+    {
+      "station_name": "ERNAKULAM JN",
+      "station_code": "ERS",
+      "arrival_time": "02:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:35"
+    },
+    {
+      "station_name": "ALLEPPEY",
+      "station_code": "ALLP",
+      "arrival_time": "03:32",
+      "halt_duration": "03 Mins",
+      "departure_time": "03:35"
+    },
+    {
+      "station_name": "KAYANKULAM JN",
+      "station_code": "KYJ",
+      "arrival_time": "04:23",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:25"
+    },
+    {
+      "station_name": "KOLLAM JN",
+      "station_code": "QLN",
+      "arrival_time": "05:07",
+      "halt_duration": "03 Mins",
+      "departure_time": "05:10"
+    },
+    {
+      "station_name": "TRIVANDRUM CNTL",
+      "station_code": "TVC",
+      "arrival_time": "07:00",
+      "halt_duration": "01 Jun 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (12808": [
+    {
+      "station_name": "H NIZAMUDDIN",
+      "station_code": "NZM",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "07:00",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "MATHURA JN",
+      "station_code": "MTJ",
+      "arrival_time": "08:20",
+      "halt_duration": "05 Mins",
+      "departure_time": "08:25"
+    },
+    {
+      "station_name": "BILOCHPURA AGRA",
+      "station_code": "BFP",
+      "arrival_time": "08:55",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:57"
+    },
+    {
+      "station_name": "AGRA CANTT",
+      "station_code": "AGC",
+      "arrival_time": "09:10",
+      "halt_duration": "05 Mins",
+      "departure_time": "09:15"
+    },
+    {
+      "station_name": "MORENA",
+      "station_code": "MRA",
+      "arrival_time": "10:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:40"
+    },
+    {
+      "station_name": "GWALIOR",
+      "station_code": "GWL",
+      "arrival_time": "11:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:20"
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "13:15",
+      "halt_duration": "08 Mins",
+      "departure_time": "13:23"
+    },
+    {
+      "station_name": "LALITPUR JN",
+      "station_code": "LAR",
+      "arrival_time": "14:21",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:23"
+    },
+    {
+      "station_name": "BINA JN",
+      "station_code": "BINA",
+      "arrival_time": "15:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "15:45"
+    },
+    {
+      "station_name": "BHOPAL JN",
+      "station_code": "BPL",
+      "arrival_time": "17:35",
+      "halt_duration": "10 Mins",
+      "departure_time": "17:45",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "ITARSI JN",
+      "station_code": "ET",
+      "arrival_time": "19:25",
+      "halt_duration": "05 Mins",
+      "departure_time": "19:30"
+    },
+    {
+      "station_name": "BETUL",
+      "station_code": "BZU",
+      "arrival_time": "21:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:10"
+    },
+    {
+      "station_name": "MULTAI",
+      "station_code": "MTY",
+      "arrival_time": "21:45",
+      "halt_duration": "01 Mins",
+      "departure_time": "21:46"
+    },
+    {
+      "station_name": "NAGPUR",
+      "station_code": "NGP",
+      "arrival_time": "00:35",
+      "halt_duration": "15 Mins",
+      "departure_time": "00:50"
+    },
+    {
+      "station_name": "BHANDARA ROAD",
+      "station_code": "BRD",
+      "arrival_time": "01:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:40"
+    },
+    {
+      "station_name": "TUMSAR ROAD",
+      "station_code": "TMR",
+      "arrival_time": "01:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:55"
+    },
+    {
+      "station_name": "GONDIA JN",
+      "station_code": "G",
+      "arrival_time": "02:43",
+      "halt_duration": "02 Mins",
+      "departure_time": "02:45"
+    },
+    {
+      "station_name": "DONGARGARH",
+      "station_code": "DGG",
+      "arrival_time": "03:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:50"
+    },
+    {
+      "station_name": "RAJ NANDGAON",
+      "station_code": "RJN",
+      "arrival_time": "04:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:20"
+    },
+    {
+      "station_name": "DURG",
+      "station_code": "DURG",
+      "arrival_time": "05:07",
+      "halt_duration": "05 Mins",
+      "departure_time": "05:12"
+    },
+    {
+      "station_name": "RAIPUR JN",
+      "station_code": "R",
+      "arrival_time": "05:47",
+      "halt_duration": "10 Mins",
+      "departure_time": "05:57"
+    },
+    {
+      "station_name": "MAHASAMUND",
+      "station_code": "MSMD",
+      "arrival_time": "07:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:02"
+    },
+    {
+      "station_name": "BAGBAHRA",
+      "station_code": "BGBR",
+      "arrival_time": "07:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:30"
+    },
+    {
+      "station_name": "KHARIAR ROAD",
+      "station_code": "KRAR",
+      "arrival_time": "07:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:55"
+    },
+    {
+      "station_name": "HARISHANKER RD",
+      "station_code": "HSK",
+      "arrival_time": "08:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:30"
+    },
+    {
+      "station_name": "KANTABANJI",
+      "station_code": "KBJ",
+      "arrival_time": "08:50",
+      "halt_duration": "10 Mins",
+      "departure_time": "09:00"
+    },
+    {
+      "station_name": "TITLAGARH",
+      "station_code": "TIG",
+      "arrival_time": "09:50",
+      "halt_duration": "10 Mins",
+      "departure_time": "10:00"
+    },
+    {
+      "station_name": "KESINGA",
+      "station_code": "KSNG",
+      "arrival_time": "10:20",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:22"
+    },
+    {
+      "station_name": "AMBODALA",
+      "station_code": "AMB",
+      "arrival_time": "10:55",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:57"
+    },
+    {
+      "station_name": "MUNIGUDA",
+      "station_code": "MNGD",
+      "arrival_time": "11:20",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:22"
+    },
+    {
+      "station_name": "RAYAGADA",
+      "station_code": "RGDA",
+      "arrival_time": "13:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "13:10"
+    },
+    {
+      "station_name": "PARVATIPURAM TN",
+      "station_code": "PVPT",
+      "arrival_time": "13:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:50"
+    },
+    {
+      "station_name": "PARVATIPURAM",
+      "station_code": "PVP",
+      "arrival_time": "13:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:55"
+    },
+    {
+      "station_name": "BOBBILI",
+      "station_code": "VBL",
+      "arrival_time": "14:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:20"
+    },
+    {
+      "station_name": "VIZIANAGRAM JN",
+      "station_code": "VZM",
+      "arrival_time": "15:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "15:10"
+    },
+    {
+      "station_name": "SIMHACHALAM",
+      "station_code": "SCM",
+      "arrival_time": "15:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:55"
+    },
+    {
+      "station_name": "VISAKHAPATNAM",
+      "station_code": "VSKP",
+      "arrival_time": "16:30",
+      "halt_duration": "31 May 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (16788": [
+    {
+      "station_name": "SHMATA VD KATRA",
+      "station_code": "SVDK",
+      "arrival_time": "Start",
+      "halt_duration": "29 May 25",
+      "departure_time": "22:30"
+    },
+    {
+      "station_name": "MTYR C TUSHAR M",
+      "station_code": "MCTM",
+      "arrival_time": "23:11",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:13"
+    },
+    {
+      "station_name": "JAMMU TAWI",
+      "station_code": "JAT",
+      "arrival_time": "00:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "00:20"
+    },
+    {
+      "station_name": "KATHUA",
+      "station_code": "KTHU",
+      "arrival_time": "01:26",
+      "halt_duration": "02 Mins",
+      "departure_time": "01:28"
+    },
+    {
+      "station_name": "PATHANKOT CANTT",
+      "station_code": "PTKC",
+      "arrival_time": "02:10",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:15"
+    },
+    {
+      "station_name": "MUKERIAN",
+      "station_code": "MEX",
+      "arrival_time": "02:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "02:50"
+    },
+    {
+      "station_name": "JALANDHAR CANT",
+      "station_code": "JRC",
+      "arrival_time": "04:10",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:15"
+    },
+    {
+      "station_name": "PHAGWARA JN",
+      "station_code": "PGW",
+      "arrival_time": "04:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:32"
+    },
+    {
+      "station_name": "LUDHIANA JN",
+      "station_code": "LDH",
+      "arrival_time": "05:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "05:50"
+    },
+    {
+      "station_name": "AHMADGARH",
+      "station_code": "AHH",
+      "arrival_time": "06:16",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:18"
+    },
+    {
+      "station_name": "MALERKOTLA",
+      "station_code": "MET",
+      "arrival_time": "06:36",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:38"
+    },
+    {
+      "station_name": "DHURI JN",
+      "station_code": "DUI",
+      "arrival_time": "07:30",
+      "halt_duration": "15 Mins",
+      "departure_time": "07:45"
+    },
+    {
+      "station_name": "SANGRUR",
+      "station_code": "SAG",
+      "arrival_time": "08:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:10"
+    },
+    {
+      "station_name": "SUNAM UDHAM S W",
+      "station_code": "SFMU",
+      "arrival_time": "08:31",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:33"
+    },
+    {
+      "station_name": "LEHRA GAGA",
+      "station_code": "LHA",
+      "arrival_time": "08:50",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:52"
+    },
+    {
+      "station_name": "JAKHAL JN",
+      "station_code": "JHL",
+      "arrival_time": "09:25",
+      "halt_duration": "03 Mins",
+      "departure_time": "09:28"
+    },
+    {
+      "station_name": "TOHANA",
+      "station_code": "TUN",
+      "arrival_time": "09:39",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:41"
+    },
+    {
+      "station_name": "NARWANA JN",
+      "station_code": "NRW",
+      "arrival_time": "10:00",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:02"
+    },
+    {
+      "station_name": "UCHANA",
+      "station_code": "UCA",
+      "arrival_time": "10:14",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:16"
+    },
+    {
+      "station_name": "BARSOLA",
+      "station_code": "BZO",
+      "arrival_time": "10:26",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:28"
+    },
+    {
+      "station_name": "JIND JN",
+      "station_code": "JIND",
+      "arrival_time": "10:42",
+      "halt_duration": "03 Mins",
+      "departure_time": "10:45"
+    },
+    {
+      "station_name": "JULANA",
+      "station_code": "JNA",
+      "arrival_time": "11:03",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:05"
+    },
+    {
+      "station_name": "ROHTAK JN",
+      "station_code": "ROK",
+      "arrival_time": "11:31",
+      "halt_duration": "02 Mins",
+      "departure_time": "11:33"
+    },
+    {
+      "station_name": "BAHADURGARH",
+      "station_code": "BGZ",
+      "arrival_time": "12:01",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:03"
+    },
+    {
+      "station_name": "SHAKURBASTI",
+      "station_code": "SSB",
+      "arrival_time": "12:36",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:38"
+    },
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "13:35",
+      "halt_duration": "35 Mins",
+      "departure_time": "14:10",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "H NIZAMUDDIN",
+      "station_code": "NZM",
+      "arrival_time": "14:21",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:23"
+    },
+    {
+      "station_name": "FARIDABAD",
+      "station_code": "FDB",
+      "arrival_time": "14:42",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:44"
+    },
+    {
+      "station_name": "AGRA CANTT",
+      "station_code": "AGC",
+      "arrival_time": "17:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "17:05"
+    },
+    {
+      "station_name": "DHAULPUR",
+      "station_code": "DHO",
+      "arrival_time": "18:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:55"
+    },
+    {
+      "station_name": "GWALIOR",
+      "station_code": "GWL",
+      "arrival_time": "20:40",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:42"
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "22:20",
+      "halt_duration": "08 Mins",
+      "departure_time": "22:28"
+    },
+    {
+      "station_name": "BHOPAL JN",
+      "station_code": "BPL",
+      "arrival_time": "03:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:05",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "ITARSI JN",
+      "station_code": "ET",
+      "arrival_time": "04:45",
+      "halt_duration": "05 Mins",
+      "departure_time": "04:50"
+    },
+    {
+      "station_name": "NAGPUR",
+      "station_code": "NGP",
+      "arrival_time": "09:50",
+      "halt_duration": "05 Mins",
+      "departure_time": "09:55"
+    },
+    {
+      "station_name": "SEVAGRAM",
+      "station_code": "SEGM",
+      "arrival_time": "10:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:50"
+    },
+    {
+      "station_name": "CHANDRAPUR",
+      "station_code": "CD",
+      "arrival_time": "12:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:20"
+    },
+    {
+      "station_name": "BALHARSHAH",
+      "station_code": "BPQ",
+      "arrival_time": "13:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "13:45"
+    },
+    {
+      "station_name": "RAMAGUNDAM",
+      "station_code": "RDM",
+      "arrival_time": "15:27",
+      "halt_duration": "01 Mins",
+      "departure_time": "15:28"
+    },
+    {
+      "station_name": "WARANGAL",
+      "station_code": "WL",
+      "arrival_time": "17:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "17:10"
+    },
+    {
+      "station_name": "KHAMMAM",
+      "station_code": "KMT",
+      "arrival_time": "18:19",
+      "halt_duration": "01 Mins",
+      "departure_time": "18:20"
+    },
+    {
+      "station_name": "VIJAYAWADA JN",
+      "station_code": "BZA",
+      "arrival_time": "20:35",
+      "halt_duration": "10 Mins",
+      "departure_time": "20:45"
+    },
+    {
+      "station_name": "TENALI JN",
+      "station_code": "TEL",
+      "arrival_time": "21:09",
+      "halt_duration": "01 Mins",
+      "departure_time": "21:10"
+    },
+    {
+      "station_name": "ONGOLE",
+      "station_code": "OGL",
+      "arrival_time": "22:39",
+      "halt_duration": "01 Mins",
+      "departure_time": "22:40"
+    },
+    {
+      "station_name": "NELLORE",
+      "station_code": "NLR",
+      "arrival_time": "00:39",
+      "halt_duration": "01 Mins",
+      "departure_time": "00:40"
+    },
+    {
+      "station_name": "RENIGUNTA JN",
+      "station_code": "RU",
+      "arrival_time": "02:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "02:50"
+    },
+    {
+      "station_name": "TIRUPATI",
+      "station_code": "TPTY",
+      "arrival_time": "03:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:20"
+    },
+    {
+      "station_name": "CHITTOOR",
+      "station_code": "CTO",
+      "arrival_time": "04:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:30"
+    },
+    {
+      "station_name": "KATPADI JN",
+      "station_code": "KPD",
+      "arrival_time": "05:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "05:20"
+    },
+    {
+      "station_name": "JOLARPETTAI JN",
+      "station_code": "JTJ",
+      "arrival_time": "06:33",
+      "halt_duration": "02 Mins",
+      "departure_time": "06:35"
+    },
+    {
+      "station_name": "SALEM JN",
+      "station_code": "SA",
+      "arrival_time": "08:07",
+      "halt_duration": "03 Mins",
+      "departure_time": "08:10"
+    },
+    {
+      "station_name": "ERODE JN",
+      "station_code": "ED",
+      "arrival_time": "09:20",
+      "halt_duration": "10 Mins",
+      "departure_time": "09:30"
+    },
+    {
+      "station_name": "KARUR JN",
+      "station_code": "KRR",
+      "arrival_time": "10:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "10:30"
+    },
+    {
+      "station_name": "TIRUCHCHIRAPALI",
+      "station_code": "TPJ",
+      "arrival_time": "12:30",
+      "halt_duration": "10 Mins",
+      "departure_time": "12:40"
+    },
+    {
+      "station_name": "DINDIGUL JN",
+      "station_code": "DG",
+      "arrival_time": "13:45",
+      "halt_duration": "05 Mins",
+      "departure_time": "13:50"
+    },
+    {
+      "station_name": "KODAIKANAL ROAD",
+      "station_code": "KQN",
+      "arrival_time": "14:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:10"
+    },
+    {
+      "station_name": "MADURAI JN",
+      "station_code": "MDU",
+      "arrival_time": "15:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "15:20"
+    },
+    {
+      "station_name": "VIRUDUNAGAR JN",
+      "station_code": "VPT",
+      "arrival_time": "15:48",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:50"
+    },
+    {
+      "station_name": "SATUR",
+      "station_code": "SRT",
+      "arrival_time": "16:08",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:10"
+    },
+    {
+      "station_name": "KOVILPATTI",
+      "station_code": "CVP",
+      "arrival_time": "16:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:30"
+    },
+    {
+      "station_name": "VANCHIMANIYACHI",
+      "station_code": "MEJ",
+      "arrival_time": "17:29",
+      "halt_duration": "01 Mins",
+      "departure_time": "17:30"
+    },
+    {
+      "station_name": "TIRUNELVELI JN",
+      "station_code": "TEN",
+      "arrival_time": "18:45",
+      "halt_duration": "01 Jun 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (12406": [
+    {
+      "station_name": "H NIZAMUDDIN",
+      "station_code": "NZM",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "15:05",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "MATHURA JN",
+      "station_code": "MTJ",
+      "arrival_time": "16:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "16:32"
+    },
+    {
+      "station_name": "AGRA CANTT",
+      "station_code": "AGC",
+      "arrival_time": "17:15",
+      "halt_duration": "05 Mins",
+      "departure_time": "17:20"
+    },
+    {
+      "station_name": "GWALIOR",
+      "station_code": "GWL",
+      "arrival_time": "19:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:30"
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "20:55",
+      "halt_duration": "08 Mins",
+      "departure_time": "21:03"
+    },
+    {
+      "station_name": "LALITPUR JN",
+      "station_code": "LAR",
+      "arrival_time": "21:58",
+      "halt_duration": "02 Mins",
+      "departure_time": "22:00"
+    },
+    {
+      "station_name": "BINA JN",
+      "station_code": "BINA",
+      "arrival_time": "23:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:20"
+    },
+    {
+      "station_name": "GANJ BASODA",
+      "station_code": "BAQ",
+      "arrival_time": "23:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "23:55"
+    },
+    {
+      "station_name": "VIDISHA",
+      "station_code": "BHS",
+      "arrival_time": "00:20",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:22"
+    },
+    {
+      "station_name": "BHOPAL JN",
+      "station_code": "BPL",
+      "arrival_time": "01:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "01:10",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "NARMADAPURAM",
+      "station_code": "NDPM",
+      "arrival_time": "02:12",
+      "halt_duration": "02 Mins",
+      "departure_time": "02:14"
+    },
+    {
+      "station_name": "ITARSI JN",
+      "station_code": "ET",
+      "arrival_time": "02:45",
+      "halt_duration": "10 Mins",
+      "departure_time": "02:55"
+    },
+    {
+      "station_name": "GHORADONGRI",
+      "station_code": "GDYA",
+      "arrival_time": "04:05",
+      "halt_duration": "01 Mins",
+      "departure_time": "04:06"
+    },
+    {
+      "station_name": "BETUL",
+      "station_code": "BZU",
+      "arrival_time": "04:44",
+      "halt_duration": "02 Mins",
+      "departure_time": "04:46"
+    },
+    {
+      "station_name": "AMLA JN",
+      "station_code": "AMLA",
+      "arrival_time": "05:07",
+      "halt_duration": "02 Mins",
+      "departure_time": "05:09"
+    },
+    {
+      "station_name": "MULTAI",
+      "station_code": "MTY",
+      "arrival_time": "05:25",
+      "halt_duration": "01 Mins",
+      "departure_time": "05:26"
+    },
+    {
+      "station_name": "PANDHURNA",
+      "station_code": "PAR",
+      "arrival_time": "06:06",
+      "halt_duration": "01 Mins",
+      "departure_time": "06:07"
+    },
+    {
+      "station_name": "NARKHER",
+      "station_code": "NRKR",
+      "arrival_time": "06:20",
+      "halt_duration": "01 Mins",
+      "departure_time": "06:21"
+    },
+    {
+      "station_name": "KATOL",
+      "station_code": "KATL",
+      "arrival_time": "06:40",
+      "halt_duration": "01 Mins",
+      "departure_time": "06:41"
+    },
+    {
+      "station_name": "NAGPUR",
+      "station_code": "NGP",
+      "arrival_time": "08:20",
+      "halt_duration": "10 Mins",
+      "departure_time": "08:30"
+    },
+    {
+      "station_name": "WARDHA JN",
+      "station_code": "WR",
+      "arrival_time": "09:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:30"
+    },
+    {
+      "station_name": "PULGAON JN",
+      "station_code": "PLO",
+      "arrival_time": "09:53",
+      "halt_duration": "01 Mins",
+      "departure_time": "09:54"
+    },
+    {
+      "station_name": "DHAMANGAON",
+      "station_code": "DMN",
+      "arrival_time": "10:12",
+      "halt_duration": "01 Mins",
+      "departure_time": "10:13"
+    },
+    {
+      "station_name": "BADNERA JN",
+      "station_code": "BD",
+      "arrival_time": "11:32",
+      "halt_duration": "03 Mins",
+      "departure_time": "11:35"
+    },
+    {
+      "station_name": "MURTAJAPUR",
+      "station_code": "MZR",
+      "arrival_time": "12:04",
+      "halt_duration": "01 Mins",
+      "departure_time": "12:05"
+    },
+    {
+      "station_name": "AKOLA JN",
+      "station_code": "AK",
+      "arrival_time": "12:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "12:45"
+    },
+    {
+      "station_name": "SHEGAON",
+      "station_code": "SEG",
+      "arrival_time": "13:13",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:15"
+    },
+    {
+      "station_name": "MALKAPUR",
+      "station_code": "MKU",
+      "arrival_time": "13:53",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:55"
+    },
+    {
+      "station_name": "BHUSAVAL JN",
+      "station_code": "BSL",
+      "arrival_time": "15:05",
+      "halt_duration": "31 May 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (12440": [
+    {
+      "station_name": "SHRI GANGANAGAR",
+      "station_code": "SGNR",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "13:25"
+    },
+    {
+      "station_name": "SADULSHAHR",
+      "station_code": "SDS",
+      "arrival_time": "13:47",
+      "halt_duration": "02 Mins",
+      "departure_time": "13:49"
+    },
+    {
+      "station_name": "HANUMANGARH JN",
+      "station_code": "HMH",
+      "arrival_time": "14:20",
+      "halt_duration": "10 Mins",
+      "departure_time": "14:30"
+    },
+    {
+      "station_name": "SANGARIA",
+      "station_code": "SGRA",
+      "arrival_time": "14:55",
+      "halt_duration": "02 Mins",
+      "departure_time": "14:57"
+    },
+    {
+      "station_name": "MANDI DABWALI",
+      "station_code": "MBY",
+      "arrival_time": "15:25",
+      "halt_duration": "05 Mins",
+      "departure_time": "15:30"
+    },
+    {
+      "station_name": "BATHINDA JN",
+      "station_code": "BTI",
+      "arrival_time": "16:30",
+      "halt_duration": "25 Mins",
+      "departure_time": "16:55"
+    },
+    {
+      "station_name": "RAMPURA PHUL",
+      "station_code": "PUL",
+      "arrival_time": "17:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "17:20"
+    },
+    {
+      "station_name": "BARNALA",
+      "station_code": "BNN",
+      "arrival_time": "17:45",
+      "halt_duration": "01 Mins",
+      "departure_time": "17:46"
+    },
+    {
+      "station_name": "DHURI JN",
+      "station_code": "DUI",
+      "arrival_time": "18:20",
+      "halt_duration": "05 Mins",
+      "departure_time": "18:25"
+    },
+    {
+      "station_name": "SANGRUR",
+      "station_code": "SAG",
+      "arrival_time": "18:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:40"
+    },
+    {
+      "station_name": "SUNAM UDHAM S W",
+      "station_code": "SFMU",
+      "arrival_time": "18:52",
+      "halt_duration": "02 Mins",
+      "departure_time": "18:54"
+    },
+    {
+      "station_name": "JAKHAL JN",
+      "station_code": "JHL",
+      "arrival_time": "19:40",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:42"
+    },
+    {
+      "station_name": "JIND JN",
+      "station_code": "JIND",
+      "arrival_time": "20:30",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:32"
+    },
+    {
+      "station_name": "ROHTAK JN",
+      "station_code": "ROK",
+      "arrival_time": "21:10",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:12"
+    },
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "23:00",
+      "halt_duration": "15 Mins",
+      "departure_time": "23:15",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "MATHURA JN",
+      "station_code": "MTJ",
+      "arrival_time": "00:41",
+      "halt_duration": "02 Mins",
+      "departure_time": "00:43"
+    },
+    {
+      "station_name": "AGRA CANTT",
+      "station_code": "AGC",
+      "arrival_time": "01:20",
+      "halt_duration": "05 Mins",
+      "departure_time": "01:25"
+    },
+    {
+      "station_name": "GWALIOR",
+      "station_code": "GWL",
+      "arrival_time": "02:58",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:00"
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "04:30",
+      "halt_duration": "08 Mins",
+      "departure_time": "04:38"
+    },
+    {
+      "station_name": "BINA JN",
+      "station_code": "BINA",
+      "arrival_time": "06:30",
+      "halt_duration": "05 Mins",
+      "departure_time": "06:35"
+    },
+    {
+      "station_name": "BHOPAL JN",
+      "station_code": "BPL",
+      "arrival_time": "08:25",
+      "halt_duration": "10 Mins",
+      "departure_time": "08:35",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "ITARSI JN",
+      "station_code": "ET",
+      "arrival_time": "10:20",
+      "halt_duration": "05 Mins",
+      "departure_time": "10:25"
+    },
+    {
+      "station_name": "KHANDWA",
+      "station_code": "KNW",
+      "arrival_time": "13:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "13:10"
+    },
+    {
+      "station_name": "MALKAPUR",
+      "station_code": "MKU",
+      "arrival_time": "15:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:20"
+    },
+    {
+      "station_name": "AKOLA JN",
+      "station_code": "AK",
+      "arrival_time": "16:55",
+      "halt_duration": "10 Mins",
+      "departure_time": "17:05"
+    },
+    {
+      "station_name": "WASHIM",
+      "station_code": "WHM",
+      "arrival_time": "18:09",
+      "halt_duration": "01 Mins",
+      "departure_time": "18:10"
+    },
+    {
+      "station_name": "HINGOLI DECCAN",
+      "station_code": "HNL",
+      "arrival_time": "18:49",
+      "halt_duration": "01 Mins",
+      "departure_time": "18:50"
+    },
+    {
+      "station_name": "PURNA JN",
+      "station_code": "PAU",
+      "arrival_time": "20:20",
+      "halt_duration": "20 Mins",
+      "departure_time": "20:40"
+    },
+    {
+      "station_name": "H SAHIB NANDED",
+      "station_code": "NED",
+      "arrival_time": "21:40",
+      "halt_duration": "31 May 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (12824": [
+    {
+      "station_name": "H NIZAMUDDIN",
+      "station_code": "NZM",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "17:55",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "23:22",
+      "halt_duration": "08 Mins",
+      "departure_time": "23:30"
+    },
+    {
+      "station_name": "SAUGOR",
+      "station_code": "SGO",
+      "arrival_time": "02:40",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:45"
+    },
+    {
+      "station_name": "KATNI MURWARA",
+      "station_code": "KMZ",
+      "arrival_time": "05:40",
+      "halt_duration": "10 Mins",
+      "departure_time": "05:50"
+    },
+    {
+      "station_name": "UMARIA",
+      "station_code": "UMR",
+      "arrival_time": "07:16",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:18"
+    },
+    {
+      "station_name": "SHAHDOL",
+      "station_code": "SDL",
+      "arrival_time": "08:18",
+      "halt_duration": "02 Mins",
+      "departure_time": "08:20"
+    },
+    {
+      "station_name": "ANUPPUR JN",
+      "station_code": "APR",
+      "arrival_time": "08:55",
+      "halt_duration": "05 Mins",
+      "departure_time": "09:00"
+    },
+    {
+      "station_name": "PENDRA ROAD",
+      "station_code": "PND",
+      "arrival_time": "09:38",
+      "halt_duration": "02 Mins",
+      "departure_time": "09:40"
+    },
+    {
+      "station_name": "USLAPUR",
+      "station_code": "USL",
+      "arrival_time": "11:50",
+      "halt_duration": "10 Mins",
+      "departure_time": "12:00"
+    },
+    {
+      "station_name": "BHATAPARA",
+      "station_code": "BYT",
+      "arrival_time": "12:42",
+      "halt_duration": "02 Mins",
+      "departure_time": "12:44"
+    },
+    {
+      "station_name": "RAIPUR JN",
+      "station_code": "R",
+      "arrival_time": "13:50",
+      "halt_duration": "05 Mins",
+      "departure_time": "13:55",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "DURG",
+      "station_code": "DURG",
+      "arrival_time": "14:55",
+      "halt_duration": "31 May 25",
+      "departure_time": "Finish"
+    }
+  ],
+  " (20848": [
+    {
+      "station_name": "MTYR C TUSHAR M",
+      "station_code": "MCTM",
+      "arrival_time": "Start",
+      "halt_duration": "30 May 25",
+      "departure_time": "00:10"
+    },
+    {
+      "station_name": "JAMMU TAWI",
+      "station_code": "JAT",
+      "arrival_time": "01:10",
+      "halt_duration": "10 Mins",
+      "departure_time": "01:20"
+    },
+    {
+      "station_name": "PATHANKOT CANTT",
+      "station_code": "PTKC",
+      "arrival_time": "03:05",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:10"
+    },
+    {
+      "station_name": "JALANDHAR CANT",
+      "station_code": "JRC",
+      "arrival_time": "05:00",
+      "halt_duration": "10 Mins",
+      "departure_time": "05:10"
+    },
+    {
+      "station_name": "LUDHIANA JN",
+      "station_code": "LDH",
+      "arrival_time": "06:05",
+      "halt_duration": "10 Mins",
+      "departure_time": "06:15"
+    },
+    {
+      "station_name": "RAJPURA JN",
+      "station_code": "RPJ",
+      "arrival_time": "07:19",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:21"
+    },
+    {
+      "station_name": "AMBALA CANT JN",
+      "station_code": "UMB",
+      "arrival_time": "08:00",
+      "halt_duration": "10 Mins",
+      "departure_time": "08:10"
+    },
+    {
+      "station_name": "NEW DELHI",
+      "station_code": "NDLS",
+      "arrival_time": "10:50",
+      "halt_duration": "25 Mins",
+      "departure_time": "11:15",
+      "is_boarding_point": true
+    },
+    {
+      "station_name": "AGRA CANTT",
+      "station_code": "AGC",
+      "arrival_time": "13:55",
+      "halt_duration": "05 Mins",
+      "departure_time": "14:00"
+    },
+    {
+      "station_name": "GWALIOR",
+      "station_code": "GWL",
+      "arrival_time": "15:50",
+      "halt_duration": "02 Mins",
+      "departure_time": "15:52"
+    },
+    {
+      "station_name": "V LAKSHMIBAIJHS",
+      "station_code": "VGLJ",
+      "arrival_time": "17:20",
+      "halt_duration": "08 Mins",
+      "departure_time": "17:28"
+    },
+    {
+      "station_name": "BINA MALKHEDI",
+      "station_code": "MAKR",
+      "arrival_time": "19:33",
+      "halt_duration": "02 Mins",
+      "departure_time": "19:35"
+    },
+    {
+      "station_name": "SAUGOR",
+      "station_code": "SGO",
+      "arrival_time": "20:28",
+      "halt_duration": "02 Mins",
+      "departure_time": "20:30"
+    },
+    {
+      "station_name": "DAMOH",
+      "station_code": "DMO",
+      "arrival_time": "21:33",
+      "halt_duration": "02 Mins",
+      "departure_time": "21:35"
+    },
+    {
+      "station_name": "KATNI MURWARA",
+      "station_code": "KMZ",
+      "arrival_time": "23:30",
+      "halt_duration": "10 Mins",
+      "departure_time": "23:40"
+    },
+    {
+      "station_name": "SHAHDOL",
+      "station_code": "SDL",
+      "arrival_time": "02:08",
+      "halt_duration": "05 Mins",
+      "departure_time": "02:13"
+    },
+    {
+      "station_name": "ANUPPUR JN",
+      "station_code": "APR",
+      "arrival_time": "02:58",
+      "halt_duration": "05 Mins",
+      "departure_time": "03:03"
+    },
+    {
+      "station_name": "PENDRA ROAD",
+      "station_code": "PND",
+      "arrival_time": "03:41",
+      "halt_duration": "02 Mins",
+      "departure_time": "03:43"
+    },
+    {
+      "station_name": "USLAPUR",
+      "station_code": "USL",
+      "arrival_time": "06:05",
+      "halt_duration": "10 Mins",
+      "departure_time": "06:15"
+    },
+    {
+      "station_name": "BHATAPARA",
+      "station_code": "BYT",
+      "arrival_time": "07:01",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:03"
+    },
+    {
+      "station_name": "TILDA NEORA",
+      "station_code": "TLD",
+      "arrival_time": "07:22",
+      "halt_duration": "02 Mins",
+      "departure_time": "07:24"
+    },
+    {
+      "station_name": "RAIPUR JN",
+      "station_code": "R",
+      "arrival_time": "08:00",
+      "halt_duration": "05 Mins",
+      "departure_time": "08:05",
+      "is_dropping_point": true
+    },
+    {
+      "station_name": "DURG",
+      "station_code": "DURG",
+      "arrival_time": "09:10",
+      "halt_duration": "31 May 25",
+      "departure_time": "Finish"
+    }
   ]
 }

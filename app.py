@@ -15,6 +15,7 @@ import time
 import re
 from delay_prediction_module import TrainDelayPredictor, enhance_routes_with_predictions
 from flask_cors import CORS
+from orchestrator import TrainAnalysisDriver  # Import orchestrator
 
 # Constants
 NGROK_AUTH_TOKEN = "2s8AbCxwpLLc5wO0kEKsl1VaXGA_57VcrKmDYQuHdpheaigPJ"
@@ -193,232 +194,7 @@ def get_station_code_and_name(station_text):
     # Define your station mapping
     # This should be replaced with your actual station data
     station_mapping = {
-    "delhi": "DLI_Delhi",
-    "new delhi": "NDLS_NewDelhi",  # Updated from NDLS_New Delhi to NDLS_NewDelhi
-    "mumbai": "CSTM_Mumbai",
-    "mumbai central": "BCT_MumbaiCentral",  # Updated from BCT_Mumbai Central to BCT_MumbaiCentral
-    "chennai": "MAS_Chennai",
-    "bangalore": "SBC_Bangalore",
-    "kolkata": "KOAA_Kolkata",
-    "hyderabad": "SC_Hyderabad",
-    "pune": "PUNE_Pune",
-    "ahmedabad": "ADI_Ahmedabad",
-    # Added stations from the list
-    "abu road": "ABR_AbuRoad",
-    "adilabad": "ADD_Adilabad",
-    "adra": "ADF_Adra",
-    "adra": "ADRA_Adra",
-    "agartala": "AGTE_Agartala",
-    "agra cantt": "AGC_AgraCantt",
-    "ahmadnagar": "AGN_Ahmadnagar",
-    "ajmer": "AII_Ajmer",
-    "akola": "AKT_Akola",
-    "aligarhi": "ALN_Aligarhi",
-    "alipurduar jn": "ALJN_AlipurduarJn",
-    "allahabad": "ALD_Allahabad",
-    "alappuzha": "ALLP_Alappuzha",
-    "aluva": "AWY_Aluva",
-    "aurangabad": "AWB_Aurangabad",
-    "amalner": "AN_Amalner",
-    "amb andaura": "ASAN_AmbAndaura",
-    "amethi": "AME_Amethi",
-    "ambikapur": "ABKP_Ambikapur",
-    "amla": "AMLA_Amla",
-    "amritsar": "ASR_Amritsar",
-    "anand": "ANA_Anand",
-    "anand nagar": "ANDN_AnandNagar",
-    "anand vihar terminus": "ANVT_AnandViharTerminus",
-    "anantapur": "ATP_Anantapur",
-    "andal": "AWL_Andal",
-    "ara": "ARA_Ara",
-    "anuppur": "APR_Anuppur",
-    "arakkonam": "AJJ_Arakkonam",
-    "arsikere": "ASK_Arsikere",
-    "asansol": "ASN_Asansol",
-    "aunrihar": "ARJ_Aunrihar",
-    "ayodhya": "AYM_Ayodhya",
-    "azamgarh": "AZR_Azamgarh",
-    "badarpur": "BPR_Badarpur",
-    "badnera": "BDJ_Badnera",
-    "belgaum": "BGM_Belgaum",
-    "bagipat road": "BPM_BagipatRoad",
-    "baidyanathdham": "BDME_Baidyanathdham",
-    "bakhtiyarpur": "BKP_Bakhtiyarpur",
-    "balasore": "BSPR_Balasore",
-    "bangarapet": "BWT_Bangarapet",
-    "balangir": "BLGR_Balangir",
-    "balaghat": "BALV_Balaghat",
-    "balurghat": "BLGT_Balurghat",
-    "balipatna": "BPO_Balipatna",
-    "bangalore cantt": "BNC_BangaloreCantt",
-    "bangalore city": "SBC_BangaloreCity",
-    "bankura": "BNK_Bankura",
-    "banahat": "BNO_Banahat",
-    "bokaro steel city": "BKSC_BokaroSteelCity",
-    "bapudham motihari": "BPH_BapudhamMotihari",
-    "bandikui": "BAR_Bandikui",
-    "baran": "BNJ_Baran",
-    "bareilly": "BE_Bareilly",
-    "basti": "BST_Basti",
-    "bhatinda jn": "BTI_BhatindaJn",
-    "bayana": "BYN_Bayana",
-    "begu sarai": "BEG_BeguSarai",
-    "belapur": "BAP_Belapur",
-    "bellary": "BAY_Bellary",
-    "bettiah": "BTH_Bettiah",
-    "betul": "BEU_Betul",
-    "bhopal": "BPL_Bhopal",
-    "bhubaneswar": "BBS_Bhubaneswar",
-    "bhuj": "BHJ_Bhuj",
-    "bhusaval": "BSL_Bhusaval",
-    "bijwasan": "BJU_Bijwasan",
-    "bikaner": "BKN_Bikaner",
-    "borivali": "BVI_Borivali",
-    "varanasi": "BSB_Varanasi",
-    "coimbatore jn": "CBE_CoimbatoreJn",
-    "chandigarh": "CDG_Chandigarh",
-    "kanpur central": "CNB_KanpurCentral",
-    "chalisgarh": "CSN_Chalisgarh",
-    "chennai central": "MAS_ChennaiCentral",
-    "chennai egmore": "MS_ChennaiEgmore",
-    "dehradun": "DDN_Dehradun",
-    "delhi sarai rohilla": "DEE_DelhiSaraiRohilla",
-    "delhi shahdara": "DSA_DelhiShahdara",
-    "dhanbad": "DHN_Dhanbad",
-    "dharmanagar": "DMR_Dharmanagar",
-    "dharwad": "DWR_Dharwad",
-    "dhone": "DHO_Dhone",
-    "darbhanga": "DBG_Darbhanga",
-    "darbhanga": "DJ_Darbhanga",
-    "durg": "DURG_Durg",
-    "erode": "ED_Erode",
-    "ernakulam jn": "ERS_ErnakulamJn",
-    "etawah": "ETW_Etawah",
-    "faizabad": "FD_Faizabad",
-    "faridabad": "FBD_Faridabad",
-    "fatehpur": "FTP_Fatehpur",
-    "firozpur": "FZR_Firozpur",
-    "gooty": "G_Gooty",
-    "gajraula": "GJL_Gajraula",
-    "gorakhpur": "GKP_Gorakhpur",
-    "ghaziabad": "GZB_Ghaziabad",
-    "guwahati": "GHY_Guwahati",
-    "gwalior": "GWL_Gwalior",
-    "habibganj": "HBJ_Habibganj",
-    "howrah": "HWH_Howrah",
-    "indore": "IDH_Indore",
-    "ipurupalem": "IPL_Ipurupalem",
-    "itwari": "ITR_Itwari",
-    "jabalpur": "JBP_Jabalpur",
-    "jaipur": "JP_Jaipur",
-    "jaisalmer": "JSM_Jaisalmer",
-    "jalandhar city": "JUC_JalandharCity",
-    "jamnagar": "JAM_Jamnagar",
-    "jhansi": "JHS_Jhansi",
-    "jodhpur": "JU_Jodhpur",
-    "kharagpur": "KGP_Kharagpur",
-    "kacheguda": "KCG_Kacheguda",
-    "kazipet": "KZJ_Kazipet",
-    "kesinga": "KSNG_Kesinga",
-    "kendujhargarh": "KDJR_Kendujhargarh",
-    "kangasbagh": "KGBS_Kangasbagh",
-    "khalilabad": "KLD_Khalilabad",
-    "khammam": "KMK_Khammam",
-    "khandwa": "KNW_Khandwa",
-    "khed": "KEI_Khed",
-    "khurda road": "KUR_KhurdaRoad",
-    "katihar": "KIR_Katihar",
-    "kishanganj": "KNE_Kishanganj",
-    "kishangarh": "KSG_Kishangarh",
-    "kiul": "KIUL_Kiul",
-    "kochuveli": "KCVL_Kochuveli",
-    "kodaikanal road": "KQR_KodaikanalRoad",
-    "kozhikode": "CLT_Kozhikode",
-    "katpadi": "KPD_Katpadi",
-    "koraput": "KRPU_Koraput",
-    "korba": "KRBA_Korba",
-    "kota": "KOTA_Kota",
-    "kotdwara": "KTW_Kotdwara",
-    "kotkapura": "KCP_Kotkapura",
-    "kottayam": "KTYM_Kottayam",
-    "krishanagar city": "KNJ_KrishanagarCity",
-    "krishnarajapuram": "KJM_Krishnarajapuram",
-    "kudal": "KUDL_Kudal",
-    "kumbakonam": "KMU_Kumbakonam",
-    "kundara": "KUDA_Kundara",
-    "kurduvadi": "KWV_Kurduvadi",
-    "kurukshetra": "KRNT_Kurukshetra",
-    "lakhimpur": "LHU_Lakhimpur",
-    "lalkuan": "LL_Lalkuan",
-    "lokmanya tilak": "LTT_LokmanyaTilak",
-    "lanka": "LKA_Lanka",
-    "lucknow": "LKO_Lucknow",
-    "lumding": "LMG_Lumding",
-    "madgaon": "MAO_Madgaon",
-    "madarihat": "MDT_Madarihat",
-    "maddur": "MAD_Maddur",
-    "makhdumpur": "MDR_Makhdumpur",
-    "majhagawan": "MJN_Majhagawan",
-    "maliya": "MEB_Maliya",
-    "malda town": "MLDT_MaldaTown",
-    "manamadurai": "MNM_Manamadurai",
-    "mangalore central": "MAQ_MangaloreCentral",
-    "mansi": "MNI_Mansi",
-    "manmad": "MMR_Manmad",
-    "mandwabazar": "MDB_Mandwabazar",
-    "meerut city": "MTC_MeerutCity",
-    "mettupalayam": "MTP_Mettupalayam",
-    "miraj": "MRJ_Miraj",
-    "moga": "MOF_Moga",
-    "mokama": "MKA_Mokama",
-    "mumbai": "MUR_Mumbai",
-    "mughalsarai": "MGS_Mughalsarai",
-    "muzaffarpur": "MZS_Muzaffarpur",
-    "mysore": "MYS_Mysore",
-    "nagpur": "NGP_Nagpur",
-    "nasik": "NK_Nasik",
-    "nagaon": "NGO_Nagaon",
-    "narwana": "NDT_Narwana",
-    "new coochbehar": "NWP_NewCoochbehar",
-    "new farakka": "NFK_NewFarakka",
-    "new jalpaiguri": "NJP_NewJalpaiguri",
-    "new tinsukia": "NTSK_NewTinsukia",
-    "nizamuddin": "NZM_Nizamuddin",
-    "ongole": "OGL_Ongole",
-    "pachora": "PC_Pachora",
-    "palakkad": "PKD_Palakkad",
-    "palghat": "PLG_Palghat",
-    "panipat": "PNP_Panipat",
-    "pathankot": "PTK_Pathankot",
-    "patna": "PNBE_Patna",
-    "porbandar": "PBR_Porbandar",
-    "puri": "PURI_Puri",
-    "raipur": "R_Raipur",
-    "rameswaram": "RMM_Rameswaram",
-    "ranchi": "RNC_Ranchi",
-    "ratlam": "RTM_Ratlam",
-    "raxaul": "RXL_Raxaul",
-    "rewa": "RE_Rewa",
-    "rohtak": "ROK_Rohtak",
-    "rajendra pul": "RJPB_RajendraPul",
-    "sealdah": "SDAH_Sealdah",
-    "shimla": "SLI_Shimla",
-    "silchar": "SCL_Silchar",
-    "solapur": "SLO_Solapur",
-    "surat": "ST_Surat",
-    "surendra nagar": "SUNR_SurendraNagar",
-    "tambaram": "TBM_Tambaram",
-    "tiruchchirappalli": "TPJ_Tiruchchirappalli",
-    "thiruvananthapuram": "TVC_Thiruvananthapuram",
-    "thane": "TNA_Thane",
-    "tirupati": "TPTY_Tirupati",
-    "udaipur city": "UDZ_UdaipurCity",
-    "ujjain": "UJN_Ujjain",
-    "ambala": "UMB_Ambala",
-    "vijayawada": "BZA_Vijayawada",
-    "visakhapatnam": "VSKP_Visakhapatnam",
-    "warangal": "WL_Warangal",
-    "yesvantpur": "YPR_Yesvantpur",
+       "yesvantpur": "YPR_Yesvantpur",
 }
     
     # Normalize the input text
@@ -517,65 +293,150 @@ def parse_date_expression(date_text):
 def index():
     if request.method == 'POST':
         try:
-            origin = request.form['origin']
-            destination = request.form['destination']
-            date = request.form['date']
-            max_routes = int(request.form['max_routes'])
-            min_connection_time = int(request.form['connection_time'])
+            # Check if this is urgent mode or normal mode
+            mode = request.form.get('mode', 'normal')
             
-            date = date.replace('-', '')
-            
-            routes = find_routes(
-                origin=origin,
-                destination=destination,
-                date=date,
-                scrape_availability=scrape_train_data,
-                scrape_routes=scrape_train_routes,
-                max_routes=max_routes
-            )
-            
-            filtered_routes = []
-            for route in routes:
-                valid_route = True
-                if len(route['segments']) > 1:
-                    for i in range(len(route['segments']) - 1):
-                        current_segment = route['segments'][i]
-                        next_segment = route['segments'][i + 1]
-                        time_diff = (next_segment['departure_time'] - current_segment['arrival_time']).total_seconds() / 60
-                        if time_diff < min_connection_time:
-                            valid_route = False
-                            break
-                if valid_route:
-                    filtered_routes.append(route)
-            
-            print(f"Debug: Using credentials from: {CREDENTIALS_PATH}")
-            print(f"Debug: Credentials file exists: {os.path.exists(CREDENTIALS_PATH)}")
-            
-            try:
-                predictor = TrainDelayPredictor(
-                    project_id="16925727262",
-                    endpoint_id="1776921841160421376",
-                    location="us-central1"
-                )
-                filtered_routes = enhance_routes_with_predictions(filtered_routes, predictor)
-                print("Debug: Successfully enhanced routes with predictions")
-            except Exception as e:
-                print(f"Debug: Error in prediction: {str(e)}")
-                # Continue without predictions if there's an error
-                return render_template('results.html', 
-                                    routes=filtered_routes, 
-                                    connection_time=min_connection_time,
-                                    error=str(e))
-
-            return render_template('results.html', 
-                                routes=filtered_routes, 
-                                connection_time=min_connection_time)
-                                
+            if mode == 'urgent':
+                return handle_urgent_mode(request)
+            else:
+                return handle_normal_mode(request)
+                
         except Exception as e:
             print(f"Debug: Route processing error: {str(e)}")
             return render_template('error.html', error=str(e))
     
     return render_template('index.html')
+
+def handle_normal_mode(request):
+    """Handle normal mode routing logic"""
+    origin = request.form['origin']
+    destination = request.form['destination']
+    date = request.form['date']
+    max_routes = int(request.form['max_routes'])
+    min_connection_time = int(request.form['connection_time'])
+    
+    date = date.replace('-', '')
+    
+    routes = find_routes(
+        origin=origin,
+        destination=destination,
+        date=date,
+        scrape_availability=scrape_train_data,
+        scrape_routes=scrape_train_routes,
+        max_routes=max_routes
+    )
+    
+    filtered_routes = []
+    for route in routes:
+        valid_route = True
+        if len(route['segments']) > 1:
+            for i in range(len(route['segments']) - 1):
+                current_segment = route['segments'][i]
+                next_segment = route['segments'][i + 1]
+                time_diff = (next_segment['departure_time'] - current_segment['arrival_time']).total_seconds() / 60
+                if time_diff < min_connection_time:
+                    valid_route = False
+                    break
+        if valid_route:
+            filtered_routes.append(route)
+    
+    print(f"Debug: Using credentials from: {CREDENTIALS_PATH}")
+    print(f"Debug: Credentials file exists: {os.path.exists(CREDENTIALS_PATH)}")
+    
+    try:
+        predictor = TrainDelayPredictor(
+            project_id="16925727262",
+            endpoint_id="1776921841160421376",
+            location="us-central1"
+        )
+        filtered_routes = enhance_routes_with_predictions(filtered_routes, predictor)
+        print("Debug: Successfully enhanced routes with predictions")
+    except Exception as e:
+        print(f"Debug: Error in prediction: {str(e)}")
+        # Continue without predictions if there's an error
+        return render_template('results.html', 
+                            routes=filtered_routes, 
+                            connection_time=min_connection_time,
+                            error=str(e))
+
+    return render_template('results.html', 
+                        routes=filtered_routes, 
+                        connection_time=min_connection_time)
+
+def handle_urgent_mode(request):
+    """Handle urgent mode using orchestrator"""
+    try:
+        # Extract form data
+        origin = request.form['origin']
+        destination = request.form['destination']
+        date = request.form['date']
+        max_standing_time_minutes = int(request.form['max_standing_time'])
+        min_valid_routes = int(request.form['max_routes'])  # This is actually min_valid_routes based on your form
+        
+        # Convert date format from YYYY-MM-DD to YYYYMMDD
+        date = date.replace('-', '')
+        
+        # Convert standing time from minutes to hours for orchestrator
+        max_standing_time_hours = max_standing_time_minutes / 60.0
+        
+        # Default values as discussed
+        max_iterations = 5
+        max_candidates_per_iteration = 5
+        
+        print(f"Debug: Urgent mode parameters:")
+        print(f"  Origin: {origin}")
+        print(f"  Destination: {destination}")
+        print(f"  Date: {date}")
+        print(f"  Max Standing Time: {max_standing_time_minutes} minutes ({max_standing_time_hours} hours)")
+        print(f"  Min Valid Routes: {min_valid_routes}")
+        print(f"  Max Iterations: {max_iterations}")
+        print(f"  Max Candidates Per Iteration: {max_candidates_per_iteration}")
+        
+        # Initialize orchestrator
+        driver = TrainAnalysisDriver()
+        
+        # Run analysis
+        result = driver.run_analysis(
+            origin=origin,
+            destination=destination,
+            journey_date=date,
+            min_valid_routes=min_valid_routes,
+            max_standing_time_hours=max_standing_time_hours,
+            max_iterations=max_iterations,
+            max_candidates_per_iteration=max_candidates_per_iteration
+        )
+        
+        print(f"Debug: Orchestrator result success: {result.get('success', False)}")
+        print(f"Debug: Valid results count: {len(result.get('valid_results', []))}")
+        
+        # For now, return a simple confirmation as requested
+        if result.get('success', False):
+            return jsonify({
+                'status': 'success',
+                'message': f"Urgent mode analysis completed successfully! Found {len(result.get('valid_results', []))} valid train options.",
+                'details': {
+                    'total_iterations': result.get('total_iterations', 0),
+                    'candidates_processed': result.get('candidates_found', 0),
+                    'valid_trains_found': len(result.get('valid_results', []))
+                }
+            })
+        else:
+            return jsonify({
+                'status': 'failed',
+                'message': f"Urgent mode analysis failed: {result.get('message', 'Unknown error')}",
+                'details': {
+                    'total_iterations': result.get('total_iterations', 0),
+                    'candidates_processed': result.get('candidates_found', 0),
+                    'failed_trains_count': len(result.get('all_failed_trains', []))
+                }
+            })
+            
+    except Exception as e:
+        print(f"Debug: Urgent mode error: {str(e)}")
+        return jsonify({
+            'status': 'error',
+            'message': f"Error in urgent mode processing: {str(e)}"
+        }), 500
 
 # New endpoint to get Azure Speech token
 @app.route('/api/get-speech-token', methods=['GET', 'OPTIONS'])
